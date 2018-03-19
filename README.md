@@ -17,13 +17,8 @@ Every thursday (during semester time) at 14:00 noon in DYN
 | **Name**                       | **Subgroup**          |
 |--------------------------------|-----------------------|
 
-| Stephan Vette                  | Main               |
-|--------------------------------|-----------------------|
-| Raul Andres Lugo Rodrigo   | Main                  |
-|--------------------------------|-----------------------|
-| Stefan Rottstegge                | Main      |
-|--------------------------------|-----------------------|
-| Abdulrahman Abouelkhair        | Main |
-|--------------------------------|-----------------------|
-| Medhini Rajagropal Balamurugan | Main |
-|--------------------------------|-----------------------|
+| Stephan Vette                  | Main                  |
+| Raul Andres Lugo Rodrigo       | Main                  |
+| Stefan Rottstegge              | Main                  |
+| Abdulrahman Abouelkhair        | Main                  |
+| Medhini Rajagropal Balamurugan | Main                  |
