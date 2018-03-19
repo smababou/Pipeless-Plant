@@ -1,28 +1,28 @@
-# Project Group WS 2018
+# Project Group WS 2017/2018
 
-## Advanced AGV Drive Control in a Pipeless Plant
+## Model-Predictive-Control for Robotic Pole Balancing
 
 ### PG Meeting
 
-Every thursday (during semester time) at 14:00 noon in DYN
+Every thursday (during semester time) at 12:00 noon in IRF 209.
 
 ### Supervisors
 
-- Marina Rantanen Modéer
-- Afaq Ahmad
-
+- Christoph Rösmann
+- Artemi Makarow
+- Maximilian Krämer
 
 ### Members - Subgroups
 
 | **Name**                       | **Subgroup**          |
 |--------------------------------|-----------------------|
-| Stephan Vette                  | Main                  |
-|--------------------------------|-----------------------|
-| Raul Andres Lugo Rodrigo       | Main                  |
-|--------------------------------|-----------------------|
-| Stefan Rottstegge              | Main                  |
-|--------------------------------|-----------------------|
-| Abdulrahman Abouelkhair        | Main                  |
-|--------------------------------|-----------------------|
-| Medhini Rajagropal Balamurugan | Main                  |
-|--------------------------------|-----------------------|
+| Rida Tariq Salam               | Vision                |
+| Seyed Amirsaman Shanaei        | Vision                |
+| Martin Klöpper                 | Control               |
+| Stephan Vette                  | Control               |
+| Rodrigo Jose Velasco Guillen   | Core                  |
+| Diego Sarmiento                | State-Estimation      |
+| Eduardo Meza Hernandez         | Core                  |
+| Jason Chia Zi Jie              | State-Estimation      |
+| Abdulrahman Abouelkhair        | Inverse-Pendulum Exp. |
+| Medhini Rajagropal Balamurugan | Inverse-Pendulum Exp. |
