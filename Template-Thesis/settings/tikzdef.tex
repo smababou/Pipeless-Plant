@@ -1,0 +1,115 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+%% Definitions for Tikz figures, e.g. for blockset diagrams
+\usepgfplotslibrary{patchplots}
+\usetikzlibrary{positioning,automata,through,calc,plotmarks,shapes,arrows,quotes,decorations.markings,shapes.misc,shapes,backgrounds,patterns,angles,babel,intersections,decorations,spy} % include some useful tikz packages
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+
+\iftoggle{lang_eng}{}
+{
+	\pgfplotsset{/pgf/number format/use comma} % Kommata für Dezimaldarstellung
+	\pgfplotsset{/pgf/number format/.cd,1000 sep={}} % Trennzeichen bei 1000
+	%\pgfplotsset{/pgf/number format/.cd,1000 sep={\,}} % Trennzeichen bei 1000
+}
+\newlength\figureheight
+\newlength\figurewidth
+
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{arrow} = [->,>=stealth']
+\tikzstyle{arrowreverse} = [<-,>=stealth']
+\tikzstyle{arrowbidir} = [<->,>=stealth']
+
+%% Line width definition
+\tikzset{draw/.append style={line width= 0.3mm}}
+
+\tikzset{thin/.style ={line width= 0.2mm}}
+\tikzset{thick/.style ={line width= 0.4mm}}
+\tikzset{very thick/.style ={line width= 0.5mm}}
+
+\pgfplotsset{tick style={black}} % modifies the style `every tick'     $ very thin,
+
+% set line joint mode to round, otherwise noise looks ugly in signal plots
+\pgfplotsset{every axis plot post/.append style={line join=round}}
+
+% select unique fontsize (small) at the beginning of each tikz picture
+\tikzset{every picture/.style={font issue=\small},
+	font issue/.style={execute at begin picture={#1\selectfont}}
+}
+\tikzset{fontscale/.style = {font=\small}
+}
+
+% add arrow pins to axis by default
+\pgfplotsset{every axis/.append style={
+		axis lines = left % middle
+	}
+}
+
+%% Lengh definition
+\newlength\BlockSep
+\newlength\BlockHeight
+\newlength\BlockWidth
+\setlength{\BlockSep}{1.4em}
+\setlength{\BlockHeight}{3em}
+\setlength{\BlockWidth}{1.8cm}
+
+\newlength\sepsepsep
+\setlength{\sepsepsep}{0.2cm}
+%% Block styles
+\tikzset{%
+	block/.style    = {draw, thick, rectangle, minimum height = \BlockHeight, minimum width = \BlockWidth,inner sep=0},
+	square/.style    = {draw, thick, rectangle, minimum height = \BlockHeight, minimum width = \BlockHeight},
+	nonlinear/.style= {draw, thick, double, rectangle, minimum height = \BlockHeight, minimum width = \BlockWidth},
+	sum/.style      = {draw, circle, node distance = 2cm}, % Adder
+	branch/.style      = {draw, circle, fill=black, minimum height = 0.4em, inner sep=0pt,anchor=center}, % Adder
+	input/.style    = {coordinate}, % Input
+	output/.style   = {coordinate}, % Output
+	annotation/.style={coordinate}, % Output
+	skip loop/.style={to path={-- ++(0,-1.2\BlockSep) -| (\tikztotarget)}},
+	skip loop up/.style={to path={-- ++(0, 1.2\BlockSep) -| (\tikztotarget)}},
+	point/.style    = {coordinate, anchor=center}
+}
+
+\def\integrate#1{
+	\draw[line cap=round,line join=round] ($(#1.north west)+(0.1,-0.1)$) -- ($(#1.south west)+(0.1,0.1)$) -- ($(#1.south east)+(-0.1,0.1)$);
+	\draw[line cap=round,line join=round] ($(#1.south west)+(0.1,0.1)$) -- ($(#1.north east)-(0.1,0.1)$);
+}
+
+\def\gain#1{
+	\draw ($(#1.north west)+(0.1,-0.1)$) -- ($(#1.south west)+(0.1,0.1)$) -- ($(#1.south east)+(-0.1,0.1)$);
+	\draw ($(#1.north west)+(0.1,-0.2)$) -- ($(#1.north east)-(0.1,0.2)$);
+}
+\def\nlingain#1{
+	\draw[line cap=round,line join=round] ($(#1.south west)+(3pt,3pt)$) -- ($(#1.south west)+(12pt,8pt)$) -- ($(#1.north east)-(12pt,8pt)$) -- ($(#1.north east)-(3pt,3pt)$);
+	\draw[->,thin] ($(#1.south)+(0pt,3pt)$) -- ($(#1.north)-(0pt,3pt)$);
+	\draw[->,thin] ($(#1.west)+(3pt,0pt)$) -- ($(#1.east)-(3pt,0pt)$);
+}
+\def\stribeck#1{
+	\draw[->,thin] ($(#1.south)+(0pt,3pt)$) -- ($(#1.north)-(0pt,3pt)$);
+	\draw[->,thin] ($(#1.west)+(3pt,0pt)$) -- ($(#1.east)-(3pt,0pt)$);
+	\draw[line join=round,line cap=round,out=-60,in=-135,looseness=1.2] ($(#1.center)!0.3!(#1.north)$) to($(#1.north east)-(4pt,4pt)$);
+	\draw[line join=round,line cap=round,out=120,in=45,looseness=1.2] ($(#1.center)!0.3!(#1.south)$) to($(#1.south west)+(4pt,4pt)$);
+	\draw[line join=round]($(#1.center)!0.3!(#1.north)$) to ($(#1.center)!0.3!(#1.south)$);
+}
+\def\saturate#1{
+	\draw[line cap=round,line join=round] ($(#1.south west)+(3pt,3pt)$) -- ($(#1.south west)+(7pt,3pt)$) -- ($(#1.north east)-(7pt,3pt)$) -- ($(#1.north east)-(3pt,3pt)$);
+	\draw[->,thin] ($(#1.south)+(0pt,3pt)$) -- ($(#1.north)-(0pt,3pt)$);
+	\draw[->,thin] ($(#1.west)+(3pt,0pt)$) -- ($(#1.east)-(3pt,0pt)$);
+}
+\def\signum#1{
+%	\draw[line cap=round,line join=round] ($(#1.west)+(3pt,-7pt)$) -- ($(#1.center)-(0,7pt)$);
+%	\draw[line cap=round,line join=round] ($(#1.east)-(3pt,-7pt)$) -- ($(#1.center)+(0,7pt)$);
+	\draw[line cap=round,line join=round] ($(#1.west)+(3pt,-7pt)$) -- ($(#1.center)-(0,7pt)$) -- ($(#1.center)+(0,7pt)$) -- ($(#1.east)-(3pt,-7pt)$);
+	\draw[->,thin] ($(#1.south)+(0pt,3pt)$) -- ($(#1.north)-(0pt,3pt)$);
+	\draw[->,thin] ($(#1.west)+(3pt,0pt)$) -- ($(#1.east)-(3pt,0pt)$);
+}
+\def\convert#1#2#3{
+	\draw[line cap=round] ($(#1.south west)+(1pt,1pt)$) -- ($(#1.north east)-(1pt,1pt)$);
+	\node at ($(#1.west)+(0.6em,0.5em)$) {#2};
+	\node at ($(#1.east)-(0.6em,0.5em)$) {#3};
+}
+
+\def\cross#1{
+	\draw[line cap=round] (#1.south east) -- (#1.north west);
+	\draw[line cap=round] (#1.north east) -- (#1.south west);
+}

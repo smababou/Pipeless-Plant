@@ -1,0 +1,23 @@
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nomenclature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%See: http://blog.stefan-macke.com/2006/05/03/abkurzungsverzeichnis-mit-latex/
+
+% Page style
+\markboth{\nomname}{\nomname}% maybe with \MakeUppercase
+\iftoggle{lang_eng}{}{\renewcommand{\nomname}{Nomenklatur}} % use german name
+
+
+\printnomenclature[4cm] % There is a bug TeXnicCenter version 2.0 Beta 1. As soon as this line is added to the document the structure pane indicates a missing paragraph. Nevertheless the nomenclature package works correctly. 
+
+%% General variables
+\nomenclature{$\mathbf{x}(t)$}{Zustandsvektor zum Zeitpunkt $t$}%
+\nomenclature{$u(t)$}{Eingangssignal zum Zeitpunkt $t$}%
+\nomenclature{$t$}{Zeit}
+\nomenclature{$x,y,z$}{Spatial coordinates}
+
+%% Abkürzungen
+\nomenclature[A]{Abrev.}{Abbreviation}
+\nomenclature[A]{KF}{\textbf{K}alman \textbf{F}ilter}
+
+\nomenclature[B]{$\alpha$}{Griechischer Buchstabe}
+

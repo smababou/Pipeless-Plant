@@ -1,0 +1,40 @@
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%
+% Define your custom commands in this file!
+%%%%%%%%%%%%%%%%%
+
+%% Math operators
+\newcommand{\sign}[1]{\operatorname{sign}\left(#1\right)}
+\DeclareMathOperator{\T}{T}
+\newcommand{\op}[1]{\operatorname{#1}}
+
+\newcommand{\fundef}[3]{#1\,{:}\,\mathbb{R}^{#2}\,{\mapsto}\,\mathbb{R}^{#3}}
+
+%% New cite commands using Biblatex
+% supervised theses
+\newcommand*{\citethes}[2][]{%
+\addtocategory{thes}{#2}\cite[#1]{#2}}
+\newcommand*{\textcitethes}[2][]{%
+\addtocategory{thes}{#2}\textcite[#1]{#2}}
+\newcommand*{\nocitethes}[2][]{%
+\addtocategory{thes}{#2}\nocite{#2}}
+
+% published media
+\newcommand*{\citemedia}[2][]{%
+\addtocategory{media}{#2}\cite[#1]{#2}}
+\newcommand*{\textcitemedia}[2][]{%
+\addtocategory{media}{#2}\textcite[#1]{#2}}
+\newcommand*{\nocitemedia}[2][]{%
+\addtocategory{media}{#2}\nocite{#2}}
+
+\newcommand{\highlight}[1]{\textcolor{red}{\colorbox{yellow}{\parbox{0.9\textwidth}{\textbf{#1}}}}}
+
+\newcommand{\Star}[1]{\tikzsetnextfilename{Star#1}\tikz\node[star, star points=#1, star point ratio=1.65,inner sep=2pt, fill=lightgray,solid,draw, anchor=center]{};}
+
+\newcommand{\GraySquare}{\tikzsetnextfilename{GraySquare}\tikz\node[draw,black,fill=lightgray,inner sep=3pt] {};}
+\newcommand{\BlueCirc}{\tikzsetnextfilename{BlueCirc}\tikz\node[draw,circle,black,fill=BlueColor,inner sep=2.5pt] {};}
+
+\makeatletter
+\newcommand\thefontsize{\f@size pt}
+\makeatother

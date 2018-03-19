@@ -1,0 +1,25 @@
+\tikzsetnextfilename{\currfilebase}% <-- TikzExpernalize PDF gets name of tex-file, otherwise all images are re-compiled in case of reordering the images or adding new ones in between the existing order
+\begin{tikzpicture}[align=center,auto,decoration={zigzag}]
+%\draw [help lines,dotted,gray,step=5mm] (-4,-3) grid (12,3);
+
+\node[inner sep=0,minimum width=4cm,minimum height=2cm,rotate=0](B)at(0,0){};
+\node[yshift=1em] at (B.south){\footnotesize ship};
+%% Ship:
+\draw[rounded corners=10,thick] (B.east) to (B.70) to (B.north west) to (B.south west) to (B.-70) to (B.east);
+\draw[very thick] (B.west)--++(35:-1cm);
+
+%% Hilfslinien
+\draw[dashed] (B.west)--node[below,yshift=-1em,pos=0.3]{\footnotesize rudder}++(35:-2cm);
+\draw[dashed] ($(B.west)-(2cm,0)$) to ($(B.east)+(2cm,0)$);
+\draw[arrow] ($(B.west)-(1.5cm,0)$) arc [start angle=180, end angle=215, radius=1.5cm] node[pos=0.5,left]{$\delta$};
+
+\draw[arrow] (B.east)-- node[at end,below]{\footnotesize ship course} ++(-27.5:2cm);
+
+\draw[arrowreverse] ($(B.east)+(1.5cm,0)$) arc [start angle=0, end angle=-27.5, radius=1.5cm] node[pos=0.5,right]{$\varphi$};
+
+\draw[arrow] (6cm,-1.0cm)--node[right,at end]{$\delta$}++(0,2.5cm);
+\draw[arrow] (5.5cm,1cm)--node[below,at end]{$\varphi$}++(6cm,0);
+\draw[thick] (6cm,1cm)--++(-20:5.5cm);
+\draw[thick,BlueColor] (11cm,1cm) arc [start angle=0, end angle=-20, radius=5cm];
+\draw[thick,BlueColor,decorate] ($(6cm,1cm)+(-20:5cm)$) -- node[left,yshift=-1em,text=black]{\footnotesize\emph{sliding mode}} ++(-20:-4cm);
+\end{tikzpicture}

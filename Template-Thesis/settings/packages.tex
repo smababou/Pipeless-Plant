@@ -1,0 +1,312 @@
+% !TeX encoding = UTF-8
+% ################################
+% PAGE GEOMETRY
+% ################################
+%% Use package geometry instead of a4wide!
+\usepackage{geometry}	
+%\usepackage[showframe]{geometry} % showframe visualizes page margins
+\geometry{top=28mm,bottom=28mm,left=21mm,right=21mm,headsep=6mm,footskip=11mm,bindingoffset=8mm}
+
+%% Font
+% Latex mit deutschen Umlauten:
+% http://www.cs.albany.edu/~herrmann/latex_umlaute/
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}	% EC-Schriften verwenden (vs. DC) da 8-Bit
+				% EC-Schriften als T1-kodierten CM-Schriften
+				% European/Ext.-Computer-Modern-(EC)-Schriften
+				% Umlaute, Anführungszeichen ...
+				% => Umlauten koennen richtig getrennt werden
+				% FAQ 5.3.2
+\usepackage{ae,aecompl}		% virtuelle-CM-Fonts
+				% da EC nicht als PostScript-(Type-1) verfuegbar
+				% => keine echten Umlaute im PDF-Dokumen 
+				%(Problem bei Suche)
+				% By loading the ae package (\usepackage{ae}), 
+				% you loose some characters as mentioned in 
+				% README. 
+				% The package aecompl by Denis Roegel restores
+				% these characters which are taken from the ec 
+				% fonts. If you use pdftex, you will get these 
+				% characters as bitmaps, but this might be 
+				% better than not having them at all.
+\usepackage[sc]{mathpazo} % Palatino (not Palatino Linotype!) as font with serifs
+\linespread{1.05}         % Palatino needs more space between lines
+\usepackage[scaled=.90]{helvet} % Helvetica as font without serifs
+%\usepackage{sansiwona} % Iwona as sans serif font, custom sty-file, alternative to helvetica
+\usepackage{courier} % Courier as type writer font
+\usepackage{enumitem} % Removes vspaces between itemize-structures with \begin{itemize}[noitemsep]...
+\usepackage{scrhack} % http://tex.stackexchange.com/questions/51867/koma-warning-about-toc
+
+% http://www.khirevich.com/latex/microtype/
+\usepackage[activate={true,nocompatibility},tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+% activate={true,nocompatibility} - activate protrusion and expansion
+% final - enable microtype; use "draft" to disable
+% tracking=true, kerning=true, spacing=true - activate these techniques
+% factor=1100 - add 10% to the protrusion amount (default is 1000)
+% stretch=10, shrink=10 - reduce stretchability/shrinkability (default is 20/20) 
+\SetProtrusion{encoding={*},family={bch},series={*},size={6,7}}
+{1={ ,750},2={ ,500},3={ ,500},4={ ,500},5={ ,500},
+6={ ,500},7={ ,600},8={ ,500},9={ ,500},0={ ,500}}
+\SetTracking{encoding={*}, shape=sc}{40}
+
+%% Euro symbol
+\usepackage{textcomp} % Euro symbol that fits to Palatino (use \texteuro)
+
+%% Include without pagebreak
+\usepackage{newclude} 
+% command 
+% use \include*{file}
+
+%% Create commands and macros with two optional parameters
+\usepackage{twoopt}
+
+% Customized chapter headings
+% (we require chapterprefix for 2-line-heading but we rewrite \chapterformat to ignore the prefix)
+\setkomafont{chapter}{\bfseries\Huge}
+%\setkomafont{chapterprefix}{\normalfont}
+\renewcommand*{\raggedchapter}{\raggedleft}
+\renewcommand*{\chapterformat}{%
+	\fontsize{100pt}{80pt}\selectfont\thechapter
+	\vspace{-0.7ex} % adjust horizontal separation between label and title body 
+}
+\RedeclareSectionCommand[beforeskip=1.8ex,afterskip=1.8cm]{chapter}
+%\renewcommand*\chapterheadmidvskip{\par\nobreak\vspace{10pt}}
+
+%% Math
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{mathtools}%
+\usepackage{amsthm}
+
+%% Theorems
+\newtheoremstyle{myTheoremStyle}% name
+%{2\lineskip}      % Space above
+%{2\lineskip}      % Space below
+{11pt}      % Space above
+{11pt}      % Space below
+{\itshape}  % Body font
+{}          % Indent amount (empty = no indent, \parindent = para indent)
+{\bfseries} % Thm head font
+{:}         % Punctuation after thm head
+{.5em}      % Space after thm head: " " = normal interword space;{\newline = linebreak}
+{}          % Thm head spec (can be left empty, meaning 'normal')
+% define theorems in theorems.tex
+
+
+%% Language settings
+\usepackage[english,ngerman]{babel}
+\usepackage[babel,autostyle]{csquotes}
+\AtBeginDocument{
+	\iftoggle{lang_eng}{\selectlanguage{english}}{\selectlanguage{ngerman}}
+}
+
+%% Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+
+%% Useful package for SI units
+\usepackage[exponent-product = \cdot,
+			output-complex-root = j, 
+			separate-uncertainty = true,
+			output-product = \cdot,
+			arc-separator = \,,
+			product-units = brackets-power]{siunitx}
+\sisetup{detect-all} % detect font faces, sizes etc.
+			
+\iftoggle{lang_eng}
+{
+	\sisetup{
+		list-final-separator = { and },
+		list-pair-separator = { and },
+		range-phrase = { to }
+	}
+}
+{
+	\sisetup{
+	locale=DE,
+	list-final-separator = { und },
+	list-pair-separator = { und },
+	range-phrase = { bis }
+	}
+}
+
+
+
+
+%% check whether compiler is set to latex or pdflatex
+\usepackage{ifpdf} 
+\usepackage{ifplatform}
+
+%% Include without pagebreak
+\usepackage{newclude} 
+% command 
+% use \include*{file}
+
+%% Figures
+\usepackage[normal,small]{caption} % Customise the captions in floating environments
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{subcaption}
+%% Colors for text, color definitions in color.tex
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+
+%% Rotate figures
+\usepackage{rotating}
+\usepackage{import}
+
+%% Tikz, further definitions in tikzdef.tex
+\usepackage{tikz,pgfplots}
+\usepackage{grffile}
+\usepackage{currfile}
+
+%% Include other pdf pages
+\usepackage{pdfpages}
+
+%% Algorithm
+\usepackage[chapter, ruled]{algorithm} % plain, boxed, ruled
+%\floatname{algorithm}{Algorithmus} % will be overwritten by \captionsetup (see below)
+\usepackage[noend]{algpseudocode} % Alternative Algorithmenumgebung
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+\iftoggle{lang_eng} {}
+{ % German translations
+	\algrenewcommand\algorithmicrequire{\textbf{Voraussetzung:}}
+	\algrenewcommand\algorithmicensure{\textbf{Abschlussbedingung:}}
+}
+
+% Setup captions for algorithm
+\DeclareCaptionLabelFormat{algo_format}{#1 #2.}
+\captionsetup[algorithm]{name=\iftoggle{lang_eng}{Algorithm}{Algorithmus}, labelformat=algo_format,font=small,labelfont=small, labelsep=colon,justification=centering}
+
+% Convert eps to pdf
+\ifpdf
+	\usepackage{epstopdf}
+\fi
+\usepackage{psfrag} % To correct the mess Matlab produces in figures!
+
+
+%% Nomenclature
+\usepackage[noprefix,intoc,\iftoggle{lang_eng}{english}{german}]{nomencl}
+\setlength{\nomlabelwidth}{.25\hsize}
+\setlength{\nomitemsep}{-\parsep}
+% Split nomenclature for symbols and abbreviations
+\renewcommand{\nomgroup}[1]{%
+\ifstrequal{#1}{C}{\vspace{3mm}\item[\textbf{\iftoggle{lang_eng}{Roman symbols}{Lateinische Symbole}}]}{
+\ifstrequal{#1}{B}{\vspace{3mm}\item[\textbf{\iftoggle{lang_eng}{Greek symbols}{Griechische Symbole}}]}}{
+\ifstrequal{#1}{A}{\vspace{3mm}\item[\textbf{\iftoggle{lang_eng}{Abbreviations and acronyms}{Abkürzungen und Akronyme}}]}{}}} 
+
+
+\makenomenclature %Generates a %tm.nlo file
+% Postprocessor settings: run makeindex.exe  with argument list: %tm.nlo -s nomencl.ist -o %tm.nls (TeXnicCenter -> Ausgabeprofile)
+% Use \printnomenclature to create a nomenclature in your document
+% Use \nomenclature[A]{abrev.}{description} for abbreviations
+% Use \nomenclature[1symbol]{symbol}{description} for greek symbols
+% Use \nomenclature[3symbol]{\symbol}{description} for greek symbols. Note: Rewriting the symbol name without the backslash is important for correct alpha numeric ordering! This is particularly visible if you have hats, tilde, dots, bars or anything like that to modify your greek letter.
+%
+% TexStudio:
+% 1. Step: configure Makeindex 
+%  Compile flags: Makeindex: makeindex.exe %.nlo -s nomencl.ist -o %.nls 
+% 2. Step: run Makeindex during compilation
+%  TexStudio: Tab Create: Default compiler: add makeindex (click on screwdriver button)
+%
+% For additional information see:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/nomencl/
+
+
+%% Bibliography using Biblatex
+% Simple bibtex is outdated. Biblatex provides a whole lot of nice features.
+\usepackage[autolang=hyphen,style=authoryear-comp,giveninits=true,uniquename=init,isbn=false,doi=false,dashed=false,backend=bibtex,maxnames=3,minnames=1,maxbibnames=99]{biblatex}
+% Detailed information: ftp://ftp.mpi-sb.mpg.de/pub/tex/mirror/ftp.dante.de/pub/tex/macros/latex/contrib/biblatex/doc/biblatex.pdf
+%
+% Options used here:
+% - babel=hyphen -> hyphenation in multiple languages within bibliography. Just add a new field to your bibtex entry to indicate which language to use. Example: hypenation={ngerman} for german hyphenation in english documents, hypenation={english} for english hyphenation in german documents.
+% - style=numeric together with defernumbers = true: Citations using reference numbers (e.g. [12] ); defernumbers enables unique reference numbers even with multiple bibliographies
+% - backend=bibtex: Avoids the installation of biber
+
+% Increase spacing between two bib items
+\setlength{\bibitemsep}{0.5\baselineskip}
+
+\addbibresource{thesis.bib} % Bibtex file 
+% Settings for bibliography with external references
+%\defbibheading{ref}[References]{
+%\pagestyle{myheadings}%
+%\markboth{#1}{#1}%
+%\section*{#1}%
+%}
+%\defbibnote{ref}{Parts of the material presented in this work has been originally published in conferences and journals. These publications as well as the resources by other researchers are summarized in the following list:}
+
+% Settings for the bibliography with supervised theses
+%\DeclareBibliographyCategory{thes}	 
+%\defbibheading{thes}[Supervised theses]{
+%\newpage
+%\pagestyle{myheadings}%
+%\markboth{#1}{#1}%
+%\section*{#1}%
+%}
+%\defbibnote{thes}{A number of ideas grown during this work emerged from discussions in the context of supervised theses. Source code and measurement data contributed to the material presented in this work. The contributing theses are:}
+
+% Settings for the bibliography with your published media
+%\DeclareBibliographyCategory{media}
+%\defbibheading{media}[Published Software and Media]{
+%\newpage
+%\pagestyle{myheadings}%
+%\markboth{#1}{#1}%
+%\section*{#1}%
+%}
+%\defbibnote{media}{During preparation of this work the following media and sources have been published online under open licenses:}
+
+% Make bold labels in bibliography!
+% From:  http://tex.stackexchange.com/questions/91570/bibliography-with-biblatex-how-to-achieve-bold-labels-using-the-authoryear-styl
+\usepackage{xpatch}
+\xpretobibmacro{author}{\mkbibbold\bgroup}{}{}
+\xapptobibmacro{author}{\egroup}{}{}
+\xpretobibmacro{bbx:editor}{\mkbibbold\bgroup}{}{}
+\xapptobibmacro{bbx:editor}{\egroup}{}{}
+\renewcommand*{\labelnamepunct}{\mkbibbold{\addcolon\space}}
+
+\usepackage{settings/bibspacing}
+% Spacing between references. This package requires the file bibspacing.sty
+\setlength{\bibspacing}{\baselineskip}
+
+% Conditionally build comments and contents
+\usepackage{comment} 
+%In preamble:
+%% Variant I: Summary only: 
+%%\includecomment{summary} %Build latex code within summary environment
+%%\excludecomment{content} %Do not build latex code within the content envrionment
+%% Variante II: Nur Inhalt:
+%%\excludecomment{summary} %Do not build latex code within the summary environment
+%%\includecomment{content} %Build latex code within content envrionment
+%% Variante III: Summary + Inhalt:
+%\includecomment{summary} %Build latex code within summary environment
+%\includecomment{content} %Build latex code within content envrionment
+%
+% Usage in the body. Example:
+%\begin{summary}
+%\rule{\textwidth}{1pt} % <- visual separation between summary and contents in compiled document
+%SUMMARY GOES HERE\\
+%\rule{\textwidth}{1pt} % <- visual separation between summary and contents in compiled document
+%\end{summary}
+%\begin{content}
+%This is the content\\
+%\end{content}
+
+%% Hyperlinks, has to be the last package!
+%\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=black]{hyperref} % schön fürs PDF
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks=false,hidelinks,pdfpagelayout=TwoPageRight]{hyperref} % schön für Druck
+\ifpdf
+\else
+\usepackage[anythingbreaks]{breakurl} % only for ps/dvi
+\fi
+
+% Make sure the whole text black!
+\color{black} 
+
+

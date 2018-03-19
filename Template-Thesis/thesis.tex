@@ -1,0 +1,147 @@
+% !TeX encoding = UTF-8
+% !TeX program = pdflatex
+% !TeX TXS-program:bibliography = txs:///bibtex
+
+% Thesis Template
+% by Jörn Malzahn, Christoph Krimpmann, Christoph Rösmann
+% This template has been designed to be compliant with the requirements of the VDI Verlag-
+% See VDIVerlag-Hinweise-31_03_2013.pdf for details.
+% The basic principle of these requirements is: you submit a compliant A4 print and they will guarantee a high quality A5 book.
+%
+\documentclass[12pt,a4paper,twoside,headsepline,captions=tableheading,toc=bibliography,openany,chapterprefix]{scrbook}
+
+%% For a draft version of your thesis use this line.
+%\documentclass[draft,12pt,a4paper,twoside,headsepline,captions=tableheading,toc=bibliography,openany]{scrbook}
+%% It uses the draft switch, which will not include the graphics in your output document. Instead it draws bounding boxes for each figure and highlights overfull boxes, and highlights exceeding margins. This is particularly usefull to hunt down overfull boxes.
+
+% Useful scripts including if/then/else
+\usepackage{etoolbox}
+
+% Set language to english, compile two times after changing
+\newtoggle{lang_eng}
+\settoggle{lang_eng}{false} % true: english, false: german
+
+% Additional packages
+\input{settings/packages}
+
+% Self-defined hyphenations
+\input{settings/hyphenations}
+
+% Self-defined commands
+\input{settings/commands}
+
+% Color settings
+\input{settings/colordef}
+
+% tikz definitions
+\input{settings/tikzdef}
+
+% tikz externalize options
+\input{settings/tikzexternalize}
+
+% Self-defined environments 
+\input{settings/theorems}
+
+% Path to the graphics/figures
+\graphicspath{{./images/}} 
+
+% Disable automatic parindent (Einrückung nach jedem Abschnitt ausschalten)
+\setlength{\parindent}{0cm}
+
+%% To keep the overview, create a commented structure or obtain a ready to print version of your work:
+% Variant I: Summary only: 
+%\includecomment{content/summary} %Build latex code within summary environment
+%\excludecomment{content/content} %Do not build latex code within the content envrionment
+%% Variante II: Nur Inhalt:
+%\excludecomment{content/summary} %Do not build latex code within the summary environment
+%\includecomment{content/content} %Build latex code within content envrionment
+%% Variante III: Summary + Inhalt:
+\includecomment{content/summary} %Build latex code within summary environment
+\includecomment{content/content} %Build latex code within content envrionment
+
+
+% ##########################################################################
+% BODY
+% ##########################################################################
+\begin{document}
+%% Uncomment the following three lines to display the page layout. In that case also uncomment line 10 in packages.tex!
+%\printinunitsof{cm}
+%\currentpage
+%\pagedesign
+
+% ##########################################################################
+% PREFACE AND INDEXES
+% ##########################################################################
+% Page numbering for title, abstract, dedication and acknowledgements
+% Table of contents has roman page numbering. See VDIVerlag-Hinweise-31_03_2013.pdf for details.
+\pagenumbering{alph}
+\pagestyle{empty} 
+\let\chapterpagestyleorig\chapterpagestyle % save pagestyle for new chapters
+\renewcommand*{\chapterpagestyle}{empty} % no page numbering for chapter pages
+
+%% Title page
+\iftoggle{lang_eng}
+	{\input{content/titlepage_english}}
+	{\input{content/titlepage_german}}
+\maketitle
+
+%% dedication
+\include{content/dedication}
+\cleardoublepage % force next part to start on the right page
+
+%% acknowledgement
+\include{content/acknowledgement}
+\cleardoublepage % force next part to start on the right page
+
+%% abstract
+\include{content/abstract}
+
+\cleardoublepage % force next part to start on the right page
+  
+
+% ##########################################################################
+% MAIN CONTENTS
+% ##########################################################################
+% There is no list of figrues and list of tables in the template. See VDIVerlag-Hinweise-31_03_2013.pdf for details.
+\setcounter{page}{1}
+\pagestyle{headings} 
+\pagenumbering{roman}
+\renewcommand*{\chapterpagestyle}{\chapterpagestyleorig} % restore chapter pagestyle for the main content
+\tableofcontents
+\newpage
+
+%% nomenclature
+\input{content/nomenclature}
+\cleardoublepage % fixes confused odd/even page order
+
+%% Page numbering in the main part
+\pagenumbering{arabic}
+\pagestyle{headings} 
+
+% #######################################################
+\input{content/chapter1}
+
+% #######################################################
+\input{content/chapter2}
+
+% #######################################################
+\input{content/chapter3}
+
+% ##########################################################################
+% BIBLIOGRAPHY
+% ##########################################################################
+
+\printbibliography
+
+% ##########################################################################
+% APPENDIX
+% ##########################################################################
+\appendix
+
+\input{content/appendix1}
+
+
+% ##########################################################################
+% THAT'S IT!
+% ##########################################################################
+\end{document}

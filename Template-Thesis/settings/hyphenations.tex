@@ -1,0 +1,11 @@
+% !TeX encoding = UTF-8
+
+% Allow hyphenation even if "-" is part of the word:
+% Refer to https://tex.stackexchange.com/questions/63232/why-can-words-with-hyphen-char-not-be-hyphenated
+\AtBeginDocument{% TODO: AtBeginDocument really necessary?
+  \hyphenchar\font=\string"7F
+}
+
+
+% Just continue this space separated list
+\hyphenation{Tech-ni-sche Uni-ver-si-tät Dort-mund}

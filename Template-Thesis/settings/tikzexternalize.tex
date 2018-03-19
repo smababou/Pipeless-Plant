@@ -1,0 +1,96 @@
+% !TeX encoding = UTF-8
+
+% Externalize tikz image
+% Many tikz images or tikz images with lots of data can imply a full latex buffer and therefore stop the comilation.
+% If you enable externalization, tikz images are precompiled into an eps/pdf image.
+% They are recompiled automatically after updating the tikz image (make sure to use recent Latex Distributions (2014+)) 
+% All you need to do is to add an argument (enable-write18 or shell-escape) to the latex executable 
+% in order to allow system calls:
+% On Windows systems:
+% 	 latex.exe [other arguments] -enable-write18 %.tex
+% 	 pdflatex.exe [other arguments] -enable-write18 %.tex
+% On Unix systems (Mac/Linux):
+% 	 latex.exe [other arguments] -shell-escape %.tex
+% 	 pdflatex.exe [other arguments] -shell-escape %.tex
+
+\ifnum\pdfshellescape=1
+% System calls enabled
+%\usetikzlibrary{external} % not up to date at the moment
+\usepgfplotslibrary{external}
+
+
+%\ifpdf
+%%%%%   DEPRECATED. Update pgfplots package (>Sept 2014). 
+%%%%%				The new version automatically distinguishes between pdflatex and dvips.
+%%%%%				Uncomment only if you still have problems.
+%%%%%				This code will be removed in further versions.
+%\else  % only for latex dvi/ps
+%	\tikzset{external/system call={latex \tikzexternalcheckshellescape -halt-on-error
+%	-interaction=batchmode -jobname "\image" "\texsource" && % replace && with ; in TexLive u.a.
+%	dvips -o "\image".ps "\image".dvi  % && ps2eps "\image.ps"
+%	}}
+%\fi
+
+\tikzexternalize[prefix=images/tikz-extern/, % folder to store precompiled tikz images (Make sure, folder already exists!!!)
+optimize command away=\includepdf ] % avoid conflicts with the pdfpages packages 
+
+% Some packages are not compatible with externalization. Create wrapped code to disable externalization:
+\makeatletter
+\AtBeginDocument{
+	% for those using the todonodes package: this command disables the externalization mechanism from the inserted todonotes.
+	\@ifpackageloaded{todonotes}{ 
+		\renewcommand{\todo}[2][]{\tikzexternaldisable\@todo[#1]{#2}\tikzexternalenable} 
+	}{}
+	% missing-?gure package:
+	\@ifpackageloaded{xmissingfigure}{ 
+		\newcommand{\xmissingfigure}[2][]{\tikzexternaldisable\missingfigure[#1]{#2}\tikzexternalenable}
+	}{}
+}
+\makeatother
+\fi
+
+
+% Fix some issue with tikz externalize on mac os in which 
+% pdflatex was not called correctly
+% workaround: specify pdflatex call manually:
+\ifnum\pdfshellescape=1
+\ifmacosx
+\tikzset{external/system call={%
+		PATH=/usr/texbin:$PATH pdflatex \tikzexternalcheckshellescape
+		-halt-on-error -interaction=batchmode 
+		-jobname "\image" "\texsource"}}
+\fi
+\fi
+
+% By default precompiled tikz images are named in order of appearance. 
+% If you use this macro (\includetikz{}), the temporary file will be named similar to the original tikz file. 
+%\newcommand{\includetikz}[1]{%
+%	 \ifnum\pdfshellescape=1
+%    	\tikzsetnextfilename{#1}%
+%	 \fi
+%    \input{Abbildungen/#1.tikz}%
+%}
+% This version adds two optional parameters to specify figurewidth and figureheight
+\newcommandtwoopt{\includetikz}[3][0.9\linewidth][5cm]{ % optinal parameters [width][height]
+	\ifnum\pdfshellescape=1
+	\tikzsetnextfilename{#3}%
+	\fi
+	\setlength\figurewidth{#1} 
+	\setlength\figureheight{#2} 
+	\input{images/#3.tikz}%
+}
+
+% if you are using older latex distributions (<2014), the precompiled tikz images are not updated automatically, therefore run this command to update all images:
+%\tikzset{external/force remake} % Recompile all tikz images
+
+% Some helpful commands
+\newcommand{\externalizeNext}{\tikzset{external/force remake=true}} % Force externalizing the next tikz picture (but tikzexternalize must be enabeld at all)
+\newcommand{\externalizeOn}{\tikzset{external/export=true}} % Enable tikz externalizing for all figure splaced afterwards
+\newcommand{\externalizeOff}{\tikzset{external/export=false}} % Disable tikz exernalizing for all figures placed afterwards
+
+% fix compatibility problems with defernumbers of biblatex
+\ifnum\pdfshellescape=1
+\tikzifexternalizing{
+	\ExecuteBibliographyOptions{defernumbers=false}
+}{}
+\fi
