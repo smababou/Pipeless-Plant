@@ -17,6 +17,6 @@ Every thursday (during semester time) at 14:00 noon in DYN.
 |--------------------------------|-----------------------|
 | Raul Andres Lugo Rodrigo       | Main                  |
 | Stefan Rottstegge              | Main                  |
-| Stephan Vette                  | Main                  |
+| Stephan Vettes                 | Main                  |
 | Abdulrahman Abouelkhair        | Main                  |
 | Medhini Rajagropal Balamurugan | Main                  |
