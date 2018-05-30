@@ -1,0 +1,182 @@
+\documentclass[11pt,a4]{article} 
+\usepackage[ansinew]{inputenc} %Schrifttyp und Umlaute
+\usepackage{epsfig} %Nutzung von eps files
+%\usepackage[dvips]{epsfig} %Nutzung von eps files
+%\usepackage[final]{graphicx}    
+%\usepackage[off]{auto-pst-pdf}     % necessary for psfrag to work
+\usepackage{epstopdf} 
+
+\usepackage[bf,sf,compact]{titlesec} 
+\usepackage{fancyhdr} 
+\usepackage{amsmath}
+\usepackage{amssymb} %Symbole nach AMS
+\usepackage{amstext}
+\usepackage{theorem}
+\usepackage{subfigure}
+\usepackage{booktabs}
+
+\usepackage{flafter}
+\usepackage{exscale}
+\usepackage{float}   % for minipages
+\usepackage{psfrag}
+
+
+\setlength{\parindent}{0cm} 
+\setlength{\textwidth}{16cm}
+\setlength{\oddsidemargin}{0cm}  
+\setlength{\voffset}{-2,8cm}  
+\setlength{\textheight}{25cm} 
+\setlength{\arrayrulewidth}{0,3mm} 
+\setlength{\textheight}{25cm} 
+
+\renewcommand{\labelenumi}{\alph{enumi})} 
+\sloppy
+
+
+
+\begin{document} %hier geht es los
+
+\thispagestyle{empty} 
+\begin{tabular*}{16cm}{lr} \hline \\ %Tabelle mit zwei Spalten, in jeder Spalte eine minipage, neue Zeile mit \\
+    \begin{minipage}{10cm} %Anfang minipage in linker Spalte, Breite 8cm
+            \textsf{Technische Universit\"at Dortmund \\ %Schriftgröße smallface
+            Department of Biochemical and Chemical Engineering \\
+            Chair of Process Dynamics and Operations \\
+            Prof.~Dr.~Sebastian Engell \\}
+    \end{minipage} & %Ende minipage in linker Spalte
+    \begin{minipage}{6cm} %Anfang minipage in rechter Spalte, Breite 8cm
+            \setlength{\unitlength}{1cm} %Formatierung, Platzierung und Einfuegen des ASTLOGOS
+            \begin{picture}(8,1) \epsfig{file= Astlogo.eps, width=5cm}
+            \end{picture}\par
+    \end{minipage} \\ \hline %Ende minipage in rechter Spalte
+\end{tabular*} %Ende Tabelle
+
+
+
+
+\vspace{5cm}
+
+\begin{center} 
+
+\LARGE{\bfseries DEVELOPMENT OF LOCAL POSITIONING SYSTEM FOR A PIPE-LESS PLANT\\
+
+\vspace{0.25cm}
+    Automation \& Robotics 
+    
+    Group Project SS18 \\}
+    
+\vspace{3cm}
+\emph{Group Members:}\\[0.2cm]
+Abdulrahman Abouelkhair(4511328)\\	                                         % Author info
+Medhini Rajagopal Balamurugan(4511328)\\
+Stefan Rottstegge(4511328)\\
+Stephan Vette(4511328)\\[1.5cm]
+
+\emph{Supervisors:}\\[0.2cm]
+Afaq Ahmad \\ 
+Marina Rantanen-Mod\'eer\\[1.5cm]	                                     % Supervisor info
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% ABSTRACT
+\clearpage
+\titleformat{\section}{\Large\bf}{\thesection:}{20pt}{}
+\setcounter{enumi}{0} \include{sections/abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\tableofcontents
+
+\newpage
+\listoffigures
+\listoftables
+
+
+\setlength{\textheight}{20cm}
+
+\pagestyle{fancy} 
+\lhead{Final report, TITLE, DD.MM.YYYY}
+\chead{}
+\rhead{Page \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.4pt} 
+
+\setlength{\topmargin}{2cm} %oberer Rand bis Oberkante Kopfzeile
+
+\makeatletter \def\usecounter#1{\@nmbrlisttrue\def\@listctr{#1}}
+\makeatother 
+\setcounter{figure}{0}
+\setcounter{table}{0} 
+
+
+%Introduction
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/introduction_marina}
+
+%Theory
+\clearpage
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/Pipelessplant}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/selection_process}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/RFID}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/Implementation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/futurework}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\section}{\Large\bf}{\thesection}{20pt}{}
+\include{sections/References}
+
+\label{LetzteSeite} %marker letzte Seite
+
+
+\end{document}
+
+\label{LetzteSeite} %marker letzte Seite
+
+%%%%%%%%%%%%%%%%%%%%%     EXTRA HELP    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TO ADD A PICTURE..
+
+% \begin{figure}[h!]
+%   \includegraphics[width=\linewidth]{boat.jp g}
+%   \caption{A boat.}
+%   \label{fig:boat1}
+% \end{figure}
+
+
+% TO ADD A TABLE..
+
+% \begin{table}[h!]
+% \centering
+%  \begin{tabular}{||c c c c||} 
+%  \hline
+%  Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+%  \hline\hline
+%  1 & 6 & 87837 & 787 \\ 
+%  2 & 7 & 78 & 5415 \\
+%  3 & 545 & 778 & 7507 \\
+%  4 & 545 & 18744 & 7560 \\
+%  5 & 88 & 788 & 6344 \\ [1ex] 
+%  \hline
+%  \end{tabular}
+\caption {Should be a caption}
+% \end{table}
+
