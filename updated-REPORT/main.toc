@@ -1,28 +1,32 @@
-\contentsline {section}{\numberline {1}Introduction}{5}
-\contentsline {section}{\numberline {2}Pipeless Plant}{6}
-\contentsline {subsection}{\numberline {2.1}Existing setup}{6}
-\contentsline {subsection}{\numberline {2.2}Problems with the Existing Setup}{6}
-\contentsline {section}{\numberline {3}Selection Process}{7}
-\contentsline {subsection}{\numberline {3.1}Triangulation}{7}
-\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{7}
-\contentsline {subsection}{\numberline {3.3}RFID}{7}
-\contentsline {subsection}{\numberline {3.4}Map-Based Localization}{7}
-\contentsline {section}{\numberline {4}Theoretical Background}{8}
-\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{8}
-\contentsline {subsection}{\numberline {4.2}Trilateration}{8}
-\contentsline {subsection}{\numberline {4.3}Simulation}{8}
-\contentsline {subsection}{\numberline {4.4}...}{8}
-\contentsline {section}{\numberline {5}Simulation}{9}
-\contentsline {section}{\numberline {6}Implementation}{10}
-\contentsline {subsection}{\numberline {6.1}Hardware (Abdul or Stephan)}{10}
-\contentsline {subsection}{\numberline {6.2}Communication (Abdul and/or Stefan)}{10}
-\contentsline {subsection}{\numberline {6.3}Initialization procedure (Stephan and Stefan)}{10}
-\contentsline {subsubsection}{\numberline {6.3.1}Recording and filtering data (Stefan)}{10}
-\contentsline {subsubsection}{\numberline {6.3.2}Analysing data (Stefan)}{10}
-\contentsline {subsubsection}{\numberline {6.3.3}Estimation of position and orientation (Stephan)}{10}
-\contentsline {subsection}{\numberline {6.4}Results}{10}
-\contentsline {subsection}{\numberline {6.5}Improvements}{10}
-\contentsline {section}{\numberline {7}Conclusion}{11}
-\contentsline {section}{\numberline {8}Future Work}{12}
-\contentsline {section}{\numberline {9}References}{13}
-\contentsline {section}{\numberline {10}Appendixes}{14}
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\contentsline {section}{\numberline {2}Pipeless Plant}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Existing setup}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Problems with the Existing Setup}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}Selection Process}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Triangulation}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}RFID}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Map-Based Localization}{7}{subsection.3.4}
+\contentsline {section}{\numberline {4}Theoretical Background}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Trilateration}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Simulation}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}...}{8}{subsection.4.4}
+\contentsline {section}{\numberline {5}Simulation}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Emulator}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}RSSI Measurements with real HW}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Simulation with emulated data}{9}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Results}{9}{subsection.5.4}
+\contentsline {section}{\numberline {6}Implementation}{10}{section.6}
+\contentsline {section}{\numberline {7}Hardware}{10}{section.7}
+\contentsline {subsection}{\numberline {7.1}Communication (Abdul and/or Stefan)}{10}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Initialization procedure (Stephan and Stefan)}{10}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data (Stefan)}{10}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Analysing data (Stefan)}{10}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Estimation of position and orientation (Stephan)}{10}{subsubsection.7.2.3}
+\contentsline {subsection}{\numberline {7.3}Results}{10}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Improvements}{10}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{11}{section.8}
+\contentsline {section}{\numberline {9}Future Work}{12}{section.9}
+\contentsline {section}{\numberline {10}References}{13}{section.10}
+\contentsline {section}{\numberline {11}Appendixes}{14}{section.11}

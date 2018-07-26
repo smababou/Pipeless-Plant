@@ -32,6 +32,16 @@
 \renewcommand{\labelenumi}{\alph{enumi})} 
 \sloppy
 
+% Linkcolour
+\usepackage[	 
+	colorlinks=true,
+ 	breaklinks=true,
+	citecolor=black,
+	linkcolor=black,	
+	menucolor=black,	
+	urlcolor=blue
+]{hyperref}
+
 
 
 \begin{document} %hier geht es los
@@ -96,7 +106,7 @@ Marina Rantanen-Mod\'eer\\[1.5cm]	                                     % Supervi
 \setlength{\textheight}{20cm}
 
 \pagestyle{fancy} 
-\lhead{Final report, TITLE, DD.MM.YYYY}
+\lhead{Final report, TITLE, \today}
 \chead{}
 \rhead{Page \thepage}
 \lfoot{}
@@ -110,6 +120,7 @@ Marina Rantanen-Mod\'eer\\[1.5cm]	                                     % Supervi
 \makeatother 
 \setcounter{figure}{0}
 \setcounter{table}{0} 
+
 
 
 %Introduction
