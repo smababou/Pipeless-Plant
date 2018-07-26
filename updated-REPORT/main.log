@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.21)  26 JUL 2018 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.21)  26 JUL 2018 16:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -477,7 +477,7 @@ Package epstopdf Info: Source file: <Astlogo.eps>
 f Astlogo.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<Astlogo-eps-converted-to.pdf, id=131, 574.145pt x 157.58875pt>
+<Astlogo-eps-converted-to.pdf, id=127, 574.145pt x 157.58875pt>
 File: Astlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use Astlogo-eps-converted-to.pdf>
 Package pdftex.def Info: Astlogo-eps-converted-to.pdf  used on input line 59.
@@ -556,89 +556,100 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 ]
 \openout2 = `sections/TheoreticalBackground.aux'.
 
- (sections/TheoreticalBackground.tex)
+ (sections/TheoreticalBackground.tex
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <5> on input line 5.
+<Pictures/Trilateration_1.png, id=207, 383.18156pt x 235.63031pt>
+File: Pictures/Trilateration_1.png Graphic file (type png)
+<use Pictures/Trilateration_1.png>
+Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 13.
+(pdftex.def)             Requested size: 369.88582pt x 227.46811pt.
+
 [8
 
 
-]
+ <./Pictures/Trilateration_1.png>]) [9]
 \openout2 = `sections/Simulation.aux'.
 
  (sections/Simulation.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 1.
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 1.
-) [9
+) [10
 
 
 ]
 \openout2 = `sections/Implementation.aux'.
 
- (sections/Implementation.tex) [10
+
+(sections/Implementation.tex) [11
 
 
 ]
 \openout2 = `sections/Conclusion.aux'.
 
-
-(sections/Conclusion.tex) [11
+ (sections/Conclusion.tex) [12
 
 
 ]
 \openout2 = `sections/futurework.aux'.
 
- (sections/futurework.tex) [12
+
+(sections/futurework.tex) [13
 
 
 ]
 \openout2 = `sections/References.aux'.
 
-
-(sections/References.tex) [13
+ (sections/References.tex) [14
 
 
 ]
 \openout2 = `sections/Appendixes.aux'.
 
- (sections/Appendixes.tex) [14
+
+(sections/Appendixes.tex) [15
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
- (main.aux
-(sections/abstract.aux) (sections/Introduction.aux) (sections/Pipelessplant.aux
-) (sections/selection_process.aux) (sections/TheoreticalBackground.aux)
+ (main.aux (sections/abstract.aux)
+(sections/Introduction.aux) (sections/Pipelessplant.aux)
+(sections/selection_process.aux) (sections/TheoreticalBackground.aux)
 (sections/Simulation.aux) (sections/Implementation.aux)
 (sections/Conclusion.aux) (sections/futurework.aux) (sections/References.aux)
 (sections/Appendixes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6FA99EF7EA0764D7E627FCF78E673FD5;2090.
+(rerunfilecheck)             Checksum: 33AF88F0B2101C2347D571C9970DF9D2;2029.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 6984 strings out of 492973
- 102736 string characters out of 3135926
- 197156 words of memory out of 3000000
- 10583 multiletter control sequences out of 15000+200000
- 15252 words of font info for 59 fonts, out of 3000000 for 9000
+ 7012 strings out of 492973
+ 103142 string characters out of 3135926
+ 197249 words of memory out of 3000000
+ 10595 multiletter control sequences out of 15000+200000
+ 16797 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,43p,300b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,43p,504b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (14 pages, 190215 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (15 pages, 254739 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
