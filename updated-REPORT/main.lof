@@ -1,2 +1,4 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Overview Trilateration}}{8}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Relation between RSSI and distance antenna to tag}}{12}{figure.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Flow Chart: Selection of correct distance and most proper IDs}}{14}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Computing the center of the robot}}{16}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Orientation of robot in absolute angle}}{16}{figure.4}

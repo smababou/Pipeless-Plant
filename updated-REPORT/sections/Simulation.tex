@@ -20,28 +20,20 @@ The emulator computed at each measurement point the distance of the antenna to t
 The RSSI is an integer value from 0...7. 0 defines in this case a distance from 14 to around 10 cm from the antenna to the tag. In the first version of the emulator the RSSI was on the basis of the information from a paper {\color{red}reference paper?!?!} and mentioned a consistent increasing of the RSSI while the distance bewetten the tags and the antenna gets smaller. \\
 During own measurements has been found out that this relation was inconsistent with this setup of components. Therefore the second version of the emulator was updated and creates more realistic data.\\
 
-\subsection{RSSI Measurements with real hardware}
+\subsection{RSSI Measurements with real hardware}\label{Sec_Sim_Mea}
 The relation of the RSSI is not just related to the distance between the antenna and the tag. It also depends on the orientation of the plain of both components. The tests with the real hardware was performed in a setup where the tags was placed on a floor and the antenna was parallel to the floor at a hight of 1.5 cm. The reason for this was the fact that the antenna should be placed directly under the robot. Fig. \ref{RSSI_Dis} presents the results of the measurements.
-
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width = 16cm]{pictures/RSSI_Distance}
-\caption{Relation between RSSI and distance antenna to tag}
-\label{RSSI_Dis}
-\end{figure}
-The correct values are also given in tbl. \ref{RSSI_Dis_data}:\\
 \begin{table}[!htbp]
 \centering
-\begin{tabular}{|c|l|l|l|l|l|l|l|l|l|l}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-\begin{tabular}[c]{@{}c@{}}Antenna to\\  tag[cm]\end{tabular} & \multicolumn{1}{c|}{14}  & \multicolumn{1}{c|}{9.8} & \multicolumn{1}{c|}{9}   & \multicolumn{1}{c|}{8}   & \multicolumn{1}{c|}{7}   & \multicolumn{1}{c|}{6}   & \multicolumn{1}{c|}{5.8} & \multicolumn{1}{c|}{5.5} & \multicolumn{1}{c|}{5.3} & \multicolumn{1}{c|}{5.1} \\ \hline
-RSSI                                                          & \multicolumn{1}{c|}{0/0} & \multicolumn{1}{c|}{1/1} & \multicolumn{1}{c|}{2/2} & \multicolumn{1}{c|}{3/3} & \multicolumn{1}{c|}{4/4} & \multicolumn{1}{c|}{5/5} & \multicolumn{1}{c|}{4/4} & \multicolumn{1}{c|}{3/3} & \multicolumn{1}{c|}{2/2} & \multicolumn{1}{c|}{1/1} \\ \hline
-\begin{tabular}[c]{@{}c@{}}Antenna\\ to tag[cm]\end{tabular}  & 5                        & 4.7                      & 4.5                      & 4.3                      & 4.2                      & 4                        & 3.5                      & 2.8                      & 0                        &                          \\ \cline{1-10}
-RSSI                                                          & 0/0                      & 1/1                      & 2/2                      & 3/3                      & 4/4                      & 5/5                      & 6/6                      & 7/7                      & 7/7                      &                          \\ \cline{1-10}
+\begin{tabular}[c]{@{}c@{}}RSSI \\ (Received Signal Strength Indicator) \end{tabular}  & 0/0 & 1/1 & 2/2 & 3/3 & 4/4 & 5/5 & 6/6 & 7/7 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Maximal distance \\ antenna to tag [cm]\end{tabular} & 14  & 9.8 & 9   & 8   & 7   & 6   & 3.5 & 2.8 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Middle distance\\ antenna to tag [cm]\end{tabular}   & 5   & 5.1 & 5.3 & 5.5 & 5.8 & 4   & -   & -   \\ \hline
+\begin{tabular}[c]{@{}c@{}}Minimal distance\\ antenna to tag [cm]\end{tabular}  & -   & 4.7 & 4.5 & 4.3 & 4.2 & -   & -   & -   \\ \hline
 \end{tabular}
-\label{RSSI_Dis_data}
 \caption{Relation between RSSI and distance antenna to tag (data)}
-\end{table}\\
+\label{RSSI_Dis_data}
+\end{table}
 It can be seen that there exists a blind spot at a distance of 5 cm where the RSSI drops to 0. The consequence is now that it is not trivial to build up a relation from the RSSI back to the correct distance. \\
 
 \subsection{Simulation with emulated data}
