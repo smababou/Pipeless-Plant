@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.21)  7 AUG 2018 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.21)  9 AUG 2018 17:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -452,20 +452,20 @@ LaTeX Warning: Unused global option(s):
 (sections/Appendixes.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 (C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -483,7 +483,7 @@ LaTeX Font Info:    ... okay on input line 67.
 )
 \c@lstlisting=\count135
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 68.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -492,25 +492,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 70.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+(Font)              <6> on input line 71.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
@@ -522,20 +522,20 @@ Package epstopdf Info: Source file: <Astlogo.eps>
 (epstopdf)                    size: 12646 bytes
 (epstopdf)             Command: <epstopdf --outfile=Astlogo-eps-converted-to.pd
 f Astlogo.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<Astlogo-eps-converted-to.pdf, id=151, 574.145pt x 157.58875pt>
+<Astlogo-eps-converted-to.pdf, id=147, 574.145pt x 157.58875pt>
 File: Astlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use Astlogo-eps-converted-to.pdf>
-Package pdftex.def Info: Astlogo-eps-converted-to.pdf  used on input line 79.
+Package pdftex.def Info: Astlogo-eps-converted-to.pdf  used on input line 80.
 (pdftex.def)             Requested size: 142.26378pt x 39.046pt.
 
-Overfull \hbox (56.90543pt too wide) in paragraph at lines 80--80
+Overfull \hbox (56.90543pt too wide) in paragraph at lines 81--81
 [][] 
  []
 
 
-Overfull \hbox (24.00003pt too wide) in alignment at lines 70--82
+Overfull \hbox (24.00003pt too wide) in alignment at lines 71--83
 [][]
  []
 
@@ -606,7 +606,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  (sections/TheoreticalBackground.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 5.
-<Pictures/Trilateration_1.png, id=250, 383.18156pt x 235.63031pt>
+<Pictures/Trilateration_1.png, id=253, 383.18156pt x 235.63031pt>
 File: Pictures/Trilateration_1.png Graphic file (type png)
 <use Pictures/Trilateration_1.png>
 Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 13.
@@ -621,14 +621,23 @@ Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 13.
  (sections/Hardware.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 1.
+<Pictures/Reader.png, id=286, 586.44093pt x 436.63126pt>
+File: Pictures/Reader.png Graphic file (type png)
+<use Pictures/Reader.png>
+Package pdftex.def Info: Pictures/Reader.png  used on input line 7.
+(pdftex.def)             Requested size: 227.62204pt x 169.47269pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+
+ []
+
 ) [10
 
 
-]
+ <./Pictures/Reader.png>]
 \openout2 = `sections/Simulation.aux'.
 
-
-(sections/Simulation.tex
+ (sections/Simulation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--16
 
  []
@@ -670,32 +679,32 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 
 
 (sections/Implementation.tex
-<Pictures/BestIDs.png, id=309, 865.2325pt x 483.8075pt>
+<Pictures/BestIDs.png, id=315, 865.2325pt x 483.8075pt>
 File: Pictures/BestIDs.png Graphic file (type png)
 <use Pictures/BestIDs.png>
 Package pdftex.def Info: Pictures/BestIDs.png  used on input line 16.
 (pdftex.def)             Requested size: 455.24408pt x 254.55641pt.
-<Pictures/Shape1.png, id=312, 39.89906pt x 39.89906pt>
+<Pictures/Shape1.png, id=318, 39.89906pt x 39.89906pt>
 File: Pictures/Shape1.png Graphic file (type png)
 <use Pictures/Shape1.png>
 Package pdftex.def Info: Pictures/Shape1.png  used on input line 26.
 (pdftex.def)             Requested size: 36.98866pt x 36.98883pt.
-<Pictures/Shape2.png, id=313, 74.52844pt x 39.89906pt>
+<Pictures/Shape2.png, id=319, 74.52844pt x 39.89906pt>
 File: Pictures/Shape2.png Graphic file (type png)
 <use Pictures/Shape2.png>
 Package pdftex.def Info: Pictures/Shape2.png  used on input line 26.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape3.png, id=314, 74.52844pt x 39.89906pt>
+<Pictures/Shape3.png, id=320, 74.52844pt x 39.89906pt>
 File: Pictures/Shape3.png Graphic file (type png)
 <use Pictures/Shape3.png>
 Package pdftex.def Info: Pictures/Shape3.png  used on input line 26.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape4.png, id=315, 74.52844pt x 74.52844pt>
+<Pictures/Shape4.png, id=321, 74.52844pt x 74.52844pt>
 File: Pictures/Shape4.png Graphic file (type png)
 <use Pictures/Shape4.png>
 Package pdftex.def Info: Pictures/Shape4.png  used on input line 26.
 (pdftex.def)             Requested size: 73.97733pt x 73.98123pt.
-<Pictures/Shape5.png, id=316, 74.52844pt x 75.28125pt>
+<Pictures/Shape5.png, id=322, 74.52844pt x 75.28125pt>
 File: Pictures/Shape5.png Graphic file (type png)
 <use Pictures/Shape5.png>
 Package pdftex.def Info: Pictures/Shape5.png  used on input line 26.
@@ -713,12 +722,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
-<Pictures/Center_Rob.png, id=325, 402.00188pt x 405.01312pt>
+<Pictures/Center_Rob.png, id=331, 402.00188pt x 405.01312pt>
 File: Pictures/Center_Rob.png Graphic file (type png)
 <use Pictures/Center_Rob.png>
 Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 51.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
-<Pictures/Orientation.png, id=326, 402.00188pt x 405.01312pt>
+<Pictures/Orientation.png, id=332, 402.00188pt x 405.01312pt>
 File: Pictures/Orientation.png Graphic file (type png)
 <use Pictures/Orientation.png>
 Package pdftex.def Info: Pictures/Orientation.png  used on input line 57.
@@ -729,30 +738,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
-) [16 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>] [17]
+<Pictures/ResultX.png, id=344, 511.9125pt x 185.94469pt>
+File: Pictures/ResultX.png Graphic file (type png)
+<use Pictures/ResultX.png>
+Package pdftex.def Info: Pictures/ResultX.png  used on input line 77.
+(pdftex.def)             Requested size: 398.33858pt x 144.69011pt.
+<Pictures/ResultY.png, id=345, 511.15968pt x 185.94469pt>
+File: Pictures/ResultY.png Graphic file (type png)
+<use Pictures/ResultY.png>
+Package pdftex.def Info: Pictures/ResultY.png  used on input line 84.
+(pdftex.def)             Requested size: 398.33858pt x 144.9029pt.
+<Pictures/ResultO.png, id=346, 509.65407pt x 185.94469pt>
+File: Pictures/ResultO.png Graphic file (type png)
+<use Pictures/ResultO.png>
+Package pdftex.def Info: Pictures/ResultO.png  used on input line 91.
+(pdftex.def)             Requested size: 398.33858pt x 145.337pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--96
+
+ []
+
+[16 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>] [17 <./Pictures/R
+esultX.png> <./Pictures/ResultY.png>]) [18 <./Pictures/ResultO.png>]
 \openout2 = `sections/Conclusion.aux'.
 
 
-(sections/Conclusion.tex) [18
+(sections/Conclusion.tex) [19
 
 
 ]
 \openout2 = `sections/futurework.aux'.
 
- (sections/futurework.tex) [19
+ (sections/futurework.tex) [20
 
 
 ]
 \openout2 = `sections/References.aux'.
 
 
-(sections/References.tex) [20
+(sections/References.tex (main.bbl)) [21
 
 
 ]
 \openout2 = `sections/Appendixes.aux'.
 
- (sections/Appendixes.tex (code/Emulator.m
+ (sections/Appendixes.tex
+(code/Emulator.m
 Overfull \hbox (31.23077pt too wide) in paragraph at lines 1--2
 [][][][] 
  []
@@ -762,34 +793,34 @@ Overfull \hbox (37.80084pt too wide) in paragraph at lines 7--8
 [][][][] 
  []
 
-[21
+[22
 
 
-] [22] [23] [24] [25] [26])) [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+] [23] [24] [25] [26] [27])) [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (main.aux (sections/abstract.aux)
 (sections/Introduction.aux) (sections/Pipelessplant.aux)
 (sections/selection_process.aux) (sections/TheoreticalBackground.aux)
 (sections/Hardware.aux) (sections/Simulation.aux) (sections/Implementation.aux)
 (sections/Conclusion.aux) (sections/futurework.aux) (sections/References.aux)
 (sections/Appendixes.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 304F9F20830D20E105AC3B52FF7077E0;2537.
+(rerunfilecheck)             Checksum: BEB5ED58AAFD972C6D9DCDA0733C17B5;2460.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 10012 strings out of 492973
- 141996 string characters out of 3135926
- 385328 words of memory out of 3000000
- 13293 multiletter control sequences out of 15000+200000
- 16797 words of font info for 65 fonts, out of 3000000 for 9000
+ 10045 strings out of 492973
+ 142577 string characters out of 3135926
+ 385344 words of memory out of 3000000
+ 13314 multiletter control sequences out of 15000+200000
+ 17143 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,16n,43p,537b,2307s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -805,11 +836,12 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (27 pages, 427160 bytes).
+1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmtt10.pfb>
+Output written on main.pdf (28 pages, 899930 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 319 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 323 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

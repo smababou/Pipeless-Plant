@@ -12,7 +12,7 @@
 \BOOKMARK [2][-]{subsection.4.2}{Trilateration}{section.4}% 12
 \BOOKMARK [2][-]{subsection.4.3}{...}{section.4}% 13
 \BOOKMARK [1][-]{section.5}{Hardware}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{RFID reader and antenna \(Stephan ?\)}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.1}{RFID reader and antenna}{section.5}% 15
 \BOOKMARK [2][-]{subsection.5.2}{RFID tag \(Stephan ?\)}{section.5}% 16
 \BOOKMARK [2][-]{subsection.5.3}{Wifi modul \(Abdul ?\)}{section.5}% 17
 \BOOKMARK [1][-]{section.6}{Simulation}{}% 18
@@ -29,9 +29,8 @@
 \BOOKMARK [3][-]{subsubsection.7.2.4}{Estimation of initial position and orientation}{subsection.7.2}% 29
 \BOOKMARK [2][-]{subsection.7.3}{Test setup}{section.7}% 30
 \BOOKMARK [2][-]{subsection.7.4}{Results}{section.7}% 31
-\BOOKMARK [2][-]{subsection.7.5}{Improvements}{section.7}% 32
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 33
-\BOOKMARK [1][-]{section.9}{Future Work}{}% 34
-\BOOKMARK [1][-]{section.10}{References}{}% 35
-\BOOKMARK [1][-]{section.11}{Appendixes}{}% 36
-\BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 37
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 32
+\BOOKMARK [1][-]{section.9}{Future Work}{}% 33
+\BOOKMARK [1][-]{section.10}{References}{}% 34
+\BOOKMARK [1][-]{section.11}{Appendixes}{}% 35
+\BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 36

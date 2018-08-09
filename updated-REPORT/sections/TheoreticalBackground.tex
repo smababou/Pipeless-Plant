@@ -3,7 +3,7 @@
 \subsection{Radio Frequency Identification (Abdul) }
 
 \subsection[Trilateration]{Trilateration\footnote{Stephan}}
-Trilateration is a method to compute the intersecting point of three circles/spheres. For this, it is necessary to know the three center of the circles/spheres plus their corresponding radii. The basic idea is to use the description of sphere.\footnote{Indoor Robot Positioning using an Enhanced Trilateration Algorithm} 
+Trilateration is a method to compute the intersecting point of three circles/spheres. For this, it is necessary to know the three center of the circles/spheres plus their corresponding radii. The basic idea is to use the description of sphere\cite{Cotera.2016}.
 \begin{align}\label{Eq_Tri}
 r^2 = (x-x_1)^2 + (y-y_1)^2 + (z-z_1)^2  
 \end{align} 
@@ -14,7 +14,7 @@ where ($P_n=(x_n,y_n,z_n$)) is the center of the sphere. To use equation (\ref{E
  \caption{Overview Trilateration}
  \label{Tri_1}
  \end{figure}\\ 
-With known positions of the center of the circles d, i and j can be computed in the following way: \footnote{Indoor Robot Positioning using an Enhanced Trilateration Algorithm}
+With known positions of the center of the circles d, i and j can be computed in the following way\cite{Cotera.2016}:
 \begin{align}
 d = |P_2 - P_1| \\
 e_x = \dfrac{1}{d}(P_2 - P_1) \\
