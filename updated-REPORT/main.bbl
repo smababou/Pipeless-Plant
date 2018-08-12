@@ -6,4 +6,13 @@ Pablo Cotera, Miguel Velazquez, David Cruz, Luis Medina, and Manuel Bandala.
 \newblock {\em International Journal of Advanced Robotic Systems}, 13(3):110,
   2016.
 
+\bibitem{KTSSysteme.2017}
+{KTS Systeme}.
+\newblock Rfid plug module rfidm1356, 2017.
+
+\bibitem{ChristofRohrigDanielHessandFrankKunemund.}
+{Christof Rohrig, Daniel Hess, and Frank Kunemund}.
+\newblock Rfid-based localization of mobile robots rfid-based localization of
+  mobile robots using the received signal strength indicator of detected tags.
+
 \end{thebibliography}

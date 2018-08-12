@@ -1,8 +1,11 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Overview Trilateration}}{8}{figure.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces RFID reader KTS Systeme RFIDM1356-001}}{10}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Flow Chart: Selection of correct distance and most proper IDs}}{14}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Computing the center of the robot}}{16}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Orientation of robot in absolute angle}}{16}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Estimated position in x-direction}}{17}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Estimated position in y-direction}}{17}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Estimated orientation}}{18}{figure.8}
+\contentsline {figure}{\numberline {3}{\ignorespaces RFID Antenna KTS Systeme PCBA1356$\_$8}}{11}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Relation between RSSI and distance antenna to tag}}{13}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Flow Chart: Selection of correct distance and most proper IDs}}{15}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Computing the center of the robot}}{17}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Orientation of robot in absolute angle}}{17}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces testing setup for initialization procedure}}{18}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Estimated position in x-direction}}{19}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Estimated position in y-direction}}{20}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Estimated orientation}}{20}{figure.11}

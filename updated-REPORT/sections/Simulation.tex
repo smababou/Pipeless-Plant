@@ -1,6 +1,6 @@
 \section[Simulation]{Simulation\footnote{Stephan}}
-These simulation was carried out to answer important design questions before the real implementation phase. After the decision for some suitable hardware, the idea was also to create artificial RFID reader data to test and simulate the algorithm, which will be explained in chapter \ref{Sec_Imp}. \\
-To answer the design questions, the simulation got these parameter (chapter \ref{Sec_AppA} Line 1-50):\\
+The simulation was carried out to answer important design questions before the real implementation phase. Another idea was also to create artificial RFID reader data to test and simulate the algorithm, which will be explained in chapter \ref{Sec_Imp}. \\
+To answer the design questions, the simulation has these parameter (Appendix \ref{Sec_AppA} Line 1-50):\\
 - the size of the simulation space\\
 - distance between the tags\\
 - distance between the first/last row/column of tags and the boarder of the simulation space\\
@@ -12,16 +12,16 @@ To answer the design questions, the simulation got these parameter (chapter \ref
 - optional: cycle time and speed of the robot (for another procedure)\\
 - logging parameter (look of the logged text file)\\
 \\
-Foregone test leads to a distance between the tags of 10 cm. This was founded on the fact that in this case at least 4 tags are detected at the same time (maximum reading range of 14 cm). In this case are around 121 tags need for every square meter, which turned out to be realistic number for a small plant size. \\
+Foregone tests lead to a distance between the tags of 10 cm. This was founded on the fact that in this case at least 4 tags are detected at the same time (maximum reading range of 14 cm). In this case are around 121 tags needed for every square meter, which turned out to be realistic number for a small plant size. \\
 
 \subsection{Emulator}
-To create artificial RFID reader data, the emulator was able to write all found tags in the created environment together with information about the measuring point into a text file. During the initialization procedure, which was the main focus in this project, the robot turns around 360$^\circ$ and makes measurements every 45$^\circ$. \\
-The emulator computed at each measurement point the distance of the antenna to the neighbouring tags. If a tags was closer than the maximal reading distance the emulator wrote the detected ID of the tags together with its RSSI into the text file. \\
-The RSSI is an integer value from 0...7. 0 defines in this case a distance from 14 to around 10 cm from the antenna to the tag. In the first version of the emulator the RSSI was on the basis of the information from a paper {\color{red}reference paper?!?!} and mentioned a consistent increasing of the RSSI while the distance bewetten the tags and the antenna gets smaller. \\
-During own measurements has been found out that this relation was inconsistent with this setup of components. Therefore the second version of the emulator was updated and creates more realistic data.\\
+To create artificial RFID reader data, the emulator was able to write all detected tags together with information about the measuring point into a text file. During the initialization procedure, which was the main focus in this project, the robot turns around 360$^\circ$ and makes measurements every 45$^\circ$. \\
+The emulator computed at each measurement point the distance from the center of the antenna to the neighbouring tags. If a tag was closer than the maximal reading distance, the emulator wrote the detected ID of the tag together with its RSSI into the text file. \\
+The RSSI is, as expalined earlier, an integer value from 0...7. 0 defines in this case a distance from 14 to around 10 cm from the antenna to the tag. In the first version of the emulator the RSSI was on the basis of the information from a paper \cite{ChristofRohrigDanielHessandFrankKunemund.} and mentioned a consistent increasing of the RSSI while the distance between the tags and the antenna gets smaller. \\
+During own measurements has been found out that this relation was inconsistent. Therefore the second version of the emulator was updated and creates more realistic data.\\
 
 \subsection{RSSI Measurements with real hardware}\label{Sec_Sim_Mea}
-The relation of the RSSI is not just related to the distance between the antenna and the tag. It also depends on the orientation of the plain of both components. The tests with the real hardware was performed in a setup where the tags was placed on a floor and the antenna was parallel to the floor at a hight of 1.5 cm. The reason for this was the fact that the antenna should be placed directly under the robot. Fig. \ref{RSSI_Dis} presents the results of the measurements.
+The relation of the RSSI is not just related to the distance between the antenna and the tag. It also depends on the orientation of the plain of both components. The tests with the real hardware was performed in a setup where the tags was placed on a floor and the antenna was parallel to the floor at a hight of 1.5 cm. The reason for this was the fact that the antenna should be placed directly under the robot. Tbl. \ref{RSSI_Dis_data} and fig. \ref{RSSI_Dis} present the results of the measurements.\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
@@ -33,7 +33,13 @@ The relation of the RSSI is not just related to the distance between the antenna
 \end{tabular}
 \caption{Relation between RSSI and distance antenna to tag (data)}
 \label{RSSI_Dis_data}
-\end{table}
+\end{table}\\
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width = 14cm]{Pictures/RSSI_Distance}
+\caption{Relation between RSSI and distance antenna to tag}
+\label{RSSI_Dis}
+\end{figure}\\
 It can be seen that there exists a blind spot at a distance of 5 cm where the RSSI drops to 0. The consequence is now that it is not trivial to build up a relation from the RSSI back to the correct distance. \\
 
 \subsection{Simulation with emulated data}
@@ -53,8 +59,8 @@ Own recorded data (blind spot) & 10                                             
 \caption{Results Simulation}
 \label{Res_Sim}
 \end{table}\\
-As can be seen from tbl. \ref{Res_Sim}, there is a very good match between the estimated position and orientation of the robot for the consistent RSSI data. On the other hand results the inconsistent RSSI data in significant differences in the estimation of the position and orientation of the robot.\\
+As can be seen from tbl. \ref{Res_Sim}, there is a sufficient good match between the estimated position and orientation of the robot for the consistent RSSI data. On the other hand results the inconsistent RSSI data in significant differences in the estimation of the position and orientation of the robot.\\
 The reason for this is the higher complexity of the algorithm to first estimate the correct distances related to RSSI values and then start to estimate the position based on those distances. \\
-A small error in the estimation of the position of the first antenna leads also to a big error in the computed orientation of the robot.
+A small error in the estimation of the position of the antenna at the first measurement point leads also to a big error in the computed orientation of the robot.
 
  
