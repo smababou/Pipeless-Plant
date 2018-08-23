@@ -1,3 +1,14 @@
 \section{Future Work}
-
-...
+After a proof-of-concept for an RFID based localizatin system has been build and a first demonstration set-up has been build the disadvantages and limitations of the prototype were evaluated. According to these results several points of improvement and extension were found and categorized into a hardware and a software section. 
+\subsection{Hardware}
+\begin{itemize}
+\item The AGVs are feed by an included 12V battery which provides the power for all included electronical deviced. This 12V power supply is available on board and is suggeted to be used. Currently the WiFi-Module and the RFID-Reader are fed by an external powerbank since a 5V power supply is needed. In terms of one zentralized power supply a 12 V to 5 V converter can be installed and connected to the new hardware.
+\item As a first set-up a demonstration area of 3 x 3 TAGs was developed. In this rather small area initializaion procedure was developed but a real time localization while a trajectory is followed by an AGV was not possible since the 30cm x 30cm was simply to small. For futrue research in terms of localizaion on a specified trajectory additional TAGs can be included to the area of operation. Since the RFID concept is highly scalable the only change that needs to be made in the algorithm is the insertion of the additional TAG into the lookup table.
+\item Currently the only Robot No. 1 is the only AGV which is equipped wich the RFID technolgoy. To run the plant wich multible AGVs the remaining robots needs to be upgraded.\\
+\end{itemize}
+\subsection{Software}
+\begin{itemize}
+\item During the Initalizatin procedure a 360 degres turn is performed. The degrees are devided by the change of degree over time. But it needs to be said that this movement is highly dependend on distrubances like changing battery charge and plant underground. For the future developers it is suggested to use the encoders of the robot weels as a determination of the orientation instead the parameter time.
+\item As an alternative localizatin technolgy was found several code lines in the VisualStudio can be deleted since the camera and image processing is simpls not used anymore. With a clean code an improvement of processing time will be accieved.
+\item As a last point it can be said that even though a localization with RFID is now possible the results are not 100 percent realiable and the accuracy especially with respect to the orientation is not satisfing so far. As an improvement the triangulation algorithm is to be optimized and or a second RFID-Antenna is to be added under the AGV to reduce measurment errors.
+\end{itemize}
