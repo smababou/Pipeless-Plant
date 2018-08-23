@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  22 AUG 2018 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  23 AUG 2018 16:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -596,7 +596,7 @@ Package epstopdf Info: Source file: <Astlogo.eps>
 f Astlogo.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<Astlogo-eps-converted-to.pdf, id=151, 574.145pt x 157.58875pt>
+<Astlogo-eps-converted-to.pdf, id=159, 574.145pt x 157.58875pt>
 File: Astlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use Astlogo-eps-converted-to.pdf>
 Package pdftex.def Info: Astlogo-eps-converted-to.pdf  used on input line 80.
@@ -670,12 +670,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 \openout2 = `sections/selection_process.aux'.
 
  (sections/selection_process.tex
-<Pictures/Triangulation.png, id=283, 471.26062pt x 252.945pt>
+<Pictures/Triangulation.png, id=293, 471.26062pt x 252.945pt>
 File: Pictures/Triangulation.png Graphic file (type png)
 <use Pictures/Triangulation.png>
 Package pdftex.def Info: Pictures/Triangulation.png  used on input line 12.
 (pdftex.def)             Requested size: 455.24408pt x 244.35284pt.
-<Pictures/acticetriangulation.png, id=285, 490.83376pt x 194.22563pt>
+<Pictures/acticetriangulation.png, id=295, 490.83376pt x 194.22563pt>
 File: Pictures/acticetriangulation.png Graphic file (type png)
 <use Pictures/acticetriangulation.png>
 Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 2
@@ -689,12 +689,12 @@ Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 2
 LaTeX Warning: Reference ` ative_Triangulation_implementation' on page 8 undefi
 ned on input line 26.
 
-<Pictures/triangulationimplementatio.png, id=291, 936.49875pt x 667.74469pt>
+<Pictures/triangulationimplementatio.png, id=301, 936.49875pt x 588.69937pt>
 File: Pictures/triangulationimplementatio.png Graphic file (type png)
 <use Pictures/triangulationimplementatio.png>
 Package pdftex.def Info: Pictures/triangulationimplementatio.png  used on input
  line 29.
-(pdftex.def)             Requested size: 455.24408pt x 324.59958pt.
+(pdftex.def)             Requested size: 455.24408pt x 286.17459pt.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 36.
@@ -720,7 +720,7 @@ tio.png>]) [10]
  (sections/TheoreticalBackground.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 5.
-<Pictures/Trilateration_1.png, id=309, 383.18156pt x 235.63031pt>
+<Pictures/Trilateration_1.png, id=319, 383.18156pt x 235.63031pt>
 File: Pictures/Trilateration_1.png Graphic file (type png)
 <use Pictures/Trilateration_1.png>
 Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 13.
@@ -739,12 +739,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
  (sections/Hardware.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 1.
-<Pictures/Reader.png, id=342, 586.44093pt x 436.63126pt>
+<Pictures/Reader.png, id=352, 586.44093pt x 436.63126pt>
 File: Pictures/Reader.png Graphic file (type png)
 <use Pictures/Reader.png>
 Package pdftex.def Info: Pictures/Reader.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 169.47269pt.
-<Pictures/Antenna.png, id=345, 289.08pt x 246.1697pt>
+<Pictures/Antenna.png, id=355, 289.08pt x 246.1697pt>
 File: Pictures/Antenna.png Graphic file (type png)
 <use Pictures/Antenna.png>
 Package pdftex.def Info: Pictures/Antenna.png  used on input line 21.
@@ -787,7 +787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
-<Pictures/RSSI_Distance.png, id=364, 1028.34187pt x 490.08093pt>
+<Pictures/RSSI_Distance.png, id=374, 1028.34187pt x 490.08093pt>
 File: Pictures/RSSI_Distance.png Graphic file (type png)
 <use Pictures/RSSI_Distance.png>
 Package pdftex.def Info: Pictures/RSSI_Distance.png  used on input line 39.
@@ -817,24 +817,24 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 \openout2 = `sections/Implementation.aux'.
 
  (sections/Implementation.tex
-<Pictures/possible_initial_positions.png, id=383, 964.35281pt x 545.78906pt>
+<Pictures/possible_initial_positions.png, id=393, 964.35281pt x 545.78906pt>
 File: Pictures/possible_initial_positions.png Graphic file (type png)
 <use Pictures/possible_initial_positions.png>
 Package pdftex.def Info: Pictures/possible_initial_positions.png  used on input
  line 9.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/hazards.png, id=385, 964.35281pt x 545.78906pt>
+<Pictures/hazards.png, id=395, 964.35281pt x 545.78906pt>
 File: Pictures/hazards.png Graphic file (type png)
 <use Pictures/hazards.png>
 Package pdftex.def Info: Pictures/hazards.png  used on input line 17.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/SFC_Init_Procedure.png, id=387, 137.01187pt x 307.90031pt>
+<Pictures/SFC_Init_Procedure.png, id=397, 137.01187pt x 307.90031pt>
 File: Pictures/SFC_Init_Procedure.png Graphic file (type png)
 <use Pictures/SFC_Init_Procedure.png>
 Package pdftex.def Info: Pictures/SFC_Init_Procedure.png  used on input line 26
 .
 (pdftex.def)             Requested size: 113.81102pt x 255.7686pt.
-<Pictures/Screenshot_Test_environment.png, id=388, 649.67719pt x 82.05656pt>
+<Pictures/Screenshot_Test_environment.png, id=399, 649.67719pt x 82.05656pt>
 File: Pictures/Screenshot_Test_environment.png Graphic file (type png)
 <use Pictures/Screenshot_Test_environment.png>
 Package pdftex.def Info: Pictures/Screenshot_Test_environment.png  used on inpu
@@ -865,107 +865,107 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 71.
 
 [21]
-<Pictures/AnalyzeArray.png, id=416, 550.055pt x 460.72125pt>
+<Pictures/AnalyzeArray.png, id=427, 550.055pt x 460.72125pt>
 File: Pictures/AnalyzeArray.png Graphic file (type png)
 <use Pictures/AnalyzeArray.png>
-Package pdftex.def Info: Pictures/AnalyzeArray.png  used on input line 96.
+Package pdftex.def Info: Pictures/AnalyzeArray.png  used on input line 93.
 (pdftex.def)             Requested size: 170.71652pt x 142.99083pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--102
+Underfull \hbox (badness 10000) in paragraph at lines 86--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--102
+Underfull \hbox (badness 10000) in paragraph at lines 86--99
 
  []
 
 [22]
-<Pictures/BestIDs.png, id=424, 865.2325pt x 483.8075pt>
+<Pictures/BestIDs.png, id=435, 865.2325pt x 483.8075pt>
 File: Pictures/BestIDs.png Graphic file (type png)
 <use Pictures/BestIDs.png>
-Package pdftex.def Info: Pictures/BestIDs.png  used on input line 107.
+Package pdftex.def Info: Pictures/BestIDs.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24408pt x 254.55641pt.
-<Pictures/Shape1.png, id=426, 39.89906pt x 39.89906pt>
+<Pictures/Shape1.png, id=437, 39.89906pt x 39.89906pt>
 File: Pictures/Shape1.png Graphic file (type png)
 <use Pictures/Shape1.png>
-Package pdftex.def Info: Pictures/Shape1.png  used on input line 117.
+Package pdftex.def Info: Pictures/Shape1.png  used on input line 114.
 (pdftex.def)             Requested size: 36.98866pt x 36.98883pt.
-<Pictures/Shape2.png, id=427, 74.52844pt x 39.89906pt>
+<Pictures/Shape2.png, id=438, 74.52844pt x 39.89906pt>
 File: Pictures/Shape2.png Graphic file (type png)
 <use Pictures/Shape2.png>
-Package pdftex.def Info: Pictures/Shape2.png  used on input line 117.
+Package pdftex.def Info: Pictures/Shape2.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape3.png, id=428, 74.52844pt x 39.89906pt>
+<Pictures/Shape3.png, id=439, 74.52844pt x 39.89906pt>
 File: Pictures/Shape3.png Graphic file (type png)
 <use Pictures/Shape3.png>
-Package pdftex.def Info: Pictures/Shape3.png  used on input line 117.
+Package pdftex.def Info: Pictures/Shape3.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape4.png, id=429, 74.52844pt x 74.52844pt>
+<Pictures/Shape4.png, id=440, 74.52844pt x 74.52844pt>
 File: Pictures/Shape4.png Graphic file (type png)
 <use Pictures/Shape4.png>
-Package pdftex.def Info: Pictures/Shape4.png  used on input line 117.
+Package pdftex.def Info: Pictures/Shape4.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 73.98123pt.
-<Pictures/Shape5.png, id=430, 74.52844pt x 75.28125pt>
+<Pictures/Shape5.png, id=441, 74.52844pt x 75.28125pt>
 File: Pictures/Shape5.png Graphic file (type png)
 <use Pictures/Shape5.png>
-Package pdftex.def Info: Pictures/Shape5.png  used on input line 117.
+Package pdftex.def Info: Pictures/Shape5.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 74.72852pt.
 
-Overfull \hbox (18.82144pt too wide) in paragraph at lines 114--119
+Overfull \hbox (18.82144pt too wide) in paragraph at lines 111--116
  [][] 
  []
 
 [23 <./Pictures/AnalyzeArray.png>] [24 <./Pictures/BestIDs.png> <./Pictures/Sha
 pe1.png> <./Pictures/Shape2.png> <./Pictures/Shape3.png> <./Pictures/Shape4.png
 > <./Pictures/Shape5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-<Pictures/Center_Rob.png, id=444, 402.00188pt x 405.01312pt>
+<Pictures/Center_Rob.png, id=455, 402.00188pt x 405.01312pt>
 File: Pictures/Center_Rob.png Graphic file (type png)
 <use Pictures/Center_Rob.png>
-Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 142.
+Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 139.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
-<Pictures/Orientation.png, id=445, 402.00188pt x 405.01312pt>
+<Pictures/Orientation.png, id=456, 402.00188pt x 405.01312pt>
 File: Pictures/Orientation.png Graphic file (type png)
 <use Pictures/Orientation.png>
-Package pdftex.def Info: Pictures/Orientation.png  used on input line 148.
+Package pdftex.def Info: Pictures/Orientation.png  used on input line 145.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
 [25 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 154--158
 
  []
 
-<Pictures/TestSetup.png, id=459, 516.42938pt x 387.69844pt>
+<Pictures/TestSetup.png, id=470, 516.42938pt x 387.69844pt>
 File: Pictures/TestSetup.png Graphic file (type png)
 <use Pictures/TestSetup.png>
-Package pdftex.def Info: Pictures/TestSetup.png  used on input line 166.
+Package pdftex.def Info: Pictures/TestSetup.png  used on input line 163.
 (pdftex.def)             Requested size: 398.33858pt x 299.0552pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--184
+Underfull \hbox (badness 10000) in paragraph at lines 160--181
 
  []
 
 [26] [27 <./Pictures/TestSetup.png>]
-<Pictures/ResultX.png, id=475, 511.9125pt x 185.94469pt>
+<Pictures/ResultX.png, id=486, 511.9125pt x 185.94469pt>
 File: Pictures/ResultX.png Graphic file (type png)
 <use Pictures/ResultX.png>
-Package pdftex.def Info: Pictures/ResultX.png  used on input line 189.
+Package pdftex.def Info: Pictures/ResultX.png  used on input line 186.
 (pdftex.def)             Requested size: 398.33858pt x 144.69011pt.
-<Pictures/ResultY.png, id=476, 511.15968pt x 185.94469pt>
+<Pictures/ResultY.png, id=487, 511.15968pt x 185.94469pt>
 File: Pictures/ResultY.png Graphic file (type png)
 <use Pictures/ResultY.png>
-Package pdftex.def Info: Pictures/ResultY.png  used on input line 196.
+Package pdftex.def Info: Pictures/ResultY.png  used on input line 193.
 (pdftex.def)             Requested size: 398.33858pt x 144.9029pt.
-<Pictures/ResultO.png, id=477, 509.65407pt x 185.94469pt>
+<Pictures/ResultO.png, id=488, 509.65407pt x 185.94469pt>
 File: Pictures/ResultO.png Graphic file (type png)
 <use Pictures/ResultO.png>
-Package pdftex.def Info: Pictures/ResultO.png  used on input line 203.
+Package pdftex.def Info: Pictures/ResultO.png  used on input line 200.
 (pdftex.def)             Requested size: 398.33858pt x 145.337pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--209
+Underfull \hbox (badness 10000) in paragraph at lines 183--206
 
  []
 
@@ -979,14 +979,18 @@ O.png>]
 ]
 \openout2 = `sections/futurework.aux'.
 
- (sections/futurework.tex) [31
+ (sections/futurework.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+) [31
 
 
 ]
 \openout2 = `sections/References.aux'.
 
-
-(sections/References.tex (main.bbl)) [32
+ (sections/References.tex (main.bbl)) [32
 
 
 ]
@@ -1013,7 +1017,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5DD8C340F2B131D94D2FD8095045B306;2522.
+(rerunfilecheck)             Checksum: 1953A17D02BAD10F69DEB1E7F1A22A90;2640.
 
 
 LaTeX Warning: There were undefined references.
@@ -1021,13 +1025,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 10157 strings out of 492973
- 150071 string characters out of 3121376
+ 10161 strings out of 492973
+ 150131 string characters out of 3121376
  454344 words of memory out of 3000000
- 13383 multiletter control sequences out of 15000+200000
+ 13385 multiletter control sequences out of 15000+200000
  17143 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,43p,1329b,2311s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,16n,43p,1392b,2311s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/stefan.rottstegge
@@ -1052,9 +1056,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/stefan.rottstegge
 :/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti12.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (36 pages, 3172610 bytes).
+Output written on main.pdf (36 pages, 3174500 bytes).
 PDF statistics:
- 879 PDF objects out of 1000 (max. 8388607)
- 355 named destinations out of 1000 (max. 500000)
- 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 357 named destinations out of 1000 (max. 500000)
+ 438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

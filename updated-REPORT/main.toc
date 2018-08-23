@@ -32,6 +32,8 @@
 \contentsline {subsection}{\numberline {7.4}Results}{28}{subsection.7.4}
 \contentsline {section}{\numberline {8}Conclusion}{30}{section.8}
 \contentsline {section}{\numberline {9}Future Work}{31}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hardware}{31}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Software}{31}{subsection.9.2}
 \contentsline {section}{\numberline {10}References}{32}{section.10}
 \contentsline {section}{\numberline {11}Appendixes}{33}{section.11}
 \contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{33}{subsection.11.1}
