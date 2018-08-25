@@ -1,15 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  23 AUG 2018 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.7.21)  25 AUG 2018 16:33
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2018-04-01> patch level 5
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\a
-rticle.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\s
-ize11.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -24,45 +20,36 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\i
-nputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\a
-nsinew.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ansinew.def"
 File: ansinew.def 2018/04/06 v1.3b Input encoding file
 ))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\epsfig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs-cfg\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs-def\pdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
@@ -71,44 +58,34 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \epsfxsize=\dimen105
 \epsfysize=\dimen106
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\epstopdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\epstopdf-base.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\grfext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\kvdefinekeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\ltxcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\kvoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\kvsetkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\etexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\ifluatex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -117,13 +94,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\pdftexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\ifpdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -138,8 +113,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titles
-ec\titlesec.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
@@ -151,8 +125,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen110
 \titlewidthfirst=\dimen111
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyh
-dr\fancyhdr.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip45
@@ -165,30 +138,24 @@ s
 \f@nch@O@olf=\skip52
 \f@nch@O@orf=\skip53
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmat
-h\amsmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmat
-h\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmat
-h\amsgen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen112
 ))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmat
-h\amsbsy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen113
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmat
-h\amsopn.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -229,32 +196,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
-ts\amssymb.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
-ts\amsfonts.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\
-theorem.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\theorem.sty"
 Package: theorem 2014/10/28 v2.2c Theorem extension package (FMi)
 \theorem@style=\toks23
 \theorem@bodyfont=\toks24
 \theorempreskipamount=\skip57
 \theorempostskipamount=\skip58
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\
-thp.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\thp.sty"
 File: thp.sty 2014/10/28 v2.2c Theorem extension package (FMi)
 ))
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig
-ure\subfigure.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip59
 \subfigcapskip=\skip60
@@ -270,14 +232,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig
-ure\subfigure.cfg")
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip63
 \subfig@bottom=\skip64
-)
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookta
-bs\booktabs.sty"
+) (C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen123
 \lightrulewidth=\dimen124
@@ -296,15 +254,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count106
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen135
-)
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\f
-lafter.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\flafter.sty"
 Package: flafter 2018/01/08 v1.4c Standard LaTeX floats after reference (FMi)
 Applying: [2015/01/01] float order in 2-column on input line 49.
 Already applied: [0000/00/00] float order in 2-column on input line 151.
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\e
-xscale.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\exscale.sty"
 Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -313,8 +268,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 \big@size=\dimen136
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\
-float.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count108
 \float@exts=\toks25
@@ -322,15 +276,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks26
 \@floatcapt=\box30
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psfrag
-\psfrag.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\psfrag\psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count109
 \pfg@scount=\count110
 \pfg@temp=\write3
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
-gs\listings.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count111
 \lst@gtempboxa=\box31
 \lst@token=\toks27
@@ -344,35 +296,29 @@ gs\listings.sty"
 \lst@lineno=\count116
 \lst@maxwidth=\dimen140
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
-gs\lstmisc.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count117
 \lst@skipnumbers=\count118
 \lst@framebox=\box32
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
-gs\listings.cfg"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs\color.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs-cfg\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor
-\xcolor.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
-cs-cfg\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -387,17 +333,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
-ef\hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\hobsub-hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\hobsub-generic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -427,28 +370,24 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxe
-tex\ifxetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\auxhook.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen141
 \Hy@linkcounter=\count119
 \Hy@pagecounter=\count120
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
-ef\pd1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count121
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00mikt
-ex\hyperref.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
@@ -462,8 +401,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count122
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\ur
-l.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -487,22 +425,19 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
-ef\hpdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count127
 \c@bookmark@seq@number=\count128
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdi
-ek\rerunfilecheck.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip65
 )
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listin
-gs\lstlang1.sty"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 
@@ -532,8 +467,7 @@ LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\context\base
-\supp-pdf.mkii"
+(C:\Users\Stephan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen145
@@ -550,13 +484,10 @@ LaTeX Font Info:    ... okay on input line 68.
 \c@lstlisting=\count135
 \AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring ON on input line 68.
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperr
-ef\nameref.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ober
-diek\gettitlestring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count136
@@ -564,22 +495,19 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
 LaTeX Info: Redefining \nameref on input line 68.
- (main.out) (main.out)
+
+(main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 71.
 LaTeX Font Info:    Try loading font information for U+msa on input line 71.
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
-ts\umsa.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 71.
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfon
-ts\umsb.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
@@ -587,10 +515,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  []
 
 Package epstopdf Info: Source file: <Astlogo.eps>
-(epstopdf)                    date: 2018-08-22 13:51:07
+(epstopdf)                    date: 2018-08-25 16:28:19
 (epstopdf)                    size: 39910 bytes
 (epstopdf)             Output file: <Astlogo-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-22 13:51:07
+(epstopdf)                    date: 2018-08-25 16:28:19
 (epstopdf)                    size: 12646 bytes
 (epstopdf)             Command: <epstopdf --outfile=Astlogo-eps-converted-to.pd
 f Astlogo.eps>
@@ -615,8 +543,8 @@ Overfull \hbox (24.00003pt too wide) in alignment at lines 71--83
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
-{C:/Users/stefan.rottstegge/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} 
-<./Astlogo-eps-converted-to.pdf>]
+{C:/Users/Stephan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Astlogo
+-eps-converted-to.pdf>]
 \openout2 = `sections/abstract.aux'.
 
  (sections/abstract.tex) [2
@@ -626,15 +554,15 @@ Non-PDF special ignored!
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-
-[3
+ [3
 
 
 ] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- (main.lot)
+
+(main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
@@ -656,8 +584,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  (sections/Pipelessplant.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
 
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\o
-mscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -669,13 +596,16 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 ]
 \openout2 = `sections/selection_process.aux'.
 
- (sections/selection_process.tex
-<Pictures/Triangulation.png, id=293, 471.26062pt x 252.945pt>
+
+(sections/selection_process.tex
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <5> on input line 5.
+<Pictures/Triangulation.png, id=302, 471.26062pt x 252.945pt>
 File: Pictures/Triangulation.png Graphic file (type png)
 <use Pictures/Triangulation.png>
 Package pdftex.def Info: Pictures/Triangulation.png  used on input line 12.
 (pdftex.def)             Requested size: 455.24408pt x 244.35284pt.
-<Pictures/acticetriangulation.png, id=295, 490.83376pt x 194.22563pt>
+<Pictures/acticetriangulation.png, id=304, 490.83376pt x 194.22563pt>
 File: Pictures/acticetriangulation.png Graphic file (type png)
 <use Pictures/acticetriangulation.png>
 Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 2
@@ -689,7 +619,7 @@ Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 2
 LaTeX Warning: Reference ` ative_Triangulation_implementation' on page 8 undefi
 ned on input line 26.
 
-<Pictures/triangulationimplementatio.png, id=301, 936.49875pt x 588.69937pt>
+<Pictures/triangulationimplementatio.png, id=314, 936.49875pt x 588.69937pt>
 File: Pictures/triangulationimplementatio.png Graphic file (type png)
 <use Pictures/triangulationimplementatio.png>
 Package pdftex.def Info: Pictures/triangulationimplementatio.png  used on input
@@ -713,19 +643,38 @@ Overfull \hbox (57.62831pt too wide) in paragraph at lines 53--63
  [][] 
  []
 
+<Pictures/RFID_Passive.png, id=318, 482.55281pt x 289.83281pt>
+File: Pictures/RFID_Passive.png Graphic file (type png)
+<use Pictures/RFID_Passive.png>
+Package pdftex.def Info: Pictures/RFID_Passive.png  used on input line 83.
+(pdftex.def)             Requested size: 199.16928pt x 119.62384pt.
+<Pictures/RFID_Active.png, id=319, 487.8225pt x 293.59688pt>
+File: Pictures/RFID_Active.png Graphic file (type png)
+<use Pictures/RFID_Active.png>
+Package pdftex.def Info: Pictures/RFID_Active.png  used on input line 89.
+(pdftex.def)             Requested size: 199.16928pt x 119.86926pt.
+<Pictures/RFID_Systems.png, id=322, 390.70969pt x 266.49562pt>
+File: Pictures/RFID_Systems.png Graphic file (type png)
+<use Pictures/RFID_Systems.png>
+Package pdftex.def Info: Pictures/RFID_Systems.png  used on input line 99.
+(pdftex.def)             Requested size: 256.0748pt x 174.6718pt.
 [8 <./Pictures/acticetriangulation.png>] [9 <./Pictures/triangulationimplementa
-tio.png>]) [10]
+tio.png>] [10 <./Pictures/RFID_Passive.png> <./Pictures/RFID_Active.png>]
+Overfull \hbox (15.4556pt too wide) in paragraph at lines 112--122
+ [][] 
+ []
+
+) [11 <./Pictures/RFID_Systems.png>] [12] [13]
 \openout2 = `sections/TheoreticalBackground.aux'.
 
- (sections/TheoreticalBackground.tex
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 5.
-<Pictures/Trilateration_1.png, id=319, 383.18156pt x 235.63031pt>
+
+(sections/TheoreticalBackground.tex
+<Pictures/Trilateration_1.png, id=354, 383.18156pt x 235.63031pt>
 File: Pictures/Trilateration_1.png Graphic file (type png)
 <use Pictures/Trilateration_1.png>
 Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 13.
 (pdftex.def)             Requested size: 369.88582pt x 227.46811pt.
- [11
+ [14
 
 
  <./Pictures/Trilateration_1.png>]
@@ -733,18 +682,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
-) [12]
+) [15]
 \openout2 = `sections/Hardware.aux'.
 
  (sections/Hardware.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 1.
-<Pictures/Reader.png, id=352, 586.44093pt x 436.63126pt>
+<Pictures/Reader.png, id=384, 586.44093pt x 436.63126pt>
 File: Pictures/Reader.png Graphic file (type png)
 <use Pictures/Reader.png>
 Package pdftex.def Info: Pictures/Reader.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 169.47269pt.
-<Pictures/Antenna.png, id=355, 289.08pt x 246.1697pt>
+<Pictures/Antenna.png, id=387, 289.08pt x 246.1697pt>
 File: Pictures/Antenna.png Graphic file (type png)
 <use Pictures/Antenna.png>
 Package pdftex.def Info: Pictures/Antenna.png  used on input line 21.
@@ -765,10 +714,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--26
 
  []
 
-[13
+[16
 
 
- <./Pictures/Reader.png>]) [14 <./Pictures/Antenna.png>]
+ <./Pictures/Reader.png>]) [17 <./Pictures/Antenna.png>]
 \openout2 = `sections/Simulation.aux'.
 
 
@@ -787,7 +736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
-<Pictures/RSSI_Distance.png, id=374, 1028.34187pt x 490.08093pt>
+<Pictures/RSSI_Distance.png, id=405, 1028.34187pt x 490.08093pt>
 File: Pictures/RSSI_Distance.png Graphic file (type png)
 <use Pictures/RSSI_Distance.png>
 Package pdftex.def Info: Pictures/RSSI_Distance.png  used on input line 39.
@@ -797,44 +746,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--44
 
  []
 
-[15
+[18
 
 
-] [16 <./Pictures/RSSI_Distance.png (PNG copy)>]
+] [19 <./Pictures/RSSI_Distance.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 56.
-
-("C:\Users\stefan.rottstegge\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\o
-mlcmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 56.
-) [17]
+) [20]
 \openout2 = `sections/Implementation.aux'.
 
- (sections/Implementation.tex
-<Pictures/possible_initial_positions.png, id=393, 964.35281pt x 545.78906pt>
+
+(sections/Implementation.tex
+<Pictures/possible_initial_positions.png, id=425, 964.35281pt x 545.78906pt>
 File: Pictures/possible_initial_positions.png Graphic file (type png)
 <use Pictures/possible_initial_positions.png>
 Package pdftex.def Info: Pictures/possible_initial_positions.png  used on input
  line 9.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/hazards.png, id=395, 964.35281pt x 545.78906pt>
+<Pictures/hazards.png, id=427, 964.35281pt x 545.78906pt>
 File: Pictures/hazards.png Graphic file (type png)
 <use Pictures/hazards.png>
 Package pdftex.def Info: Pictures/hazards.png  used on input line 17.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/SFC_Init_Procedure.png, id=397, 137.01187pt x 307.90031pt>
+<Pictures/SFC_Init_Procedure.png, id=429, 137.01187pt x 307.90031pt>
 File: Pictures/SFC_Init_Procedure.png Graphic file (type png)
 <use Pictures/SFC_Init_Procedure.png>
 Package pdftex.def Info: Pictures/SFC_Init_Procedure.png  used on input line 26
 .
 (pdftex.def)             Requested size: 113.81102pt x 255.7686pt.
-<Pictures/Screenshot_Test_environment.png, id=399, 649.67719pt x 82.05656pt>
+<Pictures/Screenshot_Test_environment.png, id=431, 649.67719pt x 82.05656pt>
 File: Pictures/Screenshot_Test_environment.png Graphic file (type png)
 <use Pictures/Screenshot_Test_environment.png>
 Package pdftex.def Info: Pictures/Screenshot_Test_environment.png  used on inpu
@@ -845,11 +793,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--39
 
  []
 
-[18
+[21
 
 
- <./Pictures/possible_initial_positions.png>] [19 <./Pictures/hazards.png>]
-[20 <./Pictures/SFC_Init_Procedure.png> <./Pictures/Screenshot_Test_environment
+ <./Pictures/possible_initial_positions.png>] [22 <./Pictures/hazards.png>]
+[23 <./Pictures/SFC_Init_Procedure.png> <./Pictures/Screenshot_Test_environment
 .png>]
 Underfull \hbox (badness 10000) in paragraph at lines 42--45
 
@@ -864,8 +812,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--68
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 71.
 
-[21]
-<Pictures/AnalyzeArray.png, id=427, 550.055pt x 460.72125pt>
+[24]
+<Pictures/AnalyzeArray.png, id=458, 550.055pt x 460.72125pt>
 File: Pictures/AnalyzeArray.png Graphic file (type png)
 <use Pictures/AnalyzeArray.png>
 Package pdftex.def Info: Pictures/AnalyzeArray.png  used on input line 93.
@@ -880,33 +828,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--99
 
  []
 
-[22]
-<Pictures/BestIDs.png, id=435, 865.2325pt x 483.8075pt>
+[25]
+<Pictures/BestIDs.png, id=467, 865.2325pt x 483.8075pt>
 File: Pictures/BestIDs.png Graphic file (type png)
 <use Pictures/BestIDs.png>
 Package pdftex.def Info: Pictures/BestIDs.png  used on input line 104.
 (pdftex.def)             Requested size: 455.24408pt x 254.55641pt.
-<Pictures/Shape1.png, id=437, 39.89906pt x 39.89906pt>
+<Pictures/Shape1.png, id=469, 39.89906pt x 39.89906pt>
 File: Pictures/Shape1.png Graphic file (type png)
 <use Pictures/Shape1.png>
 Package pdftex.def Info: Pictures/Shape1.png  used on input line 114.
 (pdftex.def)             Requested size: 36.98866pt x 36.98883pt.
-<Pictures/Shape2.png, id=438, 74.52844pt x 39.89906pt>
+<Pictures/Shape2.png, id=470, 74.52844pt x 39.89906pt>
 File: Pictures/Shape2.png Graphic file (type png)
 <use Pictures/Shape2.png>
 Package pdftex.def Info: Pictures/Shape2.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape3.png, id=439, 74.52844pt x 39.89906pt>
+<Pictures/Shape3.png, id=471, 74.52844pt x 39.89906pt>
 File: Pictures/Shape3.png Graphic file (type png)
 <use Pictures/Shape3.png>
 Package pdftex.def Info: Pictures/Shape3.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape4.png, id=440, 74.52844pt x 74.52844pt>
+<Pictures/Shape4.png, id=472, 74.52844pt x 74.52844pt>
 File: Pictures/Shape4.png Graphic file (type png)
 <use Pictures/Shape4.png>
 Package pdftex.def Info: Pictures/Shape4.png  used on input line 114.
 (pdftex.def)             Requested size: 73.97733pt x 73.98123pt.
-<Pictures/Shape5.png, id=441, 74.52844pt x 75.28125pt>
+<Pictures/Shape5.png, id=473, 74.52844pt x 75.28125pt>
 File: Pictures/Shape5.png Graphic file (type png)
 <use Pictures/Shape5.png>
 Package pdftex.def Info: Pictures/Shape5.png  used on input line 114.
@@ -916,29 +864,29 @@ Overfull \hbox (18.82144pt too wide) in paragraph at lines 111--116
  [][] 
  []
 
-[23 <./Pictures/AnalyzeArray.png>] [24 <./Pictures/BestIDs.png> <./Pictures/Sha
+[26 <./Pictures/AnalyzeArray.png>] [27 <./Pictures/BestIDs.png> <./Pictures/Sha
 pe1.png> <./Pictures/Shape2.png> <./Pictures/Shape3.png> <./Pictures/Shape4.png
 > <./Pictures/Shape5.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-<Pictures/Center_Rob.png, id=455, 402.00188pt x 405.01312pt>
+<Pictures/Center_Rob.png, id=487, 402.00188pt x 405.01312pt>
 File: Pictures/Center_Rob.png Graphic file (type png)
 <use Pictures/Center_Rob.png>
 Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 139.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
-<Pictures/Orientation.png, id=456, 402.00188pt x 405.01312pt>
+<Pictures/Orientation.png, id=488, 402.00188pt x 405.01312pt>
 File: Pictures/Orientation.png Graphic file (type png)
 <use Pictures/Orientation.png>
 Package pdftex.def Info: Pictures/Orientation.png  used on input line 145.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
-[25 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>]
+[28 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--158
 
  []
 
-<Pictures/TestSetup.png, id=470, 516.42938pt x 387.69844pt>
+<Pictures/TestSetup.png, id=501, 516.42938pt x 387.69844pt>
 File: Pictures/TestSetup.png Graphic file (type png)
 <use Pictures/TestSetup.png>
 Package pdftex.def Info: Pictures/TestSetup.png  used on input line 163.
@@ -948,18 +896,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--181
 
  []
 
-[26] [27 <./Pictures/TestSetup.png>]
-<Pictures/ResultX.png, id=486, 511.9125pt x 185.94469pt>
+[29] [30 <./Pictures/TestSetup.png>]
+<Pictures/ResultX.png, id=517, 511.9125pt x 185.94469pt>
 File: Pictures/ResultX.png Graphic file (type png)
 <use Pictures/ResultX.png>
 Package pdftex.def Info: Pictures/ResultX.png  used on input line 186.
 (pdftex.def)             Requested size: 398.33858pt x 144.69011pt.
-<Pictures/ResultY.png, id=487, 511.15968pt x 185.94469pt>
+<Pictures/ResultY.png, id=518, 511.15968pt x 185.94469pt>
 File: Pictures/ResultY.png Graphic file (type png)
 <use Pictures/ResultY.png>
 Package pdftex.def Info: Pictures/ResultY.png  used on input line 193.
 (pdftex.def)             Requested size: 398.33858pt x 144.9029pt.
-<Pictures/ResultO.png, id=488, 509.65407pt x 185.94469pt>
+<Pictures/ResultO.png, id=519, 509.65407pt x 185.94469pt>
 File: Pictures/ResultO.png Graphic file (type png)
 <use Pictures/ResultO.png>
 Package pdftex.def Info: Pictures/ResultO.png  used on input line 200.
@@ -969,11 +917,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--206
 
  []
 
-) [28 <./Pictures/ResultX.png>] [29 <./Pictures/ResultY.png> <./Pictures/Result
+) [31 <./Pictures/ResultX.png>] [32 <./Pictures/ResultY.png> <./Pictures/Result
 O.png>]
 \openout2 = `sections/Conclusion.aux'.
 
- (sections/Conclusion.tex) [30
+ (sections/Conclusion.tex) [33
 
 
 ]
@@ -984,13 +932,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [31
+) [34
 
 
 ]
 \openout2 = `sections/References.aux'.
 
- (sections/References.tex (main.bbl)) [32
+ (sections/References.tex (main.bbl)) [35
 
 
 ]
@@ -1002,10 +950,10 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
- [33
+ [36
 
 
-] [34] [35])) [36]
+] [37] [38])) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (main.aux (sections/abstract.aux)
@@ -1017,7 +965,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1953A17D02BAD10F69DEB1E7F1A22A90;2640.
+(rerunfilecheck)             Checksum: 89CAF06C0C157429A2CA1A0BBB42C805;2640.
 
 
 LaTeX Warning: There were undefined references.
@@ -1025,40 +973,33 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 10161 strings out of 492973
- 150131 string characters out of 3121376
+ 10190 strings out of 492973
+ 146830 string characters out of 3135926
  454344 words of memory out of 3000000
- 13385 multiletter control sequences out of 15000+200000
+ 13402 multiletter control sequences out of 15000+200000
  17143 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,16n,43p,1392b,2311s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmbx10.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/stefan.rottstegge
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/stefan.rottstegge/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
-s/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/stefan.rottstegge/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/stefan.
-rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-9.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmss10.pfb><C:/Users/stefan.rottstegge/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/stefan.rott
-stegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy6.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/stefan.rottstegge
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
-:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmti12.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (36 pages, 3174500 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb>
+Output written on main.pdf (39 pages, 3310067 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
- 357 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

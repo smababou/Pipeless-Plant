@@ -2,7 +2,7 @@
 
 About the 4 techniques..
 
-\subsection{Triangulation} %stefan
+\subsection[Triangulation]{Triangulation\footnote{Stefan}} %stefan
 \subsubsection*{Summary}
 Since our plant has a specified size in which the location of multiple objects has to be performed the method of Triangulation is one promising technic in which research was made. 
 Triangulation was already a common principle of measurement in the 18th century and it´s divided between active and passive triangulation. Passive triangulation is a geometrical method based on two measurement stations which positions are known exactly. At these two measurement points angels of the desired point in space are measured to compute the localization in the specified coordinate system (x, y, z) with trigonometrical formulas.
@@ -72,11 +72,71 @@ Easy detection of laser points on camera image                                  
 \subsubsection*{Pro and con}
 ..
 
-\subsection{RFID} % stephan
+\subsection[RFIS]{RFID\footnote{Stephan}} % stephan around 2 pages
 \subsubsection*{Summary} 
+One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The mainly areas of this technology is indeed still supply chains, transport, manufacturing, personnel access, animal tagging, toll collection \textcolor{red}{reference 4}, but has also become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
+The main idea of those systems is that a reader detects a tag and reads its information. The technology can be divided into three main types: passive, semi-passive and active systems. A passive system, like it is been shown in fig. \ref{RFID_Passive}, consists of a reader, which is connected to an antenna and a computer and a passive tag.\\
+\begin{figure}[!htbp]
+\centering
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width = 7cm]{Pictures/RFID_Passive}%
+\caption{Passive RFID System}
+\label{RFID_Passive}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width = 7cm]{Pictures/RFID_Active}%
+\caption{Active RFID System}
+\label{RFID_Active}
+\end{minipage}
+\end{figure}\\
+The system is called passive, because the power supply will be realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags gets enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a battery build in that the the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
+Another classification of RFID systems is the frequency of the radio waves. It can reach from 0.135 MHz (Low Frequency) to 5875 MHz (Super High Frequency). The table \ref{RFID_Systems} gives an overview about the systems related to reading ranges, reading rates and the ability to read near metal or water.\\
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{c}
+\includegraphics[width = 9cm]{Pictures/RFID_Systems}
+\end{tabular}
+\caption{Overview RFID systems}
+\label{RFID_Systems}
+\end{table}\\
+It can be seen that the passive systems in general have a smaller reading range then the active systems and has a bigger data rate. But it has also to be take into account, that passive tags a way cheaper then active tags.   
 \subsubsection*{Implementation}
+There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out by passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV. 
+
 \subsubsection*{Pro and con}
-..
+Based on the made research, two tables with advantages and disadvantages of the two RFID systems are created.\\ 
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Active RFID system}}                                                                                                                                                                                \\ \hline
+\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
+Light independent                                                                                                 & Prototype more expansive (3 reader + avtive tags)                                                            \\ \hline
+Space unlimited                                                                                                   & \begin{tabular}[c]{@{}l@{}}Datarate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Localization only has to be realized in\\ a bigger area - medium accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more AGVs are\\ used at the same time\end{tabular}      \\ \hline
+\begin{tabular}[c]{@{}l@{}}Wired communication between reader and \\ computer possible\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Signal strength can be influenced by envirnonment\\ (metal or water)\end{tabular} \\ \hline
+Simple algorithm (Trilateration)                                                                                  &                                                                                                              \\ \hline
+\end{tabular}
+\caption{Pro and cons of active RFID system}
+\label{my-label}
+\end{table}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Passive RFID system}}                                                                                                                                                                                            \\ \hline
+\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                             & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
+Light independent                                                                                                               & \begin{tabular}[c]{@{}l@{}}Communication between AGV and computer \\ has to be realized\end{tabular}         \\ \hline
+Space unlimited                                                                                                                & \begin{tabular}[c]{@{}l@{}}Data rate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Localization only has to be realized between\\ four tags (small area) - high accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more tags are\\ detected at the same time\end{tabular}  \\ \hline
+Simple algorithm (Trilateration)                                                                                               &                                                                                                              \\ \hline
+Prototype cheap (1 reader + passive tags)                                                                                      &                                                                                                              \\ \hline
+\end{tabular}
+\caption{Pro and cons passive RFID system}
+\label{Pro and Cons of the passive RFID system}
+\end{table}
 
 \subsection{Map-Based Localization} %abdul
 \subsubsection*{Summary} 
@@ -85,20 +145,3 @@ Easy detection of laser points on camera image                                  
 ..
 
 
-
-example:
-\begin{table}[h!]
-\centering
- \begin{tabular}{||c c c c||} 
- \hline
- Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
- \hline\hline
- 1 & 6 & 87837 & 787 \\ 
- 2 & 7 & 78 & 5415 \\
- 3 & 545 & 778 & 7507 \\
- 4 & 545 & 18744 & 7560 \\
- 5 & 88 & 788 & 6344 \\ [1ex] 
- \hline
- \end{tabular}
- \caption {Should be a caption}
-\end{table}
