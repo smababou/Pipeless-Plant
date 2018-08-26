@@ -4,36 +4,36 @@
 \contentsline {subsection}{\numberline {2.2}Problems with the Existing Setup}{6}{subsection.2.2}
 \contentsline {section}{\numberline {3}Selection Process}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Triangulation}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{8}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}RFIS}{10}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Map-Based Localization}{13}{subsection.3.4}
-\contentsline {section}{\numberline {4}Theoretical Background}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification (Abdul) }{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Trilateration}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}...}{15}{subsection.4.3}
-\contentsline {section}{\numberline {5}Hardware}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}RFID reader and antenna}{16}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}RFID tag ?}{17}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Wifi modul (Abdul ?)}{17}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}HW setup?!? (Abdul ?)}{17}{subsection.5.4}
-\contentsline {section}{\numberline {6}Simulation}{18}{section.6}
-\contentsline {subsection}{\numberline {6.1}Emulator}{18}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}RSSI Measurements with real hardware}{19}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Simulation with emulated data}{20}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Results}{20}{subsection.6.4}
-\contentsline {section}{\numberline {7}Implementation}{21}{section.7}
-\contentsline {subsection}{\numberline {7.1}Communication (Abdul and/or Stefan)}{21}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Initialization procedure (Stephan and Stefan)}{21}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data (Stefan)}{24}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Analysing data (Stefan)}{25}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Selection of correct distance related to RSSI}{26}{subsubsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.4}Estimation of initial position and orientation}{28}{subsubsection.7.2.4}
-\contentsline {subsection}{\numberline {7.3}Test setup}{29}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Results}{31}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{33}{section.8}
-\contentsline {section}{\numberline {9}Future Work}{34}{section.9}
-\contentsline {subsection}{\numberline {9.1}Hardware}{34}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Software}{34}{subsection.9.2}
-\contentsline {section}{\numberline {10}References}{35}{section.10}
-\contentsline {section}{\numberline {11}Appendixes}{36}{section.11}
-\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{36}{subsection.11.1}
+\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}RFIS}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Map-Based Localization}{15}{subsection.3.4}
+\contentsline {section}{\numberline {4}Theoretical Background}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification (Abdul) }{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Trilateration}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}...}{17}{subsection.4.3}
+\contentsline {section}{\numberline {5}Hardware}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}RFID reader and antenna}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}RFID tag ?}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Wifi modul (Abdul ?)}{19}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}HW setup?!? (Abdul ?)}{19}{subsection.5.4}
+\contentsline {section}{\numberline {6}Simulation}{20}{section.6}
+\contentsline {subsection}{\numberline {6.1}Emulator}{20}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}RSSI Measurements with real hardware}{21}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Simulation with emulated data}{22}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Results}{22}{subsection.6.4}
+\contentsline {section}{\numberline {7}Implementation}{23}{section.7}
+\contentsline {subsection}{\numberline {7.1}Communication (Abdul and/or Stefan)}{23}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Initialization procedure (Stephan and Stefan)}{23}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data (Stefan)}{27}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Analysing data (Stefan)}{27}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Selection of correct distance related to RSSI}{28}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}Estimation of initial position and orientation}{30}{subsubsection.7.2.4}
+\contentsline {subsection}{\numberline {7.3}Test setup}{31}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Results}{33}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{35}{section.8}
+\contentsline {section}{\numberline {9}Future Work}{36}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hardware}{36}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Software}{36}{subsection.9.2}
+\contentsline {section}{\numberline {10}References}{37}{section.10}
+\contentsline {section}{\numberline {11}Appendixes}{38}{section.11}
+\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{38}{subsection.11.1}
