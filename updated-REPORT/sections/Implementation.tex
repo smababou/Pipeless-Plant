@@ -11,7 +11,7 @@ In the start-up phase, before running the pipe less plant with its AGVs the corr
 \label{possible_initial_positions}
 \end{figure}\\
 Since this information is crucial for the plant, a procedure was set up to determine the starting positions of each and every AGV at time t=0.
-According to the fact, that the position and orientation of a single AGV is unknown at time t=0, some potential are taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\\
+According to the fact, that the position and orientation of a single AGV is unknown at time t=0, some potential are taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\pagebreak
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/hazards}
@@ -26,7 +26,7 @@ fig. \ref{SFC_Init_Procedure} represents a sequential flow chart which describes
 \includegraphics[width = 4cm]{Pictures/SFC_Init_Procedure}
 \caption{Flow Chart: Initial Procedure 360 degree turn}
 \label{SFC_Init_Procedure}
-\end{figure}\\
+\end{figure}\\\\\\\\\\\\\\\\
 An initialization procedure for AGV No. 1 was created and is started in the GUI in the Test environment. In the first place an integer number is given to the field called Sleeptime. This integer number is interpretated as milliseconds and describes the time of rotation. Even though a time for a complete turn of 360\textdegree  has been found at around 1125ms it has to be said that this time strongly depends on the battery charge of the AGV. After the desired turning time is given to the GUI the initialization is started by pushing the button Initialization, located over the input box \ref{Screenshot_Test_environment}.\\
 \begin{figure}[!htbp]
 \centering
@@ -68,7 +68,7 @@ This procedure of reading information, writing information in the initialization
 \subsubsection{Recording and filtering data (Stefan)}
 To read the UID and RSSI of all the TAG laying in the reading range the RFID-Reader is set to its Automatic mode and its Anticollision is switched on. During this mode packages of strings with a length of 35 characters are reviewed by the plans computer. Even though these 36 character strings contain all the information of the TAG which is needed some effort has to be taken to seperate the useful parts which are prcessed in localization algorithm.\\
 With exception of the information each and every string contains, the structure itselve is always the same. In the first five characters the substring ``\textit{SCAN:}'' are found and deleted for the further process. The first important caracter is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With help of this sixth slot it is distriglished if rhe current reading is either a complete or incomplete one. In order to guarantee the correctness of the reciewed information the measurments are filtered by the ``textit{+}'' and the measurments in which a ``\textit{-}''' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the UID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 caracters defines the unique identification of the specific TAG. As a last useless information which has to be cut out a string with the structure ``\textit{.RSSI=}'' is found directly after the UID. As a result the sixteen caracter hexadecimal UID and its respective RSSI are seperated from the reviewed string. Since the ordered TAG UIDs differ each other just in the last tree numbers these numbers are transformed in a decimal number before UID and RSSI is used for further computations.\\
-\begin{table}[]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -83,19 +83,20 @@ E00401503A5BD691 0/0                    &                                       
 \label{string_prep}
 \end{table}
 \subsubsection{Analysing data (Stefan)}
-In the next step of the Algorithm the previous described filled Array is analyzed. To estimate the position and orientation of the AGV the Array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\
+In the next step of the Algorithm the previous described filled Array is analyzed. To estimate the position and orientation of the AGV the Array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\\\
 1.: At the two valid measurement point each contains at least tree TAGs\\
-2.: The two measurement points in one set needs to have a distance of 180\textdegree  to each other.\\
-\\
-In terms to get the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.
+2.: The two measurement points in one set needs to have a distance of 180\textdegree  to each other.
+\pagebreak\\
+In terms to get the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.\\
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width = 6cm]{Pictures/AnalyzeArray}
+\includegraphics[width = 10cm]{Pictures/AnalyzeArray}
 \caption{Flow Chart: Analizing Measurment Points}
 \label{Analyze_Array}
 \end{figure}\\
 Initially the first row which represents the measurement at the point zero degree is checked in terms of the numbers of readable TAGs. If this specific number is higher or equal tree the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180\textdegree  to the former measurement point. If this next measurement point can be described as valid as well the first valid set of two measurement points is found. If, on the other hand, the number of readable TAGs are less than 3, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next point with a distance of 45\textdegree   is evaluated.
 Each of this sets of two measurement points [degree] is saved as a 1x2 Array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
+%
 \subsubsection[Selection of correct distance related to RSSI]{Selection of correct distance related to RSSI footnote{Stephan}}
 In a first step the multiple occurring data points (see tbl.\ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
 The measurements has shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\

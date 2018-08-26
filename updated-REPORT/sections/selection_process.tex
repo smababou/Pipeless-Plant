@@ -22,18 +22,20 @@ Active triangulation in comparison to passive triangulation needs one camera and
 \label{ative_Triangulation}
 \end{figure}\\
 To solve the active triangulation problem, the structured light has to point on object which location is desired to estimate, in the case of the pipe less plant it would be the AGV. If this point is found on the 2D image of the camera, a triangulation with basic trigonometrical formulas which are using the properties and parameters of the camera and light source can be performed and the position of the AGV is estimated. 
+\pagebreak
 \subsubsection*{Implementation} 
-One possible way to implement a solution for the passive triangulation is to attach 2 high resolution cameras with USB 3.0 for a fast data transmitting on two edges of the plant being not on each others opposite side as shown in fig. \ref{ ative_Triangulation_implementation}.
+One possible way to implement a solution for the passive triangulation is to attach 2 high resolution cameras with USB 3.0 for a fast data transmitting on two edges of the plant being not on each others opposite side as shown in fig. \ref{ativeTriangulationimplementation}.\\
 \begin{figure}[!htbp]
-\centering
-\includegraphics[width = 16cm]{Pictures/triangulationimplementatio}
-\caption{Impmentation of passive triangulation}
-\label{ative_Triangulation_implementation}
-\end{figure}\\
+	\centering
+	\includegraphics[width = 16cm]{Pictures/triangulationimplementatio}
+	\caption{Impmentation of passive triangulation}
+	\label{ativeTriangulationimplementation}
+\end{figure}\\%
 The left and right camera are sequentially taking pictures which are transmitted to the plants computer where the image processing takes place. 
-
+\pagebreak
 \subsubsection*{Pro and con}
-\begin{table}[]
+Based on the made research, two tables with advantages and disadvantages of the two RFID systems are created.
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -43,12 +45,11 @@ Upgrade to USB 3.0 for faster data transmitting possible                        
 \begin{tabular}[c]{@{}l@{}}Upgrade to a camera with higher resolution to reduce \\ measurement error possible\end{tabular} & New concept of orientation may be needed \\ \hline
 No Fish-Eye-Lense problem                                                                                                  & Limited range of observation             \\ \hline
 Low cost                                                                                                                   &                                          \\ \hline
-                                                                                                                           &                                          \\ \hline
 \end{tabular}
 \caption{Positive and Negative Points of Passive Triangulation}
 \label{pro_con_passive_tri}
 \end{table}
-\begin{table}[]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -63,14 +64,12 @@ Easy detection of laser points on camera image                                  
 \caption{Positive and Negative Points of Active Triangulation}
 \label{pro_con_active_tri}
 \end{table}
-
-
-
+\pagebreak
 \subsection{Pattern Recognition} %medhini
 \subsubsection*{Summary} 
 \subsubsection*{Implementation}
 \subsubsection*{Pro and con}
-..
+\pagebreak
 
 \subsection[RFIS]{RFID\footnote{Stephan}} % stephan around 2 pages
 \subsubsection*{Summary} 
@@ -103,8 +102,8 @@ Another classification of RFID systems is the frequency of the radio waves. It c
 \end{table}\\
 It can be seen that the passive systems in general have a smaller reading range then the active systems and has a bigger data rate. But it has also to be take into account, that passive tags a way cheaper then active tags.   
 \subsubsection*{Implementation}
-There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out by passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV. 
-
+There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out by passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV.
+\pagebreak
 \subsubsection*{Pro and con}
 Based on the made research, two tables with advantages and disadvantages of the two RFID systems are created.\\ 
 \begin{table}[!htbp]
@@ -137,7 +136,7 @@ Prototype cheap (1 reader + passive tags)                                       
 \caption{Pro and cons passive RFID system}
 \label{Pro and Cons of the passive RFID system}
 \end{table}
-
+\pagebreak
 \subsection{Map-Based Localization} %abdul
 \subsubsection*{Summary} 
 \subsubsection*{Implementation}
