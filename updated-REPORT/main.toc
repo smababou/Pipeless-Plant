@@ -37,3 +37,5 @@
 \contentsline {section}{\numberline {10}References}{38}{section.10}
 \contentsline {section}{\numberline {11}Appendixes}{39}{section.11}
 \contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{39}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{43}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{47}{subsection.11.3}

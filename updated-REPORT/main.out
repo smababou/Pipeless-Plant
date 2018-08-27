@@ -37,3 +37,5 @@
 \BOOKMARK [1][-]{section.10}{References}{}% 37
 \BOOKMARK [1][-]{section.11}{Appendixes}{}% 38
 \BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 39
+\BOOKMARK [2][-]{subsection.11.2}{Appendix B: Receiving data from reader via Wifi \(C\043\)}{section.11}% 40
+\BOOKMARK [2][-]{subsection.11.3}{Appendix C: Initialization procedure \(C\043\)}{section.11}% 41
