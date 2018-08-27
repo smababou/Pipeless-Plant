@@ -1,5 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{Prinzip3DVideometrie.}
+{Dr.-Ing. habil. Dipl.-Ing. Dipl.-Ing. Joerg Wollnack}.
+\newblock Prinzip der dreidimensional messenden videometrischen messsysteme.
+
+\bibitem{MultiObjectTriangulation.}
+{Jeremie Houssineau, Daniel Clark, Spela Ivekovic, Chee Sing Lee and Jose
+  Franco}.
+\newblock A unified approach for multi-object triangulation, tracking and
+  camera calibration.
+
 \bibitem{Cotera.2016}
 Pablo Cotera, Miguel Velazquez, David Cruz, Luis Medina, and Manuel Bandala.
 \newblock Indoor robot positioning using an enhanced trilateration algorithm.

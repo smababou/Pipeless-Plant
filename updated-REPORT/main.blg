@@ -13,6 +13,10 @@ A level-1 auxiliary file: sections/futurework.aux
 A level-1 auxiliary file: sections/References.aux
 A level-1 auxiliary file: sections/Appendixes.aux
 Database file #1: References.bib
+Warning--empty journal in Prinzip3DVideometrie.
+Warning--empty year in Prinzip3DVideometrie.
+Warning--empty journal in MultiObjectTriangulation.
+Warning--empty year in MultiObjectTriangulation.
 Warning--empty journal in ChristofRohrigDanielHessandFrankKunemund.
 Warning--empty year in ChristofRohrigDanielHessandFrankKunemund.
-(There were 2 warnings)
+(There were 6 warnings)

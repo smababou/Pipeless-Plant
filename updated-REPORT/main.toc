@@ -23,17 +23,17 @@
 \contentsline {subsection}{\numberline {6.4}Results}{22}{subsection.6.4}
 \contentsline {section}{\numberline {7}Implementation}{23}{section.7}
 \contentsline {subsection}{\numberline {7.1}Communication (Abdul and/or Stefan)}{23}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Initialization procedure (Stephan and Stefan)}{23}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data (Stefan)}{27}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Analysing data (Stefan)}{27}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2}Initialization procedure}{23}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data}{27}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Analysing data}{27}{subsubsection.7.2.2}
 \contentsline {subsubsection}{\numberline {7.2.3}Selection of correct distance related to RSSI}{28}{subsubsection.7.2.3}
 \contentsline {subsubsection}{\numberline {7.2.4}Estimation of initial position and orientation}{30}{subsubsection.7.2.4}
 \contentsline {subsection}{\numberline {7.3}Test setup}{31}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Results}{33}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{35}{section.8}
-\contentsline {section}{\numberline {9}Future Work}{36}{section.9}
-\contentsline {subsection}{\numberline {9.1}Hardware}{36}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Software}{36}{subsection.9.2}
-\contentsline {section}{\numberline {10}References}{37}{section.10}
-\contentsline {section}{\numberline {11}Appendixes}{38}{section.11}
-\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{38}{subsection.11.1}
+\contentsline {section}{\numberline {8}Conclusion}{36}{section.8}
+\contentsline {section}{\numberline {9}Future Work}{37}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hardware}{37}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Software}{37}{subsection.9.2}
+\contentsline {section}{\numberline {10}References}{38}{section.10}
+\contentsline {section}{\numberline {11}Appendixes}{39}{section.11}
+\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{39}{subsection.11.1}
