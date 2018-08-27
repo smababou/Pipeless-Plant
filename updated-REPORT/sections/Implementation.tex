@@ -2,7 +2,7 @@
 
 \subsection{Communication (Abdul and/or Stefan)}
 
-\subsection{Initialization procedure (Stephan and Stefan)}\label{Sec_Imp_Ini}
+\subsection[Initialization procedure]{Initialization procedure \footnote{Stephan and Stefan}}
 In the start-up phase, before running the pipe less plant with its AGVs the correct position and orientation of each and every vehicle is not known . Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]
 \centering
@@ -65,7 +65,8 @@ This procedure of reading information, writing information in the initialization
 \caption{Filled Array after 360 degree turn}
 \label{Init_Array}
 \end{table}\\
-\subsubsection{Recording and filtering data (Stefan)}
+
+\subsubsection[Recording and filtering data]{Recording and filtering data \footnote{Stefan}}
 To read the UID and RSSI of all the TAG laying in the reading range the RFID-Reader is set to its Automatic mode and its Anticollision is switched on. During this mode packages of strings with a length of 35 characters are reviewed by the plans computer. Even though these 36 character strings contain all the information of the TAG which is needed some effort has to be taken to seperate the useful parts which are prcessed in localization algorithm.\\
 With exception of the information each and every string contains, the structure itselve is always the same. In the first five characters the substring ``\textit{SCAN:}'' are found and deleted for the further process. The first important caracter is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With help of this sixth slot it is distriglished if rhe current reading is either a complete or incomplete one. In order to guarantee the correctness of the reciewed information the measurments are filtered by the ``textit{+}'' and the measurments in which a ``\textit{-}''' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the UID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 caracters defines the unique identification of the specific TAG. As a last useless information which has to be cut out a string with the structure ``\textit{.RSSI=}'' is found directly after the UID. As a result the sixteen caracter hexadecimal UID and its respective RSSI are seperated from the reviewed string. Since the ordered TAG UIDs differ each other just in the last tree numbers these numbers are transformed in a decimal number before UID and RSSI is used for further computations.\\
 \begin{table}[!htbp]
@@ -82,7 +83,8 @@ E00401503A5BD691 0/0                    &                                       
 \caption{String preperation}
 \label{string_prep}
 \end{table}
-\subsubsection{Analysing data (Stefan)}
+
+\subsubsection[Analysing data]{Analysing data\footnote{Stefan}}
 In the next step of the Algorithm the previous described filled Array is analyzed. To estimate the position and orientation of the AGV the Array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\\\
 1.: At the two valid measurement point each contains at least tree TAGs\\
 2.: The two measurement points in one set needs to have a distance of 180\textdegree  to each other.
@@ -97,7 +99,8 @@ In terms to get the adequate sets of measurment points the array is analyzed row
 Initially the first row which represents the measurement at the point zero degree is checked in terms of the numbers of readable TAGs. If this specific number is higher or equal tree the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180\textdegree  to the former measurement point. If this next measurement point can be described as valid as well the first valid set of two measurement points is found. If, on the other hand, the number of readable TAGs are less than 3, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next point with a distance of 45\textdegree   is evaluated.
 Each of this sets of two measurement points [degree] is saved as a 1x2 Array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
 %
-\subsubsection[Selection of correct distance related to RSSI]{Selection of correct distance related to RSSI footnote{Stephan}}
+
+\subsubsection[Selection of correct distance related to RSSI]{Selection of correct distance related to RSSI \footnote{Stephan}}
 In a first step the multiple occurring data points (see tbl.\ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
 The measurements has shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
 \begin{figure}[!htbp]
@@ -178,7 +181,7 @@ ID tag [dec]    & 2788 & 1673 & 1146 & 1414 & 1925 & 2780 & 3060 & 1681 & 1933 \
 \label{IDs_Setup}
 \end{table}\\
 The reason for the small setup was the fact that until the end of the project only 10 tags were available. One of the following steps should be to extend the platform with more tags.\\
-The initialization procedure was started via the GUI. A time value was added in the GUI to perform the 45$^\circ$ turns. This number was \textcolor{red}{around 1150 ms} and is highly correlated to the battery status of the AGV.\\
+The initialization procedure was started via the GUI. A time value was added in the GUI to perform the 45$^\circ$ turns. This number was around 1125 ms and is highly correlated to the battery status of the AGV.\\
 
 \subsection[Results]{Results\footnote{Stephan}}
 A couple of tests on the test setup (previous section) were performed to compare the good results created with the simulated data with real measurements. The result of the position estimation was directly plotted in the console. The initial position was 200 mm in x- and y-direction and a varying orientation (0$^\circ$, 90$^\circ$, 180$^\circ$ and -90$^\circ$). Fig.\ref{ResultX} and fig.\ref{ResultY} illustrate the actual measurement results and the desired position in x- and y-direction. 
