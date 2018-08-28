@@ -10,6 +10,10 @@
 \newblock A unified approach for multi-object triangulation, tracking and
   camera calibration.
 
+\bibitem{Bai_overviewof}
+Yuntian~Brian Bai, Suqin Wu, Hongren Wu, and Kefei Zhang.
+\newblock Overview of rfid-based indoor positioning technology, 2012.
+
 \bibitem{Cotera.2016}
 Pablo Cotera, Miguel Velazquez, David Cruz, Luis Medina, and Manuel Bandala.
 \newblock Indoor robot positioning using an enhanced trilateration algorithm.
