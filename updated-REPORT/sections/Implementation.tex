@@ -2,53 +2,50 @@
 
 \subsection{Communication (Abdul and/or Stefan)}
 
-\subsection[Initialization procedure]{Initialization procedure \footnote{Stephan and Stefan}}
-In the start-up phase, before running the pipe less plant with its AGVs the correct position and orientation of each and every vehicle is not known . Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
+\subsection[Initialization procedure]{Initialization procedure \footnote{Stephan and Stefan}}\label{Sec_Imp_Ini}
+In the start-up phase, before running the pipeless plant with its AGVs the correct position and orientation of each and every vehicle is not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/possible_initial_positions}
 \caption{Different possible positions for one antenna position}
 \label{possible_initial_positions}
 \end{figure}\\
-Since this information is crucial for the plant, a procedure was set up to determine the starting positions of each and every AGV at time t=0.
-According to the fact, that the position and orientation of a single AGV is unknown at time t=0, some potential are taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\pagebreak
+Since the position information is crucial for the plant, a procedure was set up to determine the starting positions of each and every AGV.
+According to the fact, that the position and orientation of a single AGV is unknown at the beginning, some potential are taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\pagebreak
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/hazards}
 \caption{Possible hazards/obstacles}
 \label{hazards}
 \end{figure}\\
-With respect to these potential hazards collisions during the initialization procedure have to be avoided. This is realized by taking advantage out of the AGVs ability to turn around its own axis without a change of the AGVs center point x and y position. This ability of the AGV leads the way that each and every robot performs an initialization turn of 360\textdegree  in which measurements are taken every 45\textdegree  to estimate the specific positions and orientations of the AGVs. Furthermore, the decision process of the antenna position under the robot is dominated by the fact that the position of the center point does not change during a turn around its own axis. 
-During the 360\textdegree  turn the intervals in which the measurments have to be taken need to be known by the controller. The determination of these measurement points can be computed in two different ways. On the one had the encoders of the AGV-wheels can be used to estimate the performed rotation. On the other hand, the time of a complete turn can be measured and used as a parameter in the procedure. In terms of simplicity the second option is used in the initialization procedure.  
-fig. \ref{SFC_Init_Procedure} represents a sequential flow chart which describes the movement and data processing during the initialization procedure.\\ 
+With respect to these potential hazards collisions during the initialization procedure have to be avoided. This is realized by taking advantage out of the AGVs ability to turn around its z axis without a change of the AGVs center point in x and y direction. This ability of the AGV leads the way that each and every robot performs an initialization turn of 360$^\circ$ in which measurements are taken every 45$^\circ$ to estimate the specific positions and orientations of the AGVs. Furthermore, the decision process of the antenna position under the robot is dominated by the fact that the position of the center point does not change during a turn around its z axis. 
+During the 360$^\circ$ turn the intervals in which the measurments have to be taken need to be known by the controller. The determination of these measurement points can be computed in two different ways. On the one hand the encoders of the AGV-wheels can be used to estimate the performed rotation. On the other hand, the time of a complete turn can be measured and used as a parameter in the procedure. In terms of simplicity the second option is used in the initialization procedure.  
+Fig. \ref{SFC_Init_Procedure} illustrates a sequential flow chart which describes the movement and data processing during the initialization procedure.\\ 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 4cm]{Pictures/SFC_Init_Procedure}
-\caption{Flow Chart: Initial Procedure 360 degree turn}
+\caption{Flow Chart: Initial procedure 360$^\circ$ turn}
 \label{SFC_Init_Procedure}
 \end{figure}\\\\\\\\\\\\\\\\
-An initialization procedure for AGV No. 1 was created and is started in the GUI in the Test environment. In the first place an integer number is given to the field called Sleeptime. This integer number is interpretated as milliseconds and describes the time of rotation. Even though a time for a complete turn of 360\textdegree  has been found at around 1125ms it has to be said that this time strongly depends on the battery charge of the AGV. After the desired turning time is given to the GUI the initialization is started by pushing the button Initialization, located over the input box \ref{Screenshot_Test_environment}.\\
+The initialization procedure for AGV No. 1 is created and can be started in the GUI in the test environment. In the first place an integer number is given to the field called Sleeptime. This integer number is interpretated in milliseconds and describes the time of rotation. Even though a time for a complete turn of 45$^\circ$  has been found at around 1125ms it has to be said that this time strongly depends on the battery charge of the AGV. After the desired turning time is given to the GUI the initialization is started by pushing the button Initialization, located over the input box in fig.  \ref{Screenshot_Test_environment}.\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/Screenshot_Test_environment}
 \caption{Test environment in GUI}
 \label{Screenshot_Test_environment}
 \end{figure}\\
-In the second step after the procedure was started all the available IDs and their respective RSSI in the current reading range of the RFID-Reader are read. The reading is performed in the Automatic Scan mode of the RFID reader. With the included timestamp for every measurement a delay of minimum 30ms between each and every TAG-Information was detected. With respect to this delay the antenna has to stop a specific period of time at each measuring point to deliver correct data of all the reachable TAGs. Experience has shown, that a measuring time between one and two seconds, in which every 100ms measurements are taken, the best results are delivered. In order to save the single TAG information of each and every measuring point an initially empty Array with 14 rows and 8 columns was created. 
+In the second step, after the procedure was started, all the available IDs and their respective RSSI in the current reading range of the RFID-Reader are read. The reading is performed in the Automatic Scan mode of the RFID reader\cite{KTSSysteme.2017}. With the included timestamp for every measurement a delay of minimum 30ms between each and every tag information was detected. With respect to this delay the antenna has to stop a specific period of time at each measuring point to deliver correct data of all the reachable tags. Experiences have shown, that a measuring time between one and two seconds delivers the best results. During this time every 100 ms new measurment information are taken. In order to save the single TAG information of each and every measuring point an initially empty array with 14 columns and 8 rows is created. 
 The number of rows is derived by the fact that measurements are taken at every 45\textdegree. \\
 \begin{align}
-Rows = 360/45\\
-Rows = 8
+Rows = 360^\circ/45^\circ = 8\\
 \end{align}
-The first seven entries of a row in the array is filled by the received TAG IDs and the last seven entries are filed by the respective RSSI. \\
+The first seven columns in the array are filled by the received TAG IDs and the last seven entries are filed by the respective RSSI. \\
 The number of columns is derived by the fact that at each and every measurement point in the used test environment, information of maximal seven TAGs can be read. \\
 \begin{align}
-Columns = max. no. of  TAGs * 2\\
-Columns = 7 * 2\\
-Columns = 14
+Columns = max. no. of  tags * 2 = 7 * 2 = 14\\
 \end{align}
-Once the received data is saved in its corresponding row, the AGV turns around 45\textdegree  to place the antenna at the next measuring point. A AGV turn is realized by setting the velocity of the right and left wheel in different directions. During the turning sections the velocity is set to 100 mm/s or rather -100 mm/s. 
-This procedure of reading information, writing information in the initialization array and turning 45\textdegree  to the next measuring point is repeating itself until a 360\textdegree  turn is performed. After a successful initialization turn the corresponding Array of measurement information can look like the example in table \ref{Init_Array}.
+Once the received data is saved in its corresponding row, the AGV turns around 45\textdegree  to place the antenna at the next measuring point. An AGV turn is realized by setting the velocity of the right and left wheel in different directions. During the turning sections the velocity is set to 100 mm/s or rather -100 mm/s. 
+This procedure of reading information, writing information in the initialization array and turning 45$^\circ$  to the next measuring point is repeating itself until a 360$^\circ$  turn is performed. After a successful initialization turn the corresponding array of measurement information can look like the example in table \ref{Init_Array}.
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -62,13 +59,13 @@ This procedure of reading information, writing information in the initialization
 5&4&7&8&1&&&2&5&0&0&0&&  \\ \hline
 2&4&1&5&&&&0&2&2&0&&&  \\ \hline
 \end{tabular}
-\caption{Filled Array after 360 degree turn}
+\caption{Filled array after 360$^\circ$ turn}
 \label{Init_Array}
 \end{table}\\
 
 \subsubsection[Recording and filtering data]{Recording and filtering data \footnote{Stefan}}
-To read the UID and RSSI of all the TAG laying in the reading range the RFID-Reader is set to its Automatic mode and its Anticollision is switched on. During this mode packages of strings with a length of 35 characters are reviewed by the plans computer. Even though these 36 character strings contain all the information of the TAG which is needed some effort has to be taken to seperate the useful parts which are prcessed in localization algorithm.\\
-With exception of the information each and every string contains, the structure itselve is always the same. In the first five characters the substring ``\textit{SCAN:}'' are found and deleted for the further process. The first important caracter is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With help of this sixth slot it is distriglished if rhe current reading is either a complete or incomplete one. In order to guarantee the correctness of the reciewed information the measurments are filtered by the ``textit{+}'' and the measurments in which a ``\textit{-}''' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the UID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 caracters defines the unique identification of the specific TAG. As a last useless information which has to be cut out a string with the structure ``\textit{.RSSI=}'' is found directly after the UID. As a result the sixteen caracter hexadecimal UID and its respective RSSI are seperated from the reviewed string. Since the ordered TAG UIDs differ each other just in the last tree numbers these numbers are transformed in a decimal number before UID and RSSI is used for further computations.\\
+To read the ID and RSSI of all the TAG laying in the reading range the RFID-reader is set to its Automatic mode and its Anticollision is switched on. In this mode packages of strings with a length of 35 characters are received by the plans computer. Even though these 36 character strings contain all the information of the TAG which is needed some effort has to be taken to seperate the useful parts which are processed in the localization algorithm.\\
+With exception of the information each and every string contains, the structure itselve is always the same. In the first five characters the substring ``\textit{SCAN:}'' is detected and deleted for the further process. The first important character is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With the help of this sixth slot it is distinglished if the current reading is either a complete or incomplete one. In order to guarantee the correctness of the received information the measurments are filtered by the ``\textit{+}'' and the measurments in which a ``\textit{-}'' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the ID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 characters defines the unique identification of the specific TAG. As a last useless string, which has to be cut out, with the structure ``\textit{.RSSI=}'' is found directly after the ID. As a result the 16 character hexadecimal ID and its respective RSSI are seperated from the received string. Since the ordered tag IDs differ each other just in the last three numbers these numbers are transformed in a decimal number before UID and RSSI are used for further computations.\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
@@ -85,31 +82,31 @@ E00401503A5BD691 0/0                    &                                       
 \end{table}
 
 \subsubsection[Analysing data]{Analysing data\footnote{Stefan}}
-In the next step of the Algorithm the previous described filled Array is analyzed. To estimate the position and orientation of the AGV the Array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\\\
-1.: At the two valid measurement point each contains at least tree TAGs\\
-2.: The two measurement points in one set needs to have a distance of 180\textdegree  to each other.
+In the next step of the algorithm the previous described filled array is analyzed. To estimate the position and orientation of the AGV the array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\\\
+1.: At the two valid measurement point each contains at least three tags\\
+2.: The other measurement point in one set needs to have a distance of 180$^\circ$  to the first.
 \pagebreak\\
 In terms to get the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 10cm]{Pictures/AnalyzeArray}
-\caption{Flow Chart: Analizing Measurment Points}
+\caption{Flow Chart: Analizing measurment points}
 \label{Analyze_Array}
 \end{figure}\\
-Initially the first row which represents the measurement at the point zero degree is checked in terms of the numbers of readable TAGs. If this specific number is higher or equal tree the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180\textdegree  to the former measurement point. If this next measurement point can be described as valid as well the first valid set of two measurement points is found. If, on the other hand, the number of readable TAGs are less than 3, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next point with a distance of 45\textdegree   is evaluated.
-Each of this sets of two measurement points [degree] is saved as a 1x2 Array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
+Initially the first row which represents the measurement at the point 0$^\circ$ is checked in terms of the number of readable tags. If this specific number is higher or equal three the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180$^\circ$ to the former measurement point. If this next measurement point can be described as valid, the first valid set of two measurement points is found. If, on the other hand, the number of readable TAGs are less than three, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next measurement point is evaluated.
+Each of this sets of two measurement points is saved as a 1x2 array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
 %
 
 \subsubsection[Selection of correct distance related to RSSI]{Selection of correct distance related to RSSI \footnote{Stephan}}
 In a first step the multiple occurring data points (see tbl.\ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
-The measurements has shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
+The measurements have shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/BestIDs}
 \caption{Flow Chart: Selection of correct distance and most proper IDs}
 \label{BestID}
 \end{figure}\\
-To distinguish between the multiple possible solution for one RSSI, the algorithm defines the shape of the pattern of tags based on the number of tags at each measurement and the number of the neighbours each tag has. At each measurement point are in this scenario several numbers (4-7) of detected tags possible. The different shapes can be found in the tbl. \ref{ID_shapes}.\\
+To distinguish between the multiple possible solution for one RSSI, the algorithm defines the shape of the pattern of tags based on the number of tags at each measurement and the number of the neighbours each tag has. At each measurement point in this scenario several numbers (4-7) of detected tags are possible. The different shapes can be found in the tbl. \ref{ID_shapes}.\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -120,18 +117,18 @@ Unique shapes        & \includegraphics[width = 1.3cm]{Pictures/Shape1} & \inclu
 \caption{Possible shapes of pattern}
 \label{ID_shapes}
 \end{table}\\
-Going back to the flow chart fig.\ref{BestID} the first step is to count the number of neighbours each tag has. With this information, the position of the tag in the pattern can be detected. For example is a tag with 3 neighbours in a pattern of 5 tags the center of this pattern.\\
+Going back to the flow chart fig.\ref{BestID} the first step is to count the number of neighbours each tag has. With this information, the position of the tag in the pattern can be detected. For example, a tag with 3 neighbours in a pattern of 5 tags, is the center of this pattern.\\
 After the number of tags at each measurement point and the position of each tag are defined, the selection of the correct distance will be performed based on the highest probability. To know the highest probabilities an analysis of measurements with emulated data has been done.\\
-As an example are leading 4 detected tags to the fact that the position of the antenna should be very close to the center of this square. If in this case a RSSI of 4 is detected, the middle value (5.8 cm) will be taken. \\
+As an example 4 detected tags are leading to the fact that the position of the antenna should be very close to the center of this square. If in this case a RSSI of 4 is detected, the middle value (5.8 cm) will be taken. \\
 Afterwards the most suitable three IDs will be selected, in case where more then three are detected. The algorithm takes at first the ID with the highest amount of neighbours, because these tags are close to the position of the antenna and have probably a value of 6 or 7 and are uniquely defined. In the case where several tags with the same number of neighbours, the first ID (number increasing) will be taken. \\
-The return of the function is an array (2x3) with the indices of the chosen IDs and the correct distance. The correct distance will be indicated by the number 0,1 and 2. 0 means the maximal, 1 the middle and 2 the minimum possible value related to one RSSI. For example leads 
+The return of the function is an array (2x3) with the indices of the chosen IDs and the correct distance. The correct distance will be indicated by the number 0,1 and 2. 0 means the maximal, 1 the middle and 2 the minimum possible value related to one RSSI. For example 
 \[
 \begin{bmatrix}
     3 & 2 & 4\\
     2 & 0 & 0 
 \end{bmatrix} 
 \]
-to the choice of the maximal value of the RSSI of the fourth detected ID and the minimum value of the RSSI of the third and the fifth ID in the recorded array at this measurement point. \\
+leads to the choice of the maximal value of the RSSI of the fourth detected ID and the minimum value of the RSSI of the third and the fifth ID in the recorded array at this measurement point. \\
 
 \subsubsection[Estimation of initial position and orientation]{Estimation of initial position and orientation \footnote{Stephan}}
 As mentioned in chapter \ref{Sec_Imp_Ini}, the main idea to estimate the initial position is to find the intersection point, which lies in the middle of the measurement points.\\
@@ -151,17 +148,17 @@ To compute this position, the algorithm uses trilateration at every suitable mea
 \label{Angle}
 \end{minipage}
 \end{figure}\\
-As follows from the fig.\ref{Center} shown above, the intersection point is found by computing two linear functions which go trough two corresponding points (blue lines). The center of the robot is then the intersection of those two linear functions and can be computed by the following equation:
+As follows from the fig.\ref{Center} shown above, the intersection point is found by computing two linear functions which go trough two corresponding points (blue lines). The center of the robot is then the intersection of those two linear functions and can be computed by the following equations:
 \begin{align}
 x = \dfrac{(x_1y_2-y_1x_2)(x_3-x_4)-(x_1-x_2)(x_3y_4-y_3x_4)}{(x_1-x_2)(y_3-y_4)-(y_1-y_2)(x_3-x_4)} \\
 y = \dfrac{(x_1y_2-y_1x_2)(y_3-y_4)-(y_1-y_2)(x_3y_4-y_3x_4)}{(x_1-x_2)(y_3-y_4)-(y_1-y_2)(x_3-x_4)}
 \end{align}
-Theoretical are all eight measuring points suitable points (at least four IDs found). But for the case that the real measurements differ from the theory, the algorithm just needs four suitable points. \\
+Theoreticaly all eight measuring points are suitable points (at least four IDs found). But for the case that the real measurements differ from the theory, the algorithm just needs four suitable points. \\
 After the initial position as well as the positions of 4 measurement points are known, the algorithm computes the orientation based on those information. The relative angle between the center and the first measurement point will be computed with the arctan2 function and leads to an orientation -180$^\circ < \Theta \leq$180$^\circ$ as shown in fig.\ref{Angle}. \\
 To compute the absolute angle, the angle of the measurement point has to be subtracted and 180$^\circ$ has to be added. This is caused by the fact that the antenna is placed on the back of the robot and the absolute orientation should be the direction of the front. After this computation, the initial position and orientation of the robot are known. \\
 
 \subsection[Test setup]{Test setup\footnote{Stephan}}
-In order to verify the validity of the initialization procedure, we carried out experiments with the components mentioned in chapter \ref{Sec_Har}. The beginning of these experiments were the reconstruction of one of the AGVs with this HW setup. After we added all components to the AGV we realized the power supply via a powerbank and the USB connection of then wifi modul. The plan is to replace this in the future with a direct connection to the battery of the AGV. Fig.\ref{TestSetup} gives an overview of the test setup and shows also that for the prototype, the reader and the wifi modul was just stuck with Sellotape on the upper layer of the AGV.\\
+In order to verify the validity of the initialization procedure, experiments with the components mentioned in chapter \ref{Sec_Har} were carried out. The beginning of these experiments were the reconstruction of one of the AGVs with this HW setup. After all components were added to the AGV the power supply was realized via a powerbank and the USB connection of then wifi modul. The plan is to replace this in the future with a direct connection to the battery of the AGV. Fig.\ref{TestSetup} gives an overview of the test setup and shows that also for the prototype, the reader and the wifi modul was just stuck with Sellotape on the upper layer of the AGV.\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 14cm]{Pictures/TestSetup}
@@ -205,7 +202,7 @@ The average of the absolute error of the estimation of the position in y-directi
 \caption{Estimated orientation}
 \label{ResultO}
 \end{figure}\\
-For the estimation of the orientation, the average of the absolute error was 23$^\circ$ with a minimum and a maximum value of 3.9$^\circ$ and 37.5$^\circ$. The measurements also shows that an estimation of the position with a big error not necessarily leads to a big error in the estimation of the orientation (see measurement 4 in fig.\ref{ResultX},\ref{ResultY} and \ref{ResultO}).\\
+For the estimation of the orientation, the average of the absolute error was 23$^\circ$ with a minimum and a maximum value of 3.9$^\circ$ and 37.5$^\circ$. The measurements also shows that an estimation of the position with a big error not necessarily leads to a big error in the estimation of the orientation (see measurement 4 in fig.\ref{ResultX},  \ref{ResultY} and \ref{ResultO}).\\
 An extension of the results could also be an analyse of the estimated positions of the antenna at the measurement points. Those points were also plotted in the console. \\
 
 %\subsection{Improvements}
