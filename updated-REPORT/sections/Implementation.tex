@@ -1,7 +1,27 @@
 \section{Implementation}\label{Sec_Imp}
 
-\subsection{Communication (Abdul and/or Stefan)}
-
+\subsection{Communication}
+The already existing software is overwritten on the  built-in micro-controller of the WeMos Wifi Module which was developed to have a continuous listening to all the data  sent from the RFID reader even in case of no tags within the range. The good and bad RFID data readings are as seen in the fig.\ref{rfid_wifi}.\\
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 14cm]{Pictures/rfidwifi}
+	\caption{RFID-WeMos Module Communication}
+	\label{rfid_wifi}
+\end{figure}\\
+A TCP-IP communication is established within the network on the WeMos WiFi Module that start publishing the data which has been received from the reader. This communication is killed if and only if in the case of robot shutdown as shown in fig.\ref{wifi_network}.\\
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 14cm]{Pictures/wifinetwork}
+	\caption{WeMos Module Network Communication}
+	\label{wifi_network}
+\end{figure}
+While on the other side on computer GUI (Graphical User Interface), the same type of communication is established (which should be in same network), and should grasp all the data that has been published by the WeMos WiFi module even if it no data is sent. This communication can be stopped from the GUI if needed as shown in fig.\ref{wifi_pc}.\\
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 14cm]{Pictures/wifipc}
+	\caption{Computer Network Communication}
+	\label{wifi_pc}
+\end{figure}\\
 \subsection[Initialization procedure]{Initialization procedure \footnote{Stephan and Stefan}}\label{Sec_Imp_Ini}
 In the start-up phase, before running the pipeless plant with its AGVs the correct position and orientation of each and every vehicle is not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]

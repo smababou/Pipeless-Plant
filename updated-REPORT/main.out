@@ -2,40 +2,45 @@
 \BOOKMARK [1][-]{section.2}{Pipeless Plant}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Existing setup}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Problems with the Existing Setup}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Selection Process}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Triangulation}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Pattern Recognition}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{RFIS}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{Map-Based Localization}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Theoretical Background}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{Radio Frequency Identification \(Abdul\) }{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Trilateration}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.3}{...}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Hardware}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{RFID reader and antenna}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{RFID tag ?}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Wifi modul \(Abdul ?\)}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.4}{HW setup?!? \(Abdul ?\)}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Simulation}{}% 19
-\BOOKMARK [2][-]{subsection.6.1}{Emulator}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.2}{RSSI Measurements with real hardware}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.3}{Simulation with emulated data}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.4}{Results}{section.6}% 23
-\BOOKMARK [1][-]{section.7}{Implementation}{}% 24
-\BOOKMARK [2][-]{subsection.7.1}{Communication \(Abdul and/or Stefan\)}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.2}{Initialization procedure}{section.7}% 26
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Recording and filtering data}{subsection.7.2}% 27
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Analysing data}{subsection.7.2}% 28
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Selection of correct distance related to RSSI}{subsection.7.2}% 29
-\BOOKMARK [3][-]{subsubsection.7.2.4}{Estimation of initial position and orientation}{subsection.7.2}% 30
-\BOOKMARK [2][-]{subsection.7.3}{Test setup}{section.7}% 31
-\BOOKMARK [2][-]{subsection.7.4}{Results}{section.7}% 32
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 33
-\BOOKMARK [1][-]{section.9}{Future Work}{}% 34
-\BOOKMARK [2][-]{subsection.9.1}{Hardware}{section.9}% 35
-\BOOKMARK [2][-]{subsection.9.2}{Software}{section.9}% 36
-\BOOKMARK [1][-]{section.10}{References}{}% 37
-\BOOKMARK [1][-]{section.11}{Appendixes}{}% 38
-\BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 39
-\BOOKMARK [2][-]{subsection.11.2}{Appendix B: Receiving data from reader via Wifi \(C\043\)}{section.11}% 40
-\BOOKMARK [2][-]{subsection.11.3}{Appendix C: Initialization procedure \(C\043\)}{section.11}% 41
+\BOOKMARK [2][-]{subsection.2.3}{Motivation}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Selection Process}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Triangulation}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Pattern Recognition}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{RFIS}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Map-Based Localizationmbl}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Theoretical Background}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Radio Frequency Identification}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{RFID System}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Working Principle}{subsection.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Trilateration}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{...}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Hardware}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{RFID reader and antenna}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{RFID tag}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Wifi Module}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Hardware Setup}{section.5}% 21
+\BOOKMARK [1][-]{section.6}{Simulation}{}% 22
+\BOOKMARK [2][-]{subsection.6.1}{Emulator}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.2}{RSSI Measurements with real hardware}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.3}{Simulation with emulated data}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.4}{Results}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Implementation}{}% 27
+\BOOKMARK [2][-]{subsection.7.1}{Communication}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.2}{Initialization procedure}{section.7}% 29
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Recording and filtering data}{subsection.7.2}% 30
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Analysing data}{subsection.7.2}% 31
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Selection of correct distance related to RSSI}{subsection.7.2}% 32
+\BOOKMARK [3][-]{subsubsection.7.2.4}{Estimation of initial position and orientation}{subsection.7.2}% 33
+\BOOKMARK [2][-]{subsection.7.3}{Test setup}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.4}{Results}{section.7}% 35
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 36
+\BOOKMARK [1][-]{section.9}{Future Work}{}% 37
+\BOOKMARK [2][-]{subsection.9.1}{Hardware}{section.9}% 38
+\BOOKMARK [2][-]{subsection.9.2}{Software}{section.9}% 39
+\BOOKMARK [1][-]{section.10}{References}{}% 40
+\BOOKMARK [1][-]{section.11}{Appendixes}{}% 41
+\BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 42
+\BOOKMARK [2][-]{subsection.11.2}{Appendix B: Receiving data from reader via Wifi \(C\043\)}{section.11}% 43
+\BOOKMARK [2][-]{subsection.11.3}{Appendix C: Initialization procedure \(C\043\)}{section.11}% 44
+\BOOKMARK [2][-]{subsection.11.4}{Appendix D: WeMos D1 Mini \(Arduino\)}{section.11}% 45
+\BOOKMARK [2][-]{subsection.11.5}{Appendix E: Communication Outlay}{section.11}% 46

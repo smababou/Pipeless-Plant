@@ -1,4 +1,4 @@
-\section[Hardware]{Hardware\footnote{Stephan and Abdul}}\label{Sec_Har}
+\section[Hardware]{Hardware\footnote{Stephan}}\label{Sec_Har}
 
 \subsection[RFID reader and antenna]{RFID reader and antenna\footnote{Stephan}}
 The RFID reader from KTS Systeme (see fig.\ref{Reader}) is a HF Modul (frequency around 13.56 MHz). It contains a full-fledged microcontroller with a high-performance RFID transceiver IC. It has a 1.27 mm pitch pin-headers for THT mounting. The connection to an external antenna can be realized via a Single ended 50$\Omega$ connection or via Pin Header U.FL. jack, which was used in this project. \\
@@ -24,8 +24,77 @@ The antenna (fig. \ref{Antenna}) is a HF PCB Antenne (PCBA1356$\_$8) also from t
 \end{figure}\\
 The antenna and the reader are connected with a SMA to U.FL. adapter cable.\\
 
-\subsection{RFID tag ?}
-
-\subsection{Wifi modul (Abdul ?)}
-
-\subsection{HW setup?!? (Abdul ?)}\label{Sec_Har_Set}
+\subsection{RFID tag}
+The tag used in the prototype is of paper type (see fig.\ref{tag}) due to its added advantages as follows:
+\begin{itemize}
+	\item cheap, with the cost of 18 cents per tag
+	\item doesn't require power supply
+	\item compact
+	\item easier implementation in the time of plant extension.
+\end{itemize}
+\begin{figure}[!htbp]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 6cm]{Pictures/tag}%
+		\caption{Paper Tag}
+		\label{tag}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 6cm]{Pictures/tagsfloor}%
+		\caption{Tags on the plant floor}
+		\label{tags_floor}
+	\end{minipage}
+\end{figure}
+It's working principle is based on inductive coupling with an operating frequency of 125-135 kHz and a range of 10cm. The tags are fixed on the floor at known location as shown in fig.\ref{tags_floor}.
+\subsection{Wifi Module}
+The WiFi module from WEMOS Co.\cite{wemosd1mini} is a mini WiFi board with 4MB flash based on ESP-8266 which is a WiFi microchip with full IP/TCP stack and micro-controller (see fig.\ref{wemos})
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 5cm]{Pictures/wemos}
+	\caption{WeMos D1 Mini WiFi Module}
+	\label{wemos}
+\end{figure}
+\begin{itemize}
+	\item Features
+	\begin{itemize}
+		\item 32-bit RISC microprocessor core running at 80 MHz
+		\item External QSPI flash of 4 MB
+		\item IEEE 802.11 b/g/n Wi-Fi
+		\item 16 GPIO pins
+		\item UART on dedicated pins, plus a transmit-only UART can be enabled on GPIO2
+		\item 10-bit ADC and \(I^2C\) (software implementation)
+	\end{itemize}
+\end{itemize}
+\subsection{Hardware Setup}
+The in built Micro-controller on the robot receives the sensors data and sends commands to the actuators via serial communication using its first UART pins. (TX/RX) is the process of sending and propagating an analogue or digital information signal over a physical point-to-point wired connection. It uses its second UART pins to communicate with the built-in WiFi Module. The built-in WiFi Module sends the received sensors data to the Computer and sends the received commands from the computer to the robot micro-controller via Wireless communication (see fig.\ref{robo_schematic}).
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 13cm]{Pictures/roboschematic}
+	\caption{Robot Hardware Schematic}
+	\label{robo_schematic}
+\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 13cm]{Pictures/hwschematic}
+	\caption{Hardware Schematic}
+	\label{hw_schematic}
+\end{figure}
+Due to its less complexity, more flexibility and that the robot's in built micro-controller UART pins  are in use, a new communication setup were developed for the RFID reader to send the data from the robot to the computer in parallel to the robot hardware setup. As shown in fig.\ref{hw_schematic}) the RFID reader is connected directly to the built-in micro-controller of the WeMos WiFi Module sending it the tags IDs read via serial communication. The WeMos WiFi Module sends the received data through the network. The RFID reader is connected to the antenna which sends and receives the radio waves via SMA antenna cable.\\
+The RFID reader as well as WeMos Module are placed on the top of the robot while the Antenna is fixed to the robot base such that the radio waves would be in direct contact with the tags on the floor.
+\begin{figure}[!htbp]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 5cm]{Pictures/rfidonrobot}%
+		\caption{Top of the Robot}
+		\label{rfid_on_robot}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 5cm]{Pictures/antennaonrobot}%
+		\caption{Base of the Robot}
+		\label{antenna_on_robot}
+	\end{minipage}
+\end{figure}

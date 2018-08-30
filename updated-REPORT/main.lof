@@ -1,21 +1,44 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Passive triangulation setup with two cameras}}{7}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Active triangulation}}{8}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Implementation of passive triangulation}}{9}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Passive RFID System}}{12}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Active RFID System}}{12}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Overview Trilateration}}{16}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces RFID reader KTS Systeme RFIDM1356-001}}{18}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces RFID Antenna KTS Systeme PCBA1356$\_$8}}{19}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Relation between RSSI and distance antenna to tag}}{21}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Different possible positions for one antenna position}}{23}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Possible hazards/obstacles}}{24}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Flow Chart: Initial procedure 360$^\circ $ turn}}{25}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Test environment in GUI}}{25}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Flow Chart: Analizing measurment points}}{28}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Flow Chart: Selection of correct distance and most proper IDs}}{29}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Computing the center of the robot}}{31}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Orientation of robot in absolute angle}}{31}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces testing setup for initialization procedure}}{32}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Estimated position in x-direction}}{33}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Estimated position in y-direction}}{34}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Estimated orientation}}{34}{figure.21}
+\contentsline {figure}{\numberline {1}{\ignorespaces Existing setup}}{9}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Passive triangulation setup with two cameras}}{12}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Active triangulation}}{12}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Implementation of passive triangulation}}{13}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Ceiling with periodic patterns of lamps acting as landmarks. }}{15}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Belief grid of the robot in the plant}}{16}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Snapshot of the ceiling }}{16}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Passive RFID System}}{17}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Active RFID System}}{17}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Adaptive Monte Carlo localization}}{20}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Global Map}}{21}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Local Map}}{21}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Robot Orientation}}{21}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Correction with global map}}{21}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Reader Tag}}{23}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces RFID System}}{24}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Inductive Coupling}}{24}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Overview Trilateration}}{26}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces RFID reader KTS Systeme RFIDM1356-001}}{27}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces RFID Antenna KTS Systeme PCBA1356$\_$8}}{28}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Paper Tag}}{29}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Tags on the plant floor}}{29}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces WeMos D1 Mini WiFi Module}}{29}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Robot Hardware Schematic}}{30}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Hardware Schematic}}{30}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Top of the Robot}}{31}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Base of the Robot}}{31}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Relation between RSSI and distance antenna to tag}}{33}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces RFID-WeMos Module Communication}}{35}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces WeMos Module Network Communication}}{36}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Computer Network Communication}}{36}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Different possible positions for one antenna position}}{37}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Possible hazards/obstacles}}{38}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Flow Chart: Initial procedure 360$^\circ $ turn}}{39}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Test environment in GUI}}{39}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Flow Chart: Analizing measurment points}}{42}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Flow Chart: Selection of correct distance and most proper IDs}}{43}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Computing the center of the robot}}{45}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Orientation of robot in absolute angle}}{45}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces testing setup for initialization procedure}}{46}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Estimated position in x-direction}}{47}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Estimated position in y-direction}}{48}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Estimated orientation}}{48}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Communication Outlay}}{82}{figure.44}

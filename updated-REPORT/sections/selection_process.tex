@@ -1,6 +1,6 @@
-\section{Selection Process} 
+\section{Selection Process} \label{Sec_selectionp}
 
-About the 4 techniques..
+Since the main aim of the project is to improve the positioning system of the existing setup, several  other techniques were discussed, ending up in four methods namely ``\textit{triangulation}'',``\textit{pattern recognition}'',``\textit{radio frequency identification}'', ``\textit{map-based localization}''. The pros and cons were listed and the mentioned techniques were compared. The following section deals with a brief description of the above mentioned techniques.\\
 
 \subsection[Triangulation]{Triangulation\footnote{Stefan}} %stefan
 \subsubsection*{Summary}
@@ -66,9 +66,60 @@ Easy detection of laser points on camera image                                  
 \end{table}
 \pagebreak
 \subsection{Pattern Recognition} %medhini
-\subsubsection*{Summary} 
+\subsubsection*{Summary}
+In this type of localization, estimation of the robot is done in indoor environments using
+only on-board sensors, namely a web-cam and a compass. The ceiling of the plant is constructed with a pattern of static landmarks whose positions are known a priori. All landmarks are indistinguishable against each other and might additionally be distributed along the ceiling in a periodic pattern. The landmark attached to the ceiling can be lights, QR codes, sensors or other
+reference points. The ceiling is used, since it is immune to changes. A camera is installed on the robot, which takes snapshots of the ceiling. The robot pose relative to the landmark is  calculated with the help of the distance of the landmark to the center of the image and its angle relatively to the direction of the  robot motion. An IMU device is additionally used to give the absolute orientation of the robot in the plant. The Markov Localization (ML) algorithm is used to estimate
+the belief grid of the robot position inside the environment. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 10cm]{Pictures/PR.png}
+	\caption{Ceiling with periodic patterns of lamps acting as landmarks. }
+	\label{Pattern Recognition}
+\end{figure}
 \subsubsection*{Implementation}
+The goal is to compute the pose of a mobile robot inside an indoor environment using a camera and an IMU device. As mentioned, Markov Localization is used to create a belief grid of the robot in the plant environment. This is done with the help of the snapshots of the ceiling taken by the camera. As seen in the figure \ref{PatternRecognition1}, the blue and black areas have lower belief and green and yellow areas have higher belief. The obtained pattern is evaluated and based on the pattern, the position of the robot is estimated. Thus with the help of the camera and the IMU device, both the position and orientation is obtained. 
+
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 7cm]{Pictures/beliefgrid.png}
+		\caption{Belief grid of the robot in the plant}
+		\label{PatternRecognition1}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 8cm]{Pictures/snapshot.png}
+		\caption{Snapshot of the ceiling }
+		\label{PatternRecognition2}
+	\end{minipage}
+\end{figure}
+
 \subsubsection*{Pro and con}
+Based on the research,the advantages and disadvantages of Mobile Robot Localization based on Pattern Recognition are created.
+\begin{table}[!htbp]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		
+		\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                    & \multicolumn{1}{c|}{\textbf{Con}}   \\ \hline
+		\begin{tabular}[c]{@{}l@{}}The ceiling is usually immune to changes                                                                  
+			as a  \\ reference and implement  landmarks
+			on the ceiling itself  \end{tabular}                                                & \begin{tabular}[c]{@{}l@{}}Complex and many changes have to be \\ added to the plant   \end{tabular}                                    \\ \hline
+		
+		
+		No Fish-Eye-Lense problem                                                                                            & Cost intensive                                 \\ \hline
+		& Light dependent                            \\ \hline
+		
+	\end{tabular}
+	\caption{Pros and cons points of Mobile Robot Localization based on Pattern Recognition
+	}
+	\label{pro_con_Mobile Robot Localization based on Pattern Recognition
+	}
+\end{table}
 \pagebreak
 
 \subsection[RFIS]{RFID\footnote{Stephan}} % stephan around 2 pages
@@ -137,10 +188,85 @@ Prototype cheap (1 reader + passive tags)                                       
 \label{Pro and Cons of the passive RFID system}
 \end{table}
 \pagebreak
-\subsection{Map-Based Localization} %abdul
-\subsubsection*{Summary} 
+\subsection{Map-Based Localization\cite{mbl}} %abdul
+\subsubsection*{Summary}
+AMCL (Adaptive Monte Carlo Localization) is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization\cite{acml1}\cite{acml2} approach, which uses a particle filter to track the pose of a robot against a known map.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width = 15cm]{Pictures/amcl}
+	\caption{Adaptive Monte Carlo localization}
+	\label{amcl}
+\end{figure}\\
+amcl takes in a laser-based map, laser scans, and Odom scan, and outputs pose estimates (see fig.\ref{amcl}). On startup, amcl initializes its particle filter according to the parameters provided. Note that, because of the defaults, if no parameters are set, the initial filter state will be a moderately sized particle cloud centered about (0,0,0).
+\\
 \subsubsection*{Implementation}
+To implement such a technique a global and local map should be created as shown in fig. \ref{global_map} and fig. \ref{local_map}.
+\begin{figure}[!htbp]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 6cm]{Pictures/global}%
+		\caption{Global Map}
+		\label{global_map}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width = 6cm]{Pictures/local}%
+		\caption{Local Map}
+		\label{local_map}
+	\end{minipage}
+\end{figure}
+\begin{itemize}
+\item SLAM (Simultaneous Localization and Mapping) is a technique used in mobile robotics in which a robot builds a map of an unknown environment, keeping at the same time track of its localization in this environment.\\
+\end{itemize}
+\begin{itemize}
+\item Adaptive Monte Carlo Localization
+\\
+Given a map of the environment, the goal of the algorithm is for the robot to determine its pose within the environment.
+\\
+At every time \(t\) the algorithm takes as input the previous belief \(X_{t-1}=\big\{x_{t-1}^1, x_{t-1}^2, ...., x_{t-1}^M\big\} \),  an actuation command \(u_t\), and data received from sensors \(z_t\); and the algorithm outputs the new belief \(X_t\).
+\end{itemize}
+\begin{itemize}
+	\item Orientation Correction
+	\begin{figure}[!htbp]
+		\centering
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width = 6cm]{Pictures/robotorientation}%
+			\caption{Robot Orientation}
+			\label{robot_orientation}
+		\end{minipage}%
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width = 6cm]{Pictures/correctionwithglobalmap}%
+			\caption{Correction with global map}
+			\label{correction_with_globalmap}
+		\end{minipage}
+	\end{figure}\\
+ 	Initially the robot assumes a position as shown in fig.\ref{robot_orientation}, and as it moves it begins to re-correct it's estimated orientation using the static obstacle with the global map as a reference as shown in fig. \ref{correction_with_globalmap}. 
+\end{itemize}
 \subsubsection*{Pro and con}
-..
-
-
+Based on the research made, two tables with advantages and disadvantages of the two Map-Based Localization systems are created.\\ 
+\begin{table}[!htbp]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Using Ultrasonic Sensor}}                                                                                                                                                                                \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
+		Cheap \euro3/each                                                                                                & Scan angle 30\degree                                                            \\ \hline
+		Easy hardware Installation                                                                                                   & Similar landmarks cause localization error 
+		\\ \hline
+		\begin{tabular}[c]{@{}l@{}}Faster feedback than the previous camera\\ based localization system\end{tabular}
+		& High computational effort for large plant     
+		\\ \hline
+		Scan range 4.5 meters
+		& \begin{tabular}[c]{@{}l@{}}Robots should start at every launch from static\\ home position\end{tabular}
+		\\ \hline
+		\begin{tabular}[c]{@{}l@{}}Different map based localization\\ algorithms are available\end{tabular}
+		& 
+			                                                                                  \\ \hline
+	\end{tabular}
+	\caption{Pro and cons of Localization using Ultrasonic Sensor}
+	\label{my-label}
+\end{table}
+\pagebreak

@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{mbl}
+Yihuan~Zhang Liang~Wang and Jun Wang.
+\newblock Map-based localization method for autonomous vehicles using 3d-lidar.
+\newblock {\em IFAC (International Federation of Automatic Control) Hosting by
+  Elsevie}, 50, 2017.
 
 \bibitem{Prinzip3DVideometrie.}
 {Dr.-Ing. habil. Dipl.-Ing. Dipl.-Ing. Joerg Wollnack}.
@@ -14,6 +20,28 @@
 Yuntian~Brian Bai, Suqin Wu, Hongren Wu, and Kefei Zhang.
 \newblock Overview of rfid-based indoor positioning technology, 2012.
 
+\bibitem{acml1}
+Jun~Liu Baoxian~Zhang and Haoyao Chen.
+\newblock Amcl based map fusion for multi-robot slam with heterogenous.
+\newblock {\em IEEE International Conference on Information and Automation
+  (ICIA)}, 6, 2013.
+
+\bibitem{acml2}
+ROS.
+\newblock Amcl, 2018.
+
+\bibitem{rfid.application}
+Hanifa~SHAH Kamran~AHSAN and Paul KINGSTON.
+\newblock Rfid applications: An introductory and exploratory study.
+\newblock {\em International Journal of Computer Science Issues}, 7(3), 2010.
+
+\bibitem{rfid.application2}
+Vinita~Sharma Ms.Neha~Kamda and Sudhanshu Nayak.
+\newblock A survey paper on rfid technology, its applications and
+  classification of security/privacy attacks and solutions.
+\newblock {\em IRACST - International Journal of Computer Science and
+  Information Technology \& Security}, 6(4), 2016.
+
 \bibitem{Cotera.2016}
 Pablo Cotera, Miguel Velazquez, David Cruz, Luis Medina, and Manuel Bandala.
 \newblock Indoor robot positioning using an enhanced trilateration algorithm.
@@ -23,6 +51,10 @@ Pablo Cotera, Miguel Velazquez, David Cruz, Luis Medina, and Manuel Bandala.
 \bibitem{KTSSysteme.2017}
 {KTS Systeme}.
 \newblock Rfid plug module rfidm1356, 2017.
+
+\bibitem{wemosd1mini}
+WEMOS.
+\newblock Wemos d1 mini, 2018.
 
 \bibitem{ChristofRohrigDanielHessandFrankKunemund.}
 {Christof Rohrig, Daniel Hess, and Frank Kunemund}.
