@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Selection Process}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Triangulation}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Pattern Recognition}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}RFIS}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}RFID}{17}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Map-Based Localization\cite {mbl}}{20}{subsection.3.4}
 \contentsline {section}{\numberline {4}Theoretical Background}{23}{section.4}
 \contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{23}{subsection.4.1}
@@ -42,5 +42,11 @@
 \contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{52}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{56}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{60}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Appendix D: WeMos D1 Mini (Arduino)}{78}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Appendix E: Communication Outlay}{82}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization procedure 2(C\#)}{60}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Appendix E: Initialization procedure 3(C\#)}{69}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Appendix F: Initialization procedure 4(C\#)}{70}{subsection.11.6}
+\contentsline {subsection}{\numberline {11.7}Appendix G: Initialization procedure 5(C\#)}{71}{subsection.11.7}
+\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 6(C\#)}{72}{subsection.11.8}
+\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 7(C\#)}{78}{subsection.11.9}
+\contentsline {subsection}{\numberline {11.10}Appendix J: WeMos D1 Mini (Arduino)}{80}{subsection.11.10}
+\contentsline {subsection}{\numberline {11.11}Appendix K: Communication Outlay}{84}{subsection.11.11}

@@ -6,7 +6,7 @@
 \BOOKMARK [1][-]{section.3}{Selection Process}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Triangulation}{section.3}% 7
 \BOOKMARK [2][-]{subsection.3.2}{Pattern Recognition}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.3}{RFIS}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{RFID}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.4}{Map-Based Localizationmbl}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Theoretical Background}{}% 11
 \BOOKMARK [2][-]{subsection.4.1}{Radio Frequency Identification}{section.4}% 12
@@ -42,5 +42,11 @@
 \BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 42
 \BOOKMARK [2][-]{subsection.11.2}{Appendix B: Receiving data from reader via Wifi \(C\043\)}{section.11}% 43
 \BOOKMARK [2][-]{subsection.11.3}{Appendix C: Initialization procedure \(C\043\)}{section.11}% 44
-\BOOKMARK [2][-]{subsection.11.4}{Appendix D: WeMos D1 Mini \(Arduino\)}{section.11}% 45
-\BOOKMARK [2][-]{subsection.11.5}{Appendix E: Communication Outlay}{section.11}% 46
+\BOOKMARK [2][-]{subsection.11.4}{Appendix D: Initialization procedure 2\(C\043\)}{section.11}% 45
+\BOOKMARK [2][-]{subsection.11.5}{Appendix E: Initialization procedure 3\(C\043\)}{section.11}% 46
+\BOOKMARK [2][-]{subsection.11.6}{Appendix F: Initialization procedure 4\(C\043\)}{section.11}% 47
+\BOOKMARK [2][-]{subsection.11.7}{Appendix G: Initialization procedure 5\(C\043\)}{section.11}% 48
+\BOOKMARK [2][-]{subsection.11.8}{Appendix H: Initialization procedure 6\(C\043\)}{section.11}% 49
+\BOOKMARK [2][-]{subsection.11.9}{Appendix I: Initialization procedure 7\(C\043\)}{section.11}% 50
+\BOOKMARK [2][-]{subsection.11.10}{Appendix J: WeMos D1 Mini \(Arduino\)}{section.11}% 51
+\BOOKMARK [2][-]{subsection.11.11}{Appendix K: Communication Outlay}{section.11}% 52
