@@ -42,11 +42,14 @@
 \BOOKMARK [2][-]{subsection.11.1}{Appendix A: Emulator RFID data \(Matlab\)}{section.11}% 42
 \BOOKMARK [2][-]{subsection.11.2}{Appendix B: Receiving data from reader via Wifi \(C\043\)}{section.11}% 43
 \BOOKMARK [2][-]{subsection.11.3}{Appendix C: Initialization procedure \(C\043\)}{section.11}% 44
-\BOOKMARK [2][-]{subsection.11.4}{Appendix D: Initialization procedure 2\(C\043\)}{section.11}% 45
-\BOOKMARK [2][-]{subsection.11.5}{Appendix E: Initialization procedure 3\(C\043\)}{section.11}% 46
-\BOOKMARK [2][-]{subsection.11.6}{Appendix F: Initialization procedure 4\(C\043\)}{section.11}% 47
-\BOOKMARK [2][-]{subsection.11.7}{Appendix G: Initialization procedure 5\(C\043\)}{section.11}% 48
-\BOOKMARK [2][-]{subsection.11.8}{Appendix H: Initialization procedure 6\(C\043\)}{section.11}% 49
-\BOOKMARK [2][-]{subsection.11.9}{Appendix I: Initialization procedure 7\(C\043\)}{section.11}% 50
-\BOOKMARK [2][-]{subsection.11.10}{Appendix J: WeMos D1 Mini \(Arduino\)}{section.11}% 51
-\BOOKMARK [2][-]{subsection.11.11}{Appendix K: Communication Outlay}{section.11}% 52
+\BOOKMARK [2][-]{subsection.11.4}{Appendix D: Initialization turn and recording Data\(C\043\)}{section.11}% 45
+\BOOKMARK [2][-]{subsection.11.5}{Appendix E: Filling Array\(C\043\)}{section.11}% 46
+\BOOKMARK [2][-]{subsection.11.6}{Appendix F: Checking for solutions in array\(C\043\)}{section.11}% 47
+\BOOKMARK [2][-]{subsection.11.7}{Appendix G: Position and orientation estimation\(C\043\)}{section.11}% 48
+\BOOKMARK [2][-]{subsection.11.8}{Appendix H: Initialization procedure 3\(C\043\)}{section.11}% 49
+\BOOKMARK [2][-]{subsection.11.9}{Appendix I: Initialization procedure 4\(C\043\)}{section.11}% 50
+\BOOKMARK [2][-]{subsection.11.10}{Appendix J: Initialization procedure 5\(C\043\)}{section.11}% 51
+\BOOKMARK [2][-]{subsection.11.11}{Appendix K: Initialization procedure 6\(C\043\)}{section.11}% 52
+\BOOKMARK [2][-]{subsection.11.12}{Appendix L: Initialization procedure 7\(C\043\)}{section.11}% 53
+\BOOKMARK [2][-]{subsection.11.13}{Appendix M: WeMos D1 Mini \(Arduino\)}{section.11}% 54
+\BOOKMARK [2][-]{subsection.11.14}{Appendix N: Communication Outlay}{section.11}% 55

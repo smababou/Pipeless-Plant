@@ -42,11 +42,14 @@
 \contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{52}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{56}{subsection.11.2}
 \contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{60}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization procedure 2(C\#)}{60}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Appendix E: Initialization procedure 3(C\#)}{69}{subsection.11.5}
-\contentsline {subsection}{\numberline {11.6}Appendix F: Initialization procedure 4(C\#)}{70}{subsection.11.6}
-\contentsline {subsection}{\numberline {11.7}Appendix G: Initialization procedure 5(C\#)}{71}{subsection.11.7}
-\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 6(C\#)}{72}{subsection.11.8}
-\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 7(C\#)}{78}{subsection.11.9}
-\contentsline {subsection}{\numberline {11.10}Appendix J: WeMos D1 Mini (Arduino)}{80}{subsection.11.10}
-\contentsline {subsection}{\numberline {11.11}Appendix K: Communication Outlay}{84}{subsection.11.11}
+\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization turn and recording Data(C\#)}{60}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Appendix E: Filling Array(C\#)}{62}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Appendix F: Checking for solutions in array(C\#)}{63}{subsection.11.6}
+\contentsline {subsection}{\numberline {11.7}Appendix G: Position and orientation estimation(C\#)}{66}{subsection.11.7}
+\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 3(C\#)}{69}{subsection.11.8}
+\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 4(C\#)}{71}{subsection.11.9}
+\contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{71}{subsection.11.10}
+\contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{72}{subsection.11.11}
+\contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{78}{subsection.11.12}
+\contentsline {subsection}{\numberline {11.13}Appendix M: WeMos D1 Mini (Arduino)}{80}{subsection.11.13}
+\contentsline {subsection}{\numberline {11.14}Appendix N: Communication Outlay}{84}{subsection.11.14}
