@@ -54,7 +54,7 @@
             int counter;    //Counter for the row in the Init_Array
             Console.WriteLine("");
 
-            for (int j = 0; j < 8; j++)
+            for (int j = 0; j < 8; j++)//converting UID to the specific decimal numbers in lookup table
             {
                 counter = 0;
                 for (int i = 0; i < messungen; i++)
