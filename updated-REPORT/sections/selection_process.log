@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  16 SEP 2018 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  17 SEP 2018 11:56
 entering extended mode
 **./selection_process.tex
 (selection_process.tex
@@ -1974,7 +1974,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.16 ...gulation} \cite{MultiObjectTriangulation.}
-                                                  .
+                                                  \cite{laser_triangulation}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1984,6 +1984,24 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Citation `MultiObjectTriangulation.' on page  undefined on input
  line 16.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{laser_triangulation}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.16 ...tTriangulation.}\cite{laser_triangulation}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `laser_triangulation' on page  undefined on input line 
+16.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -2064,7 +2082,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.20 \caption
-             {Active triangulation [3]}
+             {Active triangulation}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2087,9 +2105,6 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no ] in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
 
@@ -4551,8 +4566,8 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 5--72
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 5--72
-[]
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 5--72
+[][]
  []
 
 

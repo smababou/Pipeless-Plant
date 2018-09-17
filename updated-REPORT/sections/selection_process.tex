@@ -13,11 +13,11 @@ With respect to the system setup used in the 18th century nowadays two cameras a
 \label{Triangulation}
 \end{figure}\\
 To solve the problem of position estimation, it is necessary to know the parameters of the left and the right camera visualized in the figure. In theory the triangulation is trivial, since each and every point of the images of the respective cameras maps to a line in 3D space. If a pair of corresponding points, in the case of the pipesless plant it would be an AGV is found, the projection of a point x in 3D space can be computed. 
-Active triangulation in comparison to passive triangulation needs one camera and at least one source of structured light (e.g. Laser). The geometrical location and orientation of the camera and light source in space need to be known. Two possible setups with either a laser point or a stripe as structured light are shown in fig. \ref{ative_Triangulation} \cite{MultiObjectTriangulation.}.
+Active triangulation in comparison to passive triangulation needs one camera and at least one source of structured light (e.g. Laser). The geometrical location and orientation of the camera and light source in space need to be known. Two possible setups with either a laser point or a stripe as structured light are shown in fig. \ref{ative_Triangulation} \cite{MultiObjectTriangulation.}\cite{laser_triangulation}.
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/acticetriangulation}
-\caption{Active triangulation [3]}
+\caption{Active triangulation}
 \label{ative_Triangulation}
 \end{figure}\\
 To solve the active triangulation problem, the structured light has to point an object which location is desired to estimate. If this point is found on the 2D image of the camera, a triangulation with basic trigonometrical formulas which are using the properties and parameters of the camera and light source can be performed and the position of the AGV can be estimated. 

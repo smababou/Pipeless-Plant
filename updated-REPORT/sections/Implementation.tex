@@ -40,7 +40,7 @@ According to the fact, that the position and orientation of a single AGV is unkn
 \end{figure}\\
 With respect to these potential hazards collisions during the initialization procedure have to be avoided. This is realized by taking advantage out of the AGVs ability to turn around its z axis without a change of the AGVs center point in x and y direction. This ability of the AGV leads the way that each and every robot performs an initialization turn of 360$^\circ$ in which measurements are taken every 45$^\circ$ to estimate the specific positions and orientations of the AGVs. Furthermore, the decision process of the antenna position under the robot is dominated by the fact that the position of the center point does not change during a turn around its z axis. 
 During the 360$^\circ$ turn the intervals in which the measurments have to be taken need to be known by the controller. The determination of these measurement points can be computed in two different ways. On the one hand the encoders of the AGV-wheels can be used to estimate the performed rotation. On the other hand, the time of a complete turn can be measured and used as a parameter in the procedure. In terms of simplicity the second option is used in the initialization procedure.  
-Fig. \ref{SFC_Init_Procedure} illustrates a sequential flow chart which describes the movement and data processing during the initialization procedure.\\ 
+Fig. \ref{SFC_Init_Procedure} illustrates a sequential flow chart which describes the movement and data processing during the initialization procedure. The part of the code which is explained and visualized by Fig. \ref{SFC_Init_Procedure} is found in section \ref{Sec_AppD} \\ 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 4cm]{Pictures/SFC_Init_Procedure}
@@ -65,7 +65,7 @@ The number of columns is derived by the fact that at each and every measurement 
 Columns = max. no. of  tags * 2 = 7 * 2 = 14\\
 \end{align}
 Once the received data is saved in its corresponding row, the AGV turns around 45\textdegree  to place the antenna at the next measuring point. An AGV turn is realized by setting the velocity of the right and left wheel in different directions. During the turning sections the velocity is set to 100 mm/s or rather -100 mm/s. 
-This procedure of reading information, writing information in the initialization array and turning 45$^\circ$  to the next measuring point is repeating itself until a 360$^\circ$  turn is performed. After a successful initialization turn the corresponding array of measurement information can look like the example in table \ref{Init_Array}.
+This procedure of reading information, writing information in the initialization array and turning 45$^\circ$  to the next measuring point is repeating itself until a 360$^\circ$  turn is performed. After a successful initialization turn the corresponding array of measurement information can look like the example in table \ref{Init_Array}. The code which realizes the filling of the array can be seen in section \ref{Sec_AppE}
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -85,7 +85,7 @@ This procedure of reading information, writing information in the initialization
 
 \subsubsection{Recording and filtering data}
 To read the ID and RSSI of all the TAG laying in the reading range the RFID-reader is set to its Automatic mode and its Anticollision is switched on. In this mode packages of strings with a length of 35 characters are received by the plans computer. Even though these 36 character strings contain all the information of the TAG which is needed some effort has to be taken to seperate the useful parts which are processed in the localization algorithm.\\
-With exception of the information each string contains, the structure itself is always the same. In the first five characters the substring ``\textit{SCAN:}'' is detected and deleted for the further process. The first important character is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With the help of this sixth slot it is distinglished wheather the current reading is complete or not. In order to guarantee the correctness of the received information the measurments are filtered by the ``\textit{+}'' and the measurments in which a ``\textit{-}'' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the ID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 characters defines the unique identification of the specific TAG. As a last useless string, which has to be cut out, with the structure ``\textit{.RSSI=}'' is found directly after the ID. As a result the 16 character hexadecimal ID and its respective RSSI are seperated from the received string. Since the ordered tag IDs differ each other just in the last three numbers these numbers are transformed in a decimal number before UID and RSSI are used for further computations.\\
+With exception of the information each string contains, the structure itself is always the same. In the first five characters the substring ``\textit{SCAN:}'' is detected and deleted for the further process. The first important character is found in the sixth slot of the string. Here either a ``\textit{+}'' or a ``\textit{-}'' is written. With the help of this sixth slot it is distinglished wheather the current reading is complete or not. In order to guarantee the correctness of the received information the measurments are filtered by the ``\textit{+}'' and the measurments in which a ``\textit{-}'' is included are ignored in the further processes. After the indicator for complete and in complete readings a introduction to the ID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 characters defines the unique identification of the specific TAG. As a last useless string, which has to be cut out, with the structure ``\textit{.RSSI=}'' is found directly after the ID. As a result the 16 character hexadecimal ID and its respective RSSI are seperated from the received string. Since the ordered tag IDs differ each other just in the last three numbers these numbers are transformed in a decimal number before UID and RSSI are used for further computations. The code which realizes the recording and filtering of the data can be seen in section \ref{Sec_AppB}\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
@@ -101,12 +101,13 @@ E00401503A5BD691 0/0                    &                                       
 \label{string_prep}
 \end{table}
 
-\subsubsection[Analysing data]{Analysing data\footnote{Stefan}}
+\subsubsection{Analysing data}
 In the next step of the algorithm the previous described filled array is analyzed. To estimate the position and orientation of the AGV the array has to include two valid sets of each two valid measuring points.  During this analyzation the single measurement point-sets are validated in terms of following restrictions:\\\\
 1.: At the two valid measurement point each contains at least three tags\\
 2.: The other measurement point in one set needs to have a distance of 180$^\circ$  to the first.
 \pagebreak\\
 In terms to get the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.\\
+The code in which the analization is realized can be seen in section \ref{Sec_AppF}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 10cm]{Pictures/AnalyzeArray}
