@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: sections/abstract.aux
 A level-1 auxiliary file: sections/Introduction.aux
@@ -19,47 +17,7 @@ Warning--empty journal in Prinzip3DVideometrie.
 Warning--empty year in Prinzip3DVideometrie.
 Warning--empty journal in MultiObjectTriangulation.
 Warning--empty year in MultiObjectTriangulation.
+Warning--empty journal in laser_triangulation
 Warning--empty journal in ChristofRohrigDanielHessandFrankKunemund.
 Warning--empty year in ChristofRohrigDanielHessandFrankKunemund.
-You've used 12 entries,
-            1791 wiz_defined-function locations,
-            517 strings with 5759 characters,
-and the built_in function-call counts, 1754 in all, are:
-= -- 125
-> -- 87
-< -- 0
-+ -- 35
-- -- 23
-* -- 82
-:= -- 304
-add.period$ -- 29
-call.type$ -- 12
-change.case$ -- 12
-chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 85
-empty$ -- 193
-format.name$ -- 23
-if$ -- 378
-int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 8
-newline$ -- 56
-num.names$ -- 12
-pop$ -- 51
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 47
-stack$ -- 0
-substring$ -- 9
-swap$ -- 9
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 6
-while$ -- 13
-width$ -- 14
-write$ -- 110
-(There were 6 warnings)
+(There were 7 warnings)

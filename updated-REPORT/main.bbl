@@ -16,6 +16,12 @@ Yihuan~Zhang Liang~Wang and Jun Wang.
 \newblock A unified approach for multi-object triangulation, tracking and
   camera calibration.
 
+\bibitem{laser_triangulation}
+Matteo Munaro, Edmond Wai Yan~So, Stefano Tonello, and Emanuele Menegatti.
+\newblock Efficient completeness inspection using real-time 3d color
+  reconstruction with a dual-laser triangulation system.
+\newblock 48:201--225, 09 2015.
+
 \bibitem{Bai_overviewof}
 Yuntian~Brian Bai, Suqin Wu, Hongren Wu, and Kefei Zhang.
 \newblock Overview of rfid-based indoor positioning technology, 2012.

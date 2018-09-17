@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  16 SEP 2018 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.22)  17 SEP 2018 11:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -526,26 +526,7 @@ LaTeX Warning: Label `my-label' multiply defined.
 ) (sections/TheoreticalBackground.aux) (sections/Hardware.aux)
 (sections/Simulation.aux) (sections/Implementation.aux)
 (sections/Conclusion.aux) (sections/futurework.aux) (sections/References.aux)
-(sections/Appendixes.aux
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-
-LaTeX Warning: Label `Sec_AppC' multiply defined.
-
-))
+(sections/Appendixes.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -639,7 +620,7 @@ Package epstopdf Info: Source file: <Astlogo.eps>
 f Astlogo.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<Astlogo-eps-converted-to.pdf, id=211, 574.145pt x 157.58875pt>
+<Astlogo-eps-converted-to.pdf, id=223, 574.145pt x 157.58875pt>
 File: Astlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use Astlogo-eps-converted-to.pdf>
 Package pdftex.def Info: Astlogo-eps-converted-to.pdf  used on input line 95.
@@ -715,6 +696,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
  []
 
 
+LaTeX Warning: Reference `Sec_Conc' on page 8 undefined on input line 10.
+
+
 LaTeX Warning: Reference `Sec_fut' on page 8 undefined on input line 10.
 
 ) [8
@@ -723,7 +707,7 @@ LaTeX Warning: Reference `Sec_fut' on page 8 undefined on input line 10.
 \openout2 = `sections/Pipelessplant.aux'.
 
  (sections/Pipelessplant.tex
-<Pictures/Plant.png, id=433, 675.52374pt x 453.695pt>
+<Pictures/Plant.png, id=447, 675.52374pt x 453.695pt>
 File: Pictures/Plant.png Graphic file (type png)
 <use Pictures/Plant.png>
 Package pdftex.def Info: Pictures/Plant.png  used on input line 12.
@@ -745,12 +729,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Pictures/Triangulation.png, id=446, 471.26062pt x 252.945pt>
+<Pictures/Triangulation.png, id=460, 471.26062pt x 252.945pt>
 File: Pictures/Triangulation.png Graphic file (type png)
 <use Pictures/Triangulation.png>
 Package pdftex.def Info: Pictures/Triangulation.png  used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 244.35284pt.
-<Pictures/acticetriangulation.png, id=449, 490.83376pt x 194.22563pt>
+
+LaTeX Warning: Citation `laser_triangulation' on page 11 undefined on input lin
+e 16.
+
+<Pictures/acticetriangulation.png, id=463, 490.83376pt x 194.22563pt>
 File: Pictures/acticetriangulation.png Graphic file (type png)
 <use Pictures/acticetriangulation.png>
 Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 1
@@ -760,7 +748,7 @@ Package pdftex.def Info: Pictures/acticetriangulation.png  used on input line 1
 
 
  <./Pictures/Triangulation.png>] [12 <./Pictures/acticetriangulation.png>]
-<Pictures/triangulationimplementatio.png, id=461, 936.49875pt x 588.69937pt>
+<Pictures/triangulationimplementatio.png, id=475, 936.49875pt x 588.69937pt>
 File: Pictures/triangulationimplementatio.png Graphic file (type png)
 <use Pictures/triangulationimplementatio.png>
 Package pdftex.def Info: Pictures/triangulationimplementatio.png  used on input
@@ -777,18 +765,18 @@ Overfull \hbox (57.62831pt too wide) in paragraph at lines 52--62
  []
 
 [13 <./Pictures/triangulationimplementatio.png>] [14]
-<Pictures/PR.png, id=472, 267.8808pt x 249.5724pt>
+<Pictures/PR.png, id=486, 267.8808pt x 249.5724pt>
 File: Pictures/PR.png Graphic file (type png)
 <use Pictures/PR.png>
 Package pdftex.def Info: Pictures/PR.png  used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 265.08623pt.
  [15 <./Pictures/PR.png>]
-<Pictures/beliefgrid.png, id=479, 260.975pt x 210.7875pt>
+<Pictures/beliefgrid.png, id=493, 260.975pt x 210.7875pt>
 File: Pictures/beliefgrid.png Graphic file (type png)
 <use Pictures/beliefgrid.png>
 Package pdftex.def Info: Pictures/beliefgrid.png  used on input line 87.
 (pdftex.def)             Requested size: 199.16928pt x 160.86916pt.
-<Pictures/snapshot.png, id=480, 276.03125pt x 203.76125pt>
+<Pictures/snapshot.png, id=494, 276.03125pt x 203.76125pt>
 File: Pictures/snapshot.png Graphic file (type png)
 <use Pictures/snapshot.png>
 Package pdftex.def Info: Pictures/snapshot.png  used on input line 93.
@@ -801,17 +789,17 @@ Overfull \hbox (21.63017pt too wide) in paragraph at lines 103--117
 [16 <./Pictures/beliefgrid.png> <./Pictures/snapshot.png>]
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 123.
-<Pictures/RFID_Passive.png, id=490, 482.55281pt x 289.83281pt>
+<Pictures/RFID_Passive.png, id=504, 482.55281pt x 289.83281pt>
 File: Pictures/RFID_Passive.png Graphic file (type png)
 <use Pictures/RFID_Passive.png>
 Package pdftex.def Info: Pictures/RFID_Passive.png  used on input line 131.
 (pdftex.def)             Requested size: 199.16928pt x 119.62384pt.
-<Pictures/RFID_Active.png, id=491, 487.8225pt x 293.59688pt>
+<Pictures/RFID_Active.png, id=505, 487.8225pt x 293.59688pt>
 File: Pictures/RFID_Active.png Graphic file (type png)
 <use Pictures/RFID_Active.png>
 Package pdftex.def Info: Pictures/RFID_Active.png  used on input line 137.
 (pdftex.def)             Requested size: 199.16928pt x 119.86926pt.
-<Pictures/RFID_Systems.png, id=494, 390.70969pt x 266.49562pt>
+<Pictures/RFID_Systems.png, id=508, 390.70969pt x 266.49562pt>
 File: Pictures/RFID_Systems.png Graphic file (type png)
 <use Pictures/RFID_Systems.png>
 Package pdftex.def Info: Pictures/RFID_Systems.png  used on input line 147.
@@ -827,7 +815,7 @@ Overfull \hbox (15.4556pt too wide) in paragraph at lines 160--170
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 189.
 
-<Pictures/amcl.png, id=517, 674.52pt x 406.1574pt>
+<Pictures/amcl.png, id=531, 674.52pt x 406.1574pt>
 File: Pictures/amcl.png Graphic file (type png)
 <use Pictures/amcl.png>
 Package pdftex.def Info: Pictures/amcl.png  used on input line 194.
@@ -837,12 +825,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--200
 
  []
 
-<Pictures/global.png, id=521, 318.9516pt x 296.7888pt>
+<Pictures/global.png, id=535, 318.9516pt x 296.7888pt>
 File: Pictures/global.png Graphic file (type png)
 <use Pictures/global.png>
 Package pdftex.def Info: Pictures/global.png  used on input line 206.
 (pdftex.def)             Requested size: 170.71652pt x 158.85968pt.
-<Pictures/local.png, id=522, 309.7974pt x 296.7888pt>
+<Pictures/local.png, id=536, 309.7974pt x 296.7888pt>
 File: Pictures/local.png Graphic file (type png)
 <use Pictures/local.png>
 Package pdftex.def Info: Pictures/local.png  used on input line 212.
@@ -860,13 +848,13 @@ OT1/cmr/m/n/10.95 =
  []
 
 [20 <./Pictures/amcl.png>]
-<Pictures/robotorientation.png, id=530, 313.17pt x 291.0072pt>
+<Pictures/robotorientation.png, id=544, 313.17pt x 291.0072pt>
 File: Pictures/robotorientation.png Graphic file (type png)
 <use Pictures/robotorientation.png>
 Package pdftex.def Info: Pictures/robotorientation.png  used on input line 233.
 
 (pdftex.def)             Requested size: 170.71652pt x 158.63795pt.
-<Pictures/correctionwithglobalmap.png, id=531, 323.7696pt x 313.17pt>
+<Pictures/correctionwithglobalmap.png, id=545, 323.7696pt x 313.17pt>
 File: Pictures/correctionwithglobalmap.png Graphic file (type png)
 <use Pictures/correctionwithglobalmap.png>
 Package pdftex.def Info: Pictures/correctionwithglobalmap.png  used on input li
@@ -878,12 +866,12 @@ on.png> <./Pictures/correctionwithglobalmap.png>]
 \openout2 = `sections/TheoreticalBackground.aux'.
 
  (sections/TheoreticalBackground.tex
-<Pictures/readertag.png, id=553, 372.1905pt x 127.4361pt>
+<Pictures/readertag.png, id=567, 372.1905pt x 127.4361pt>
 File: Pictures/readertag.png Graphic file (type png)
 <use Pictures/readertag.png>
 Package pdftex.def Info: Pictures/readertag.png  used on input line 7.
 (pdftex.def)             Requested size: 369.88582pt x 126.6463pt.
-<Pictures/rfidsystem.png, id=555, 516.4896pt x 314.3745pt>
+<Pictures/rfidsystem.png, id=569, 516.4896pt x 314.3745pt>
 File: Pictures/rfidsystem.png Graphic file (type png)
 <use Pictures/rfidsystem.png>
 Package pdftex.def Info: Pictures/rfidsystem.png  used on input line 20.
@@ -902,7 +890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
 
  <./Pictures/readertag.png>]
-<Pictures/rfidtotag.png, id=563, 705.5961pt x 389.0535pt>
+<Pictures/rfidtotag.png, id=577, 705.5961pt x 389.0535pt>
 File: Pictures/rfidtotag.png Graphic file (type png)
 <use Pictures/rfidtotag.png>
 Package pdftex.def Info: Pictures/rfidtotag.png  used on input line 40.
@@ -913,7 +901,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
  []
 
 [24 <./Pictures/rfidsystem.png> <./Pictures/rfidtotag.png>]
-<Pictures/Trilateration_1.png, id=574, 383.18156pt x 235.63031pt>
+<Pictures/Trilateration_1.png, id=588, 383.18156pt x 235.63031pt>
 File: Pictures/Trilateration_1.png Graphic file (type png)
 <use Pictures/Trilateration_1.png>
 Package pdftex.def Info: Pictures/Trilateration_1.png  used on input line 55.
@@ -929,12 +917,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--80
  (sections/Hardware.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <7> on input line 1.
-<Pictures/Reader.png, id=602, 586.44093pt x 436.63126pt>
+<Pictures/Reader.png, id=616, 586.44093pt x 436.63126pt>
 File: Pictures/Reader.png Graphic file (type png)
 <use Pictures/Reader.png>
 Package pdftex.def Info: Pictures/Reader.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 169.47269pt.
-<Pictures/Antenna.png, id=605, 289.08pt x 246.1697pt>
+<Pictures/Antenna.png, id=619, 289.08pt x 246.1697pt>
 File: Pictures/Antenna.png Graphic file (type png)
 <use Pictures/Antenna.png>
 Package pdftex.def Info: Pictures/Antenna.png  used on input line 21.
@@ -959,38 +947,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--26
 
 
  <./Pictures/Reader.png>]
-<Pictures/tag.png, id=614, 435.12563pt x 327.47343pt>
+<Pictures/tag.png, id=628, 435.12563pt x 327.47343pt>
 File: Pictures/tag.png Graphic file (type png)
 <use Pictures/tag.png>
 Package pdftex.def Info: Pictures/tag.png  used on input line 39.
 (pdftex.def)             Requested size: 170.71652pt x 128.48364pt.
-<Pictures/tagsfloor.png, id=615, 429.605pt x 358.33875pt>
+<Pictures/tagsfloor.png, id=629, 429.605pt x 358.33875pt>
 File: Pictures/tagsfloor.png Graphic file (type png)
 <use Pictures/tagsfloor.png>
 Package pdftex.def Info: Pictures/tagsfloor.png  used on input line 45.
 (pdftex.def)             Requested size: 170.71652pt x 142.39796pt.
-<Pictures/wemos.png, id=619, 104.12233pt x 76.01733pt>
+<Pictures/wemos.png, id=633, 104.12233pt x 76.01733pt>
 File: Pictures/wemos.png Graphic file (type png)
 <use Pictures/wemos.png>
 Package pdftex.def Info: Pictures/wemos.png  used on input line 55.
 (pdftex.def)             Requested size: 142.26378pt x 103.87515pt.
  [28 <./Pictures/Antenna.png>]
-<Pictures/roboschematic.png, id=625, 944.5689pt x 304.0158pt>
+<Pictures/roboschematic.png, id=639, 944.5689pt x 304.0158pt>
 File: Pictures/roboschematic.png Graphic file (type png)
 <use Pictures/roboschematic.png>
 Package pdftex.def Info: Pictures/roboschematic.png  used on input line 74.
 (pdftex.def)             Requested size: 369.88582pt x 119.04813pt.
-<Pictures/hwschematic.png, id=626, 1465.72594pt x 1046.40938pt>
+<Pictures/hwschematic.png, id=640, 1465.72594pt x 1046.40938pt>
 File: Pictures/hwschematic.png Graphic file (type png)
 <use Pictures/hwschematic.png>
 Package pdftex.def Info: Pictures/hwschematic.png  used on input line 80.
 (pdftex.def)             Requested size: 369.88582pt x 264.06061pt.
-<Pictures/rfidonrobot.png, id=628, 474.27188pt x 438.13687pt>
+<Pictures/rfidonrobot.png, id=642, 474.27188pt x 438.13687pt>
 File: Pictures/rfidonrobot.png Graphic file (type png)
 <use Pictures/rfidonrobot.png>
 Package pdftex.def Info: Pictures/rfidonrobot.png  used on input line 90.
 (pdftex.def)             Requested size: 142.26378pt x 131.42201pt.
-<Pictures/antennaonrobot.png, id=629, 386.94562pt x 355.3275pt>
+<Pictures/antennaonrobot.png, id=643, 386.94562pt x 355.3275pt>
 File: Pictures/antennaonrobot.png Graphic file (type png)
 <use Pictures/antennaonrobot.png>
 Package pdftex.def Info: Pictures/antennaonrobot.png  used on input line 96.
@@ -1015,7 +1003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
-<Pictures/RSSI_Distance.png, id=657, 1028.34187pt x 490.08093pt>
+<Pictures/RSSI_Distance.png, id=671, 1028.34187pt x 490.08093pt>
 File: Pictures/RSSI_Distance.png Graphic file (type png)
 <use Pictures/RSSI_Distance.png>
 Package pdftex.def Info: Pictures/RSSI_Distance.png  used on input line 39.
@@ -1045,17 +1033,17 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 \openout2 = `sections/Implementation.aux'.
 
  (sections/Implementation.tex
-<Pictures/rfidwifi.png, id=675, 705.837pt x 436.9926pt>
+<Pictures/rfidwifi.png, id=689, 705.837pt x 436.9926pt>
 File: Pictures/rfidwifi.png Graphic file (type png)
 <use Pictures/rfidwifi.png>
 Package pdftex.def Info: Pictures/rfidwifi.png  used on input line 7.
 (pdftex.def)             Requested size: 398.33858pt x 246.62122pt.
-<Pictures/wifinetwork.png, id=677, 674.0382pt x 413.8662pt>
+<Pictures/wifinetwork.png, id=691, 674.0382pt x 413.8662pt>
 File: Pictures/wifinetwork.png Graphic file (type png)
 <use Pictures/wifinetwork.png>
 Package pdftex.def Info: Pictures/wifinetwork.png  used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 244.5831pt.
-<Pictures/wifipc.png, id=679, 695.2374pt x 418.6842pt>
+<Pictures/wifipc.png, id=693, 695.2374pt x 418.6842pt>
 File: Pictures/wifipc.png Graphic file (type png)
 <use Pictures/wifipc.png>
 Package pdftex.def Info: Pictures/wifipc.png  used on input line 21.
@@ -1065,24 +1053,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--25
 
  []
 
-<Pictures/possible_initial_positions.png, id=681, 964.35281pt x 545.78906pt>
+<Pictures/possible_initial_positions.png, id=695, 964.35281pt x 545.78906pt>
 File: Pictures/possible_initial_positions.png Graphic file (type png)
 <use Pictures/possible_initial_positions.png>
 Package pdftex.def Info: Pictures/possible_initial_positions.png  used on input
  line 29.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/hazards.png, id=683, 964.35281pt x 545.78906pt>
+<Pictures/hazards.png, id=697, 964.35281pt x 545.78906pt>
 File: Pictures/hazards.png Graphic file (type png)
 <use Pictures/hazards.png>
 Package pdftex.def Info: Pictures/hazards.png  used on input line 37.
 (pdftex.def)             Requested size: 455.24408pt x 257.6535pt.
-<Pictures/SFC_Init_Procedure.png, id=685, 137.01187pt x 307.90031pt>
+<Pictures/SFC_Init_Procedure.png, id=701, 137.01187pt x 307.90031pt>
 File: Pictures/SFC_Init_Procedure.png Graphic file (type png)
 <use Pictures/SFC_Init_Procedure.png>
 Package pdftex.def Info: Pictures/SFC_Init_Procedure.png  used on input line 46
 .
 (pdftex.def)             Requested size: 113.81102pt x 255.7686pt.
-<Pictures/Screenshot_Test_environment.png, id=687, 649.67719pt x 82.05656pt>
+<Pictures/Screenshot_Test_environment.png, id=703, 649.67719pt x 82.05656pt>
 File: Pictures/Screenshot_Test_environment.png Graphic file (type png)
 <use Pictures/Screenshot_Test_environment.png>
 Package pdftex.def Info: Pictures/Screenshot_Test_environment.png  used on inpu
@@ -1145,112 +1133,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--85
  []
 
 [40]
-<Pictures/AnalyzeArray.png, id=728, 550.055pt x 460.72125pt>
+<Pictures/AnalyzeArray.png, id=745, 550.055pt x 460.72125pt>
 File: Pictures/AnalyzeArray.png Graphic file (type png)
 <use Pictures/AnalyzeArray.png>
-Package pdftex.def Info: Pictures/AnalyzeArray.png  used on input line 112.
+Package pdftex.def Info: Pictures/AnalyzeArray.png  used on input line 113.
 (pdftex.def)             Requested size: 284.52756pt x 238.32507pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--119
+Underfull \hbox (badness 10000) in paragraph at lines 105--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--119
+Underfull \hbox (badness 10000) in paragraph at lines 105--120
 
  []
 
 [41]
-<Pictures/BestIDs.png, id=738, 865.2325pt x 483.8075pt>
+<Pictures/BestIDs.png, id=753, 865.2325pt x 483.8075pt>
 File: Pictures/BestIDs.png Graphic file (type png)
 <use Pictures/BestIDs.png>
-Package pdftex.def Info: Pictures/BestIDs.png  used on input line 125.
+Package pdftex.def Info: Pictures/BestIDs.png  used on input line 126.
 (pdftex.def)             Requested size: 455.24408pt x 254.55641pt.
-<Pictures/Shape1.png, id=740, 39.89906pt x 39.89906pt>
+<Pictures/Shape1.png, id=755, 39.89906pt x 39.89906pt>
 File: Pictures/Shape1.png Graphic file (type png)
 <use Pictures/Shape1.png>
-Package pdftex.def Info: Pictures/Shape1.png  used on input line 135.
+Package pdftex.def Info: Pictures/Shape1.png  used on input line 136.
 (pdftex.def)             Requested size: 36.98866pt x 36.98883pt.
-<Pictures/Shape2.png, id=741, 74.52844pt x 39.89906pt>
+<Pictures/Shape2.png, id=756, 74.52844pt x 39.89906pt>
 File: Pictures/Shape2.png Graphic file (type png)
 <use Pictures/Shape2.png>
-Package pdftex.def Info: Pictures/Shape2.png  used on input line 135.
+Package pdftex.def Info: Pictures/Shape2.png  used on input line 136.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape3.png, id=742, 74.52844pt x 39.89906pt>
+<Pictures/Shape3.png, id=757, 74.52844pt x 39.89906pt>
 File: Pictures/Shape3.png Graphic file (type png)
 <use Pictures/Shape3.png>
-Package pdftex.def Info: Pictures/Shape3.png  used on input line 135.
+Package pdftex.def Info: Pictures/Shape3.png  used on input line 136.
 (pdftex.def)             Requested size: 73.97733pt x 39.6061pt.
-<Pictures/Shape4.png, id=743, 74.52844pt x 74.52844pt>
+<Pictures/Shape4.png, id=758, 74.52844pt x 74.52844pt>
 File: Pictures/Shape4.png Graphic file (type png)
 <use Pictures/Shape4.png>
-Package pdftex.def Info: Pictures/Shape4.png  used on input line 135.
+Package pdftex.def Info: Pictures/Shape4.png  used on input line 136.
 (pdftex.def)             Requested size: 73.97733pt x 73.98123pt.
-<Pictures/Shape5.png, id=744, 74.52844pt x 75.28125pt>
+<Pictures/Shape5.png, id=759, 74.52844pt x 75.28125pt>
 File: Pictures/Shape5.png Graphic file (type png)
 <use Pictures/Shape5.png>
-Package pdftex.def Info: Pictures/Shape5.png  used on input line 135.
+Package pdftex.def Info: Pictures/Shape5.png  used on input line 136.
 (pdftex.def)             Requested size: 73.97733pt x 74.72852pt.
 
-Overfull \hbox (18.82144pt too wide) in paragraph at lines 132--137
+Overfull \hbox (18.82144pt too wide) in paragraph at lines 133--138
  [][] 
  []
 
 [42 <./Pictures/AnalyzeArray.png>] [43 <./Pictures/BestIDs.png> <./Pictures/Sha
 pe1.png> <./Pictures/Shape2.png> <./Pictures/Shape3.png> <./Pictures/Shape4.png
 > <./Pictures/Shape5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 
-LaTeX Warning: Reference `Sec_Imp_Ini' on page 44 undefined on input line 154.
+LaTeX Warning: Reference `Sec_Imp_Ini' on page 44 undefined on input line 155.
 
-<Pictures/Center_Rob.png, id=759, 402.00188pt x 405.01312pt>
+<Pictures/Center_Rob.png, id=774, 402.00188pt x 405.01312pt>
 File: Pictures/Center_Rob.png Graphic file (type png)
 <use Pictures/Center_Rob.png>
-Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 160.
+Package pdftex.def Info: Pictures/Center_Rob.png  used on input line 161.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
-<Pictures/Orientation.png, id=760, 402.00188pt x 405.01312pt>
+<Pictures/Orientation.png, id=775, 402.00188pt x 405.01312pt>
 File: Pictures/Orientation.png Graphic file (type png)
 <use Pictures/Orientation.png>
-Package pdftex.def Info: Pictures/Orientation.png  used on input line 166.
+Package pdftex.def Info: Pictures/Orientation.png  used on input line 167.
 (pdftex.def)             Requested size: 156.49014pt x 157.65784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--179
+Underfull \hbox (badness 10000) in paragraph at lines 176--180
 
  []
 
 [44]
-<Pictures/TestSetup.png, id=773, 516.42938pt x 387.69844pt>
+<Pictures/TestSetup.png, id=788, 516.42938pt x 387.69844pt>
 File: Pictures/TestSetup.png Graphic file (type png)
 <use Pictures/TestSetup.png>
-Package pdftex.def Info: Pictures/TestSetup.png  used on input line 184.
+Package pdftex.def Info: Pictures/TestSetup.png  used on input line 185.
 (pdftex.def)             Requested size: 398.33858pt x 299.0552pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--202
+Underfull \hbox (badness 10000) in paragraph at lines 182--203
 
  []
 
 [45 <./Pictures/Center_Rob.png> <./Pictures/Orientation.png>] [46 <./Pictures/T
 estSetup.png>]
-<Pictures/ResultX.png, id=789, 511.9125pt x 185.94469pt>
+<Pictures/ResultX.png, id=804, 511.9125pt x 185.94469pt>
 File: Pictures/ResultX.png Graphic file (type png)
 <use Pictures/ResultX.png>
-Package pdftex.def Info: Pictures/ResultX.png  used on input line 207.
+Package pdftex.def Info: Pictures/ResultX.png  used on input line 208.
 (pdftex.def)             Requested size: 398.33858pt x 144.69011pt.
-<Pictures/ResultY.png, id=790, 511.15968pt x 185.94469pt>
+<Pictures/ResultY.png, id=805, 511.15968pt x 185.94469pt>
 File: Pictures/ResultY.png Graphic file (type png)
 <use Pictures/ResultY.png>
-Package pdftex.def Info: Pictures/ResultY.png  used on input line 214.
+Package pdftex.def Info: Pictures/ResultY.png  used on input line 215.
 (pdftex.def)             Requested size: 398.33858pt x 144.9029pt.
-<Pictures/ResultO.png, id=791, 509.65407pt x 185.94469pt>
+<Pictures/ResultO.png, id=806, 509.65407pt x 185.94469pt>
 File: Pictures/ResultO.png Graphic file (type png)
 <use Pictures/ResultO.png>
-Package pdftex.def Info: Pictures/ResultO.png  used on input line 221.
+Package pdftex.def Info: Pictures/ResultO.png  used on input line 222.
 (pdftex.def)             Requested size: 398.33858pt x 145.337pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--227
+Underfull \hbox (badness 10000) in paragraph at lines 205--228
 
  []
 
@@ -1325,7 +1313,7 @@ Overfull \hbox (109.07428pt too wide) in paragraph at lines 216--217
  []
 
 [77]) (code/Init7.cs [78]) [79] (code/Wemos.ino [80] [81] [82]) [83]
-<Pictures/communication.png, id=2293, 691.6239pt x 411.4572pt>
+<Pictures/communication.png, id=2305, 691.6239pt x 411.4572pt>
 File: Pictures/communication.png Graphic file (type png)
 <use Pictures/communication.png>
 Package pdftex.def Info: Pictures/communication.png  used on input line 61.
@@ -1341,15 +1329,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
 (sections/Appendixes.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 86B02C014FE253D7969006FEFA4A0B71;4054.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 074C167B13868EA86D707143C7080F49;3738
-(rerunfilecheck)             After:  86B02C014FE253D7969006FEFA4A0B71;4054.
 
 LaTeX Warning: There were undefined references.
 
@@ -1359,13 +1341,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 12383 strings out of 492973
- 187089 string characters out of 3121376
- 482686 words of memory out of 3000000
- 14316 multiletter control sequences out of 15000+200000
+ 12385 strings out of 492973
+ 187152 string characters out of 3121376
+ 483334 words of memory out of 3000000
+ 14320 multiletter control sequences out of 15000+200000
  18021 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,61p,3061b,2311s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,16n,61p,3044b,2311s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb><C:/Users/stefan.rottstegge/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/stefan.rottstegge
@@ -1393,9 +1375,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/stefan.rottstegge/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Us
 ers/stefan.rottstegge/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/euro
 sym/feymr10.pfb>
-Output written on main.pdf (84 pages, 10605131 bytes).
+Output written on main.pdf (84 pages, 10606556 bytes).
 PDF statistics:
- 2684 PDF objects out of 2984 (max. 8388607)
- 1571 named destinations out of 1728 (max. 500000)
- 672 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2695 PDF objects out of 2984 (max. 8388607)
+ 1569 named destinations out of 1728 (max. 500000)
+ 696 words of extra memory for PDF output out of 10000 (max. 10000000)
 
