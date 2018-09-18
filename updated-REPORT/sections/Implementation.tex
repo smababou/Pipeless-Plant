@@ -1,7 +1,7 @@
 \section{Implementation}\label{Sec_Imp}
 
 \subsection{Communication}
-The already existing software is overwritten on the  built-in micro-controller of the WeMos Wifi Module which was developed to have a continuous listening to all the data  sent from the RFID reader even in case of no tags within the range. The good and bad RFID data readings are as seen in the fig.\ref{rfid_wifi}.\\
+The already existing software is overwritten on the  built-in micro-controller of the WeMos Wifi Module which was developed to have a continuous listening to all the data  sent from the RFID reader even in case of no tags within the range. The complete and erroneous RFID data readings are as seen in the fig.\ref{rfid_wifi}.\\
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width = 14cm]{Pictures/rfidwifi}
@@ -15,7 +15,7 @@ A TCP-IP communication is established within the network on the WeMos WiFi Modul
 	\caption{WeMos Module Network Communication}
 	\label{wifi_network}
 \end{figure}
-While on the other side on computer GUI (Graphical User Interface), the same type of communication is established (which should be in same network), and should grasp all the data that has been published by the WeMos WiFi module even if it no data is sent. This communication can be stopped from the GUI if needed as shown in fig.\ref{wifi_pc}.\\
+While on the other side of computer GUI (Graphical User Interface), the similar communication is being established (which should be on the same network). and should grasp all the data that has been published by the WeMos WiFi module even if there exists no feedback. This communication can be terminated on the GUI if required as shown in the fig.\ref{wifi_pc}.\\
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width = 14cm]{Pictures/wifipc}

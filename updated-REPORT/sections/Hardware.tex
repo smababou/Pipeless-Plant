@@ -27,10 +27,10 @@ The antenna and the reader are connected with a SMA to U.FL. adapter cable.\\
 \subsection{RFID tag}
 The tag used in the prototype is of paper type (see fig.\ref{tag}) due to its added advantages as follows:
 \begin{itemize}
-	\item cheap, with the cost of 18 cents per tag
-	\item doesn't require power supply
-	\item compact
-	\item easier implementation in the time of plant extension.
+	\item The tags are cheap costing 18 cents each.
+	\item It doesn't require power supply.
+	\item The tags are compact.
+	\item The implementation in the time of plant extension is simple.
 \end{itemize}
 \begin{figure}[!htbp]
 	\centering
@@ -49,39 +49,40 @@ The tag used in the prototype is of paper type (see fig.\ref{tag}) due to its ad
 \end{figure}
 It's working principle is based on inductive coupling with an operating frequency of 125-135 kHz and a range of 10cm. The tags are fixed on the floor at known location as shown in fig.\ref{tags_floor}.
 \subsection{Wifi Module}
-The WiFi module from WEMOS Co.\cite{wemosd1mini} is a mini WiFi board with 4MB flash based on ESP-8266 which is a WiFi microchip with full IP/TCP stack and micro-controller (see fig.\ref{wemos})
+The WiFi module used is from WEMOS Co.\cite{wemosd1mini}.It is a mini WiFi board with 4MB flash based on ESP-8266 which is a WiFi microchip with full IP/TCP stack and micro-controller (see fig.\ref{wemos}).
+\footnotetext{Source of figure \ref{tag} (Paper Tag): www.kurzweilai.net/scientists-print-cheap-rfid-tags-on-paper}
+\footnotetext{Source of figure \ref{wemos} (WeMos D1 Mini WiFi Module): www.github.com/mcauser/Fritzing-Part-WeMos-D1-Mini}
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width = 5cm]{Pictures/wemos}
 	\caption{WeMos D1 Mini WiFi Module}
 	\label{wemos}
 \end{figure}
+\\
+The WeMos module has the following features:
 \begin{itemize}
-	\item Features
-	\begin{itemize}
-		\item 32-bit RISC microprocessor core running at 80 MHz
-		\item External QSPI flash of 4 MB
-		\item IEEE 802.11 b/g/n Wi-Fi
-		\item 16 GPIO pins
-		\item UART on dedicated pins, plus a transmit-only UART can be enabled on GPIO2
-		\item 10-bit ADC and \(I^2C\) (software implementation)
-	\end{itemize}
+	\item 32-bit RISC microprocessor core running at 80 MHz
+	\item External QSPI flash of 4 MB
+	\item IEEE 802.11 b/g/n Wi-Fi
+	\item 16 GPIO pins
+	\item UART on dedicated pins, plus a transmit-only UART can be enabled on GPIO2
+	\item 10-bit ADC and \(I^2C\) (software implementation)
 \end{itemize}
 \subsection{Hardware Setup}
-The in built Micro-controller on the robot receives the sensors data and sends commands to the actuators via serial communication using its first UART pins. (TX/RX) is the process of sending and propagating an analogue or digital information signal over a physical point-to-point wired connection. It uses its second UART pins to communicate with the built-in WiFi Module. The built-in WiFi Module sends the received sensors data to the Computer and sends the received commands from the computer to the robot micro-controller via Wireless communication (see fig.\ref{robo_schematic}).
-\begin{figure}[!htbp]
+\begin{figure}[!htb]
 	\centering
 	\includegraphics[width = 13cm]{Pictures/roboschematic}
 	\caption{Robot Hardware Schematic}
 	\label{robo_schematic}
 \end{figure}
-\begin{figure}[!htbp]
+The built-in Micro-controller on the robot receives the sensor data and sends commands to the actuators via serial communication using its first UART pins. (TX/RX) is the process of sending and propagating an analogue or digital information signal over a physical point-to-point wired connection. It uses its second UART pins to communicate with the built-in WiFi Module. The built-in WiFi Module sends the received sensors data to the Computer and sends the received commands from the computer to the robot micro-controller via Wireless communication (see fig.\ref{robo_schematic}).
+\begin{figure}[!htb]
 	\centering
-	\includegraphics[width = 13cm]{Pictures/hwschematic}
+	\includegraphics[width = 11cm]{Pictures/hwschematic}
 	\caption{Hardware Schematic}
 	\label{hw_schematic}
 \end{figure}
-Due to its less complexity, more flexibility and that the robot's in built micro-controller UART pins  are in use, a new communication setup were developed for the RFID reader to send the data from the robot to the computer in parallel to the robot hardware setup. As shown in fig.\ref{hw_schematic}) the RFID reader is connected directly to the built-in micro-controller of the WeMos WiFi Module sending it the tags IDs read via serial communication. The WeMos WiFi Module sends the received data through the network. The RFID reader is connected to the antenna which sends and receives the radio waves via SMA antenna cable.\\
+Due to its less complexity, more flexibility and that the robot's in built micro-controller UART pins are in use, a new communication setup was developed for the RFID reader to send the data from the robot to the computer in parallel to the robot hardware setup. As shown in fig.\ref{hw_schematic}) the RFID reader is connected directly to the built-in micro-controller of the WeMos WiFi Module via serial communication sending it the tags IDs. The WeMos WiFi Module sends the received data through the network. The RFID reader is connected to the antenna which sends and receives the radio waves via SMA antenna cable.\\
 The RFID reader as well as WeMos Module are placed on the top of the robot while the Antenna is fixed to the robot base such that the radio waves would be in direct contact with the tags on the floor.
 \begin{figure}[!htbp]
 	\centering
