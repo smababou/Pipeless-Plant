@@ -120,44 +120,44 @@ Based on the research, the advantages and disadvantages of Mobile Robot Localiza
 \pagebreak
 
 \subsection{Map-Based Localization\cite{mbl}} %abdul
-Adaptive Monte Carlo Localization (AMCL) is a probabilistic localization system for a robot moving on a two dimensional surface. It implements the adaptive (or KLD-sampling) Monte Carlo localization\cite{acml1}\cite{acml2} approach, which uses a particle filter to track the pose of a robot against a known map.
+Adaptive Monte Carlo Localization (AMCL) is a probabilistic localization system for a robot moving on a two dimensional surface. It implements the adaptive (or KLD-sampling) Monte Carlo localization\cite{acml1}\cite{acml2} approach, which uses a particle filter to track the position of a robot against a known map.
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width = 15cm]{Pictures/amcl}
-	\caption{Adaptive Monte Carlo localization}
-	\label{amcl}
-	
-\end{figure}\\
-\footnotetext{Source of figure \ref{amcl} (Adaptive Monte Carlo localization): www.moodle.tu-dortmund.de/mobile-robots}
-AMCL takes in a laser-based map, laser scans, and Odom scan, and outputs pose estimates (see fig.\ref{amcl}). On startup, amcl initializes its particle filter according to the parameters provided. Note that, because of the defaults, if no parameters are set, the initial filter state will be a moderately sized particle cloud centered about (0,0,0).
+	\begin{center}
+		\includegraphics[width = 15cm]{Pictures/amcl.png}
+		\caption[The ListOfFigures caption]{Adaptive Monte Carlo localization \footnotemark[1]}
+		\label{amcl}
+	\end{center}
+\end{figure}
+\footnotetext[1]{Source: \url{www.moodle.tu-dortmund.de/mobile-robots}}
+Laser and Odom scans are taken in a laser-based map. With these Information output positions are estimated like seen in fig.\ref{amcl}. On startup, AMCL initializes its particle filter according to the parameters provided. Note that, because of the defaults, if no parameters are set, the initial filter state will be a moderately sized particle cloud centered at (0,0,0).
 \\
 \subsubsection*{Implementation}
-To implement such a technique a global and local map should be created as shown in fig. \ref{global_map} and fig. \ref{local_map}, following are the steps for creating robot localization based on a map.
+To implement such a technique a global and local map should be created as shown in fig. \ref{global_map} and fig. \ref{local_map}, In the following steps the localization of a robot based on a map can be seen.
 \begin{figure}[!htbp]
 	\centering
 	\begin{minipage}{.5\textwidth}
 		\centering
 		\includegraphics[width = 6cm]{Pictures/global}%
-		\caption{Global Map}
+		\caption[The ListOfFigures caption]{Global Map \footnotemark[1]}
 		\label{global_map}
 	\end{minipage}%
 	\begin{minipage}{.5\textwidth}
 		\centering
 		\includegraphics[width = 6cm]{Pictures/local}%
-		\caption{Local Map}
+		\caption[The ListOfFigures caption]{Local Map \footnotemark[1]}
 		\label{local_map}
 	\end{minipage}
 \end{figure}
 \begin{itemize}
-\item SLAM (Simultaneous Localization and Mapping) is a technique used in mobile robotics in which a robot builds a map of an unknown environment, keeping at the same time track of its localization in this environment.\\
+\item SLAM (Simultaneous Localization and Mapping) is a technique used in mobile robotics in which a robot builds a map of an unknown environment, while keeping track of its localization in this environment at the same time.
 \end{itemize}
 \begin{itemize}
 \item Adaptive Monte Carlo Localization
 \\
-Given a map of the environment, the goal of the algorithm is for the robot to determine its pose within the environment.
+The goal for this algorithm is to determine the position of the robot on a given map of the environment.
 \\
-At every time \(t\) the algorithm takes as input the previous belief \(X_{t-1}=\big\{x_{t-1}^1, x_{t-1}^2, ...., x_{t-1}^M\big\} \),  an actuation command \(u_t\), and data received from sensors \(z_t\); and the algorithm outputs the new belief \(X_t\).
-\footnotetext{Source of figures \ref{local_map}, \ref{global_map}, \ref{robot_orientation} and \ref{correction_with_globalmap}: www.moodle.tu-dortmund.de/mobile-robots}
+At every time \(t\) the algorithm takes as input the previous prediction \(X_{t-1}=\big\{x_{t-1}^1, x_{t-1}^2, ...., x_{t-1}^M\big\} \) as an input,  an actuation command \(u_t\), and data received from sensors \(z_t\); and the algorithm outputs the new prediction \(X_t\).
+\footnotetext[1]{Source: \url{www.moodle.tu-dortmund.de/mobile-robots}}
 \end{itemize}
 \begin{itemize}
 	\item Orientation Correction
@@ -166,17 +166,17 @@ At every time \(t\) the algorithm takes as input the previous belief \(X_{t-1}=\
 		\begin{minipage}{.5\textwidth}
 			\centering
 			\includegraphics[width = 6cm]{Pictures/robotorientation}%
-			\caption{Robot Orientation}
+			\caption[The ListOfFigures caption]{Robot Orientation \footnotemark[1]}
 			\label{robot_orientation}
 		\end{minipage}%
 		\begin{minipage}{.5\textwidth}
 			\centering
 			\includegraphics[width = 6cm]{Pictures/correctionwithglobalmap}%
-			\caption{Correction with global map}
+			\caption[The ListOfFigures caption]{Correction with global map \footnotemark[1]}
 			\label{correction_with_globalmap}
 		\end{minipage}
 	\end{figure}\\
- 	Initially the robot assumes a position as shown in fig.\ref{robot_orientation}, and as it moves it begins to re-correct it's estimated orientation using the static obstacle with the global map as a reference as shown in fig. \ref{correction_with_globalmap}. 
+ 	Initially the robot assumes a position as shown in fig.\ref{robot_orientation}, and as it moves it begins to re-correct it's estimated orientation using the static obstacle with the global map as a reference (see fig. \ref{correction_with_globalmap}). 
 \end{itemize}
 
 Based on the research made, two tables with advantages and disadvantages of the two Map-Based Localization systems are created.\\ 

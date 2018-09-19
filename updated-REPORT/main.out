@@ -50,5 +50,9 @@
 \BOOKMARK [2][-]{subsection.11.10}{Appendix J: Initialization procedure 5\(C\043\)}{section.11}% 50
 \BOOKMARK [2][-]{subsection.11.11}{Appendix K: Initialization procedure 6\(C\043\)}{section.11}% 51
 \BOOKMARK [2][-]{subsection.11.12}{Appendix L: Initialization procedure 7\(C\043\)}{section.11}% 52
-\BOOKMARK [2][-]{subsection.11.13}{Appendix M: WeMos D1 Mini \(Arduino\)}{section.11}% 53
-\BOOKMARK [2][-]{subsection.11.14}{Appendix N: Communication Outlay}{section.11}% 54
+\BOOKMARK [2][-]{subsection.11.13}{Appendix M: WiFi Initialization WeMos D1 Mini \(Arduino\)}{section.11}% 53
+\BOOKMARK [2][-]{subsection.11.14}{Appendix N: Launch the communication\)}{section.11}% 54
+\BOOKMARK [2][-]{subsection.11.15}{Appendix O: Receiving data from RFID reader}{section.11}% 55
+\BOOKMARK [2][-]{subsection.11.16}{Appendix P: Publishing tags IDs through the network}{section.11}% 56
+\BOOKMARK [2][-]{subsection.11.17}{Appendix Q: Manual Configuration of the RFID reader}{section.11}% 57
+\BOOKMARK [2][-]{subsection.11.18}{Appendix R: Communication Outlay}{section.11}% 58

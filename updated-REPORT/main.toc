@@ -50,5 +50,9 @@
 \contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{72}{subsection.11.10}
 \contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{73}{subsection.11.11}
 \contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{79}{subsection.11.12}
-\contentsline {subsection}{\numberline {11.13}Appendix M: WeMos D1 Mini (Arduino)}{81}{subsection.11.13}
-\contentsline {subsection}{\numberline {11.14}Appendix N: Communication Outlay}{85}{subsection.11.14}
+\contentsline {subsection}{\numberline {11.13}Appendix M: WiFi Initialization WeMos D1 Mini (Arduino)}{81}{subsection.11.13}
+\contentsline {subsection}{\numberline {11.14}Appendix N: Launch the communication)}{81}{subsection.11.14}
+\contentsline {subsection}{\numberline {11.15}Appendix O: Receiving data from RFID reader}{83}{subsection.11.15}
+\contentsline {subsection}{\numberline {11.16}Appendix P: Publishing tags IDs through the network}{83}{subsection.11.16}
+\contentsline {subsection}{\numberline {11.17}Appendix Q: Manual Configuration of the RFID reader}{84}{subsection.11.17}
+\contentsline {subsection}{\numberline {11.18}Appendix R: Communication Outlay}{85}{subsection.11.18}
