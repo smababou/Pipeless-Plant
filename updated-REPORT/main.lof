@@ -5,13 +5,13 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Ceiling with periodic patterns of lamps acting as landmarks. }}{15}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Belief grid of the robot in the plant}}{16}{figure.6}
 \contentsline {figure}{\numberline {7}{\ignorespaces Snapshot of the ceiling }}{16}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Passive RFID System}}{17}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Active RFID System}}{17}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Adaptive Monte Carlo localization}}{20}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Global Map}}{21}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Local Map}}{21}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Robot Orientation}}{21}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Correction with global map}}{21}{figure.14}
+\contentsline {figure}{\numberline {8}{\ignorespaces Adaptive Monte Carlo localization}}{17}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Global Map}}{18}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Local Map}}{18}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Robot Orientation}}{18}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Correction with global map}}{18}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Passive RFID System}}{20}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Active RFID System}}{20}{figure.14}
 \contentsline {figure}{\numberline {15}{\ignorespaces Reader Tag}}{23}{figure.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces RFID System}}{24}{figure.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Inductive Coupling}}{24}{figure.17}
@@ -41,4 +41,4 @@
 \contentsline {figure}{\numberline {41}{\ignorespaces Estimated position in x-direction}}{47}{figure.41}
 \contentsline {figure}{\numberline {42}{\ignorespaces Estimated position in y-direction}}{48}{figure.42}
 \contentsline {figure}{\numberline {43}{\ignorespaces Estimated orientation}}{48}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Communication Outlay}}{84}{figure.44}
+\contentsline {figure}{\numberline {44}{\ignorespaces Communication Outlay}}{85}{figure.44}

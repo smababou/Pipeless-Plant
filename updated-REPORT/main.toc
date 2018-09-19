@@ -1,19 +1,18 @@
 \contentsline {section}{\numberline {1}Introduction}{7}{section.1}
-\contentsline {section}{\numberline {2}Pipeless Plant}{9}{section.2}
+\contentsline {section}{\numberline {2}Pipeless plant}{9}{section.2}
 \contentsline {subsection}{\numberline {2.1}Existing setup}{9}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Problems with the Existing Setup}{10}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Project Objectives}{10}{subsection.2.3}
-\contentsline {section}{\numberline {3}Selection Process}{11}{section.3}
+\contentsline {section}{\numberline {3}Possible localization technologies for chosen application}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Triangulation}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Pattern Recognition}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}RFID}{17}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Map-Based Localization\cite {mbl}}{20}{subsection.3.4}
-\contentsline {section}{\numberline {4}Theoretical Background}{23}{section.4}
+\contentsline {subsection}{\numberline {3.3}Map-Based Localization\cite {mbl}}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}RFID}{20}{subsection.3.4}
+\contentsline {section}{\numberline {4}Principle of localization via Radio Frequency Identification technology}{23}{section.4}
 \contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{23}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}RFID System}{23}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Working Principle}{23}{subsubsection.4.1.2}
 \contentsline {subsection}{\numberline {4.2}Trilateration}{25}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}...}{26}{subsection.4.3}
 \contentsline {section}{\numberline {5}Hardware}{27}{section.5}
 \contentsline {subsection}{\numberline {5.1}RFID reader and antenna}{27}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}RFID tag}{28}{subsection.5.2}
@@ -34,22 +33,22 @@
 \contentsline {subsection}{\numberline {7.3}Test setup}{45}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Results}{47}{subsection.7.4}
 \contentsline {section}{\numberline {8}Conclusion}{49}{section.8}
-\contentsline {section}{\numberline {9}Future Work}{50}{section.9}
+\contentsline {section}{\numberline {9}Future work}{50}{section.9}
 \contentsline {subsection}{\numberline {9.1}Hardware}{50}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Software}{50}{subsection.9.2}
 \contentsline {section}{\numberline {10}References}{51}{section.10}
-\contentsline {section}{\numberline {11}Appendixes}{52}{section.11}
-\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{52}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{56}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{60}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization turn and recording Data(C\#)}{60}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Appendix E: Filling Array(C\#)}{62}{subsection.11.5}
-\contentsline {subsection}{\numberline {11.6}Appendix F: Checking for solutions in array(C\#)}{63}{subsection.11.6}
-\contentsline {subsection}{\numberline {11.7}Appendix G: Position and orientation estimation(C\#)}{66}{subsection.11.7}
-\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 3(C\#)}{69}{subsection.11.8}
-\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 4(C\#)}{71}{subsection.11.9}
-\contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{71}{subsection.11.10}
-\contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{72}{subsection.11.11}
-\contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{78}{subsection.11.12}
-\contentsline {subsection}{\numberline {11.13}Appendix M: WeMos D1 Mini (Arduino)}{80}{subsection.11.13}
-\contentsline {subsection}{\numberline {11.14}Appendix N: Communication Outlay}{84}{subsection.11.14}
+\contentsline {section}{\numberline {11}Appendixes}{53}{section.11}
+\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{53}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{57}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{61}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization turn and recording Data(C\#)}{61}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Appendix E: Filling Array(C\#)}{63}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Appendix F: Checking for solutions in array(C\#)}{64}{subsection.11.6}
+\contentsline {subsection}{\numberline {11.7}Appendix G: Position and orientation estimation(C\#)}{67}{subsection.11.7}
+\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 3(C\#)}{70}{subsection.11.8}
+\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 4(C\#)}{72}{subsection.11.9}
+\contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{72}{subsection.11.10}
+\contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{73}{subsection.11.11}
+\contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{79}{subsection.11.12}
+\contentsline {subsection}{\numberline {11.13}Appendix M: WeMos D1 Mini (Arduino)}{81}{subsection.11.13}
+\contentsline {subsection}{\numberline {11.14}Appendix N: Communication Outlay}{85}{subsection.11.14}

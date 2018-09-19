@@ -1,4 +1,4 @@
-\section{Selection Process} \label{Sec_selectionp}
+\section{Possible localization technologies for chosen application} \label{Sec_selectionp}
 
 Since the main aim of the project is to improve the positioning system of the existing setup, several other techniques were discussed, ending up in four methods namely \textit{triangulation}, \textit{pattern recognition}, \textit{radio frequency identification}, \textit{map-based localization}. The pros and cons were listed and the mentioned techniques were compared. The following section deals with a brief description of the above-mentioned techniques.\\
 
@@ -29,6 +29,7 @@ One possible way to implement a solution for the passive triangulation is to att
 	\includegraphics[width = 16cm]{Pictures/triangulationimplementatio}
 	\caption{Implementation of passive triangulation}
 	\label{ativeTriangulationimplementation}
+	\footnote{Source of figures \ref{Pattern Recognition}, \ref{PatternRecognition1} and \ref{PatternRecognition2}  Pattern Recognition: www.ieeexplore.ieee.org/document/7101612/} 
 \end{figure}\\%
 The left and right camera are sequentially taking pictures which are transmitted to the plants computer where the image processing takes place.\\ 
 \pagebreak
@@ -65,10 +66,10 @@ Easy detection of laser points on camera image                                  
 \pagebreak
 \subsection{Pattern Recognition}%medhini
 
-\footnote{Source of figures \ref{Pattern Recognition}, \ref{PatternRecognition1} and \ref{PatternRecognition2}  Pattern Recognition: www.ieeexplore.ieee.org/document/7101612/} 
+
 
 In this type of localization, estimation of the robot is done in indoor environments using
-only on-board sensors, namely a web-cam and a compass. The ceiling of the plant is constructed with a pattern of static landmarks whose positions are known a priori as shown in fig. \ref{Pattern Recognition}. All landmarks are indistinguishable from each other and might additionally be distributed along the ceiling in a periodic pattern. The landmark attached to the ceiling can be lights, QR codes, sensors or other reference points. The ceiling is used since it is immune to changes. A camera is installed on the robot, which takes snapshots of the ceiling which can be seen in fig. \ref{PatternRecognition2}. The robot pose relative to the landmark is calculated with the help of the distance of the landmark to the center of the image and its angle relative to the direction of the robot motion. An IMU device is additionally used to give the absolute orientation of the robot in the plant. The Markov Localization (ML) algorithm is used to estimate
+only on-board sensors, namely a web-cam and a compass \cite{pat_recog}. The ceiling of the plant is constructed with a pattern of static landmarks whose positions are known a priori as shown in fig. \ref{Pattern Recognition}. All landmarks are indistinguishable from each other and might additionally be distributed along the ceiling in a periodic pattern. The landmark attached to the ceiling can be lights, QR codes, sensors or other reference points. The ceiling is used since it is immune to changes. A camera is installed on the robot, which takes snapshots of the ceiling which can be seen in fig. \ref{PatternRecognition2}. The robot pose relative to the landmark is calculated with the help of the distance of the landmark to the center of the image and its angle relative to the direction of the robot motion. An IMU device is additionally used to give the absolute orientation of the robot in the plant. The Markov Localization (ML) algorithm is used to estimate
 the belief grid of the robot position inside the environment. 
 
 \begin{figure}[!htbp]
@@ -118,72 +119,6 @@ Based on the research, the advantages and disadvantages of Mobile Robot Localiza
 \end{table}
 \pagebreak
 
-\subsection[RFID]{RFID\footnote{Stephan}} % stephan around 2 pages
-\subsubsection*{Summary} 
-One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The main areas of this technology is indeed still supply chains, transport, manufacturing, personnel access, animal tagging, toll collection \cite{Bai_overviewof},  but also has become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
-The main idea of those systems is that a reader detects a tag and reads its information. The technology can be divided into three main types: passive, semi-passive and active systems. A passive system, like it is been shown in fig. \ref{RFID_Passive}, consists of a reader, which is connected to an antenna and a computer and a passive tag.\\
-\begin{figure}[!htbp]
-\centering
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics[width = 7cm]{Pictures/RFID_Passive}%
-\caption{Passive RFID System}
-\label{RFID_Passive}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics[width = 7cm]{Pictures/RFID_Active}%
-\caption{Active RFID System}
-\label{RFID_Active}
-\end{minipage}
-\end{figure}\\
-The system is called passive, because the power supply is realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags gets enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a battery build in that the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
-Another classification of RFID systems is the frequency of the radio waves. It can reach from 0.135 MHz (Low Frequency) to 5875 MHz (Super High Frequency). The table \ref{RFID_Systems} gives an overview about the systems related to reading ranges, reading rates and the ability to read near metal or water.\\
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{c}
-\includegraphics[width = 9cm]{Pictures/RFID_Systems}
-\end{tabular}
-\caption{Overview RFID systems}
-\label{RFID_Systems}
-\end{table}\\
-It can be seen that the passive systems in general have a smaller reading range then the active systems and has a bigger data rate. But it has also to be take into account, that passive tags are cheaper then active tags.   
-\subsubsection*{Implementation}
-There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV.
-\pagebreak
-\subsubsection*{Pro and con}
-Based on the research made, two tables with advantages and disadvantages of the two RFID systems are created.\\ 
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Active RFID system}}                                                                                                                                                                                \\ \hline
-\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
-Light independent                                                                                                 & Prototype more expansive (3 reader + avtive tags)                                                            \\ \hline
-Space unlimited                                                                                                   & \begin{tabular}[c]{@{}l@{}}Datarate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}l@{}}Localization only has to be realized in\\ a bigger area - medium accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more AGVs are\\ used at the same time\end{tabular}      \\ \hline
-\begin{tabular}[c]{@{}l@{}}Wired communication between reader and \\ computer possible\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Signal strength can be influenced by envirnonment\\ (metal or water)\end{tabular} \\ \hline
-Simple algorithm (Trilateration)                                                                                  &                                                                                                              \\ \hline
-\end{tabular}
-\caption{Pro and cons of active RFID system}
-\label{my-label}
-\end{table}
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Passive RFID system}}                                                                                                                                                                                            \\ \hline
-\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                             & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
-Light independent                                                                                                               & \begin{tabular}[c]{@{}l@{}}Communication between AGV and computer \\ has to be realized\end{tabular}         \\ \hline
-Space unlimited                                                                                                                & \begin{tabular}[c]{@{}l@{}}Data rate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}l@{}}Localization only has to be realized between\\ four tags (small area) - high accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more tags are\\ detected at the same time\end{tabular}  \\ \hline
-Simple algorithm (Trilateration)                                                                                               &                                                                                                              \\ \hline
-Prototype cheap (1 reader + passive tags)                                                                                      &                                                                                                              \\ \hline
-\end{tabular}
-\caption{Pro and cons passive RFID system}
-\label{Pro and Cons of the passive RFID system}
-\end{table}
-\pagebreak
 \subsection{Map-Based Localization\cite{mbl}} %abdul
 Adaptive Monte Carlo Localization (AMCL) is a probabilistic localization system for a robot moving on a two dimensional surface. It implements the adaptive (or KLD-sampling) Monte Carlo localization\cite{acml1}\cite{acml2} approach, which uses a particle filter to track the pose of a robot against a known map.
 \begin{figure}[!htbp]
@@ -191,6 +126,7 @@ Adaptive Monte Carlo Localization (AMCL) is a probabilistic localization system 
 	\includegraphics[width = 15cm]{Pictures/amcl}
 	\caption{Adaptive Monte Carlo localization}
 	\label{amcl}
+	
 \end{figure}\\
 \footnotetext{Source of figure \ref{amcl} (Adaptive Monte Carlo localization): www.moodle.tu-dortmund.de/mobile-robots}
 AMCL takes in a laser-based map, laser scans, and Odom scan, and outputs pose estimates (see fig.\ref{amcl}). On startup, amcl initializes its particle filter according to the parameters provided. Note that, because of the defaults, if no parameters are set, the initial filter state will be a moderately sized particle cloud centered about (0,0,0).
@@ -270,3 +206,65 @@ Based on the research made, two tables with advantages and disadvantages of the 
 	\label{my-label}
 \end{table}
 \pagebreak
+\subsection{RFID} % stephan around 2 pages
+One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The main areas of this technology is indeed still supply chains, transport, manufacturing, personnel access, animal tagging, toll collection \cite{Bai_overviewof},  but also has become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
+The main idea of those systems is that a reader detects a tag and reads its information. The technology can be divided into three main types: passive, semi-passive and active systems. A passive system, like it is been shown in fig. \ref{RFID_Passive}, consists of a reader, which is connected to an antenna and a computer and a passive tag.\\
+\begin{figure}[!htbp]
+\centering
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width = 7cm]{Pictures/RFID_Passive}%
+\caption{Passive RFID System}
+\label{RFID_Passive}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width = 7cm]{Pictures/RFID_Active}%
+\caption{Active RFID System}
+\label{RFID_Active}
+\end{minipage}
+\end{figure}\\
+The system is called passive, because the power supply is realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags gets enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a battery build in that the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
+Another classification of RFID systems is the frequency of the radio waves. It can reach from 0.135 MHz (Low Frequency) to 5875 MHz (Super High Frequency). The table \ref{RFID_Systems} gives an overview about the systems related to reading ranges, reading rates and the ability to read near metal or water.\\
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{c}
+\includegraphics[width = 9cm]{Pictures/RFID_Systems}
+\end{tabular}
+\caption{Overview RFID systems}
+\label{RFID_Systems}
+\end{table}\\
+It can be seen that the passive systems in general have a smaller reading range then the active systems and has a bigger data rate. But it has also to be take into account, that passive tags are cheaper then active tags.   
+\subsubsection*{Implementation}
+There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV.
+Based on the research made, two tables with advantages and disadvantages of the two RFID systems are created.\\ 
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Active RFID system}}                                                                                                                                                                                \\ \hline
+\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
+Light independent                                                                                                 & Prototype more expansive (3 reader + avtive tags)                                                            \\ \hline
+Space unlimited                                                                                                   & \begin{tabular}[c]{@{}l@{}}Datarate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Localization only has to be realized in\\ a bigger area - medium accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more AGVs are\\ used at the same time\end{tabular}      \\ \hline
+\begin{tabular}[c]{@{}l@{}}Wired communication between reader and \\ computer possible\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Signal strength can be influenced by envirnonment\\ (metal or water)\end{tabular} \\ \hline
+Simple algorithm (Trilateration)                                                                                  &                                                                                                              \\ \hline
+\end{tabular}
+\caption{Pro and cons of active RFID system}
+\label{my-label}
+\end{table}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Passive RFID system}}                                                                                                                                                                                            \\ \hline
+\multicolumn{1}{|c|}{\textbf{Pro}}                                                                                             & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
+Light independent                                                                                                               & \begin{tabular}[c]{@{}l@{}}Communication between AGV and computer \\ has to be realized\end{tabular}         \\ \hline
+Space unlimited                                                                                                                & \begin{tabular}[c]{@{}l@{}}Data rate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Localization only has to be realized between\\ four tags (small area) - high accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more tags are\\ detected at the same time\end{tabular}  \\ \hline
+Simple algorithm (Trilateration)                                                                                               &                                                                                                              \\ \hline
+Prototype cheap (1 reader + passive tags)                                                                                      &                                                                                                              \\ \hline
+\end{tabular}
+\caption{Pro and cons passive RFID system}
+\label{Pro and Cons of the passive RFID system}
+\end{table}
