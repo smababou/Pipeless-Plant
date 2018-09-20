@@ -9,27 +9,29 @@ With respect to the system setup used in the 18th century nowadays two cameras a
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/Triangulation}
-\caption{Passive triangulation setup with two cameras [3]}
+\caption{Passive triangulation setup with two cameras}
 \label{Triangulation}
 \end{figure}\\
-To solve the problem of position estimation, it is necessary to know the parameters of the left and the right camera visualized in the figure. In theory the triangulation is trivial, since each and every point of the images of the respective cameras maps to a line in 3D space. If a pair of corresponding points, in the case of the pipesless plant it would be an AGV is found, the projection of a point x in 3D space can be computed. 
-Active triangulation in comparison to passive triangulation needs one camera and at least one source of structured light (e.g. Laser). The geometrical location and orientation of the camera and light source in space need to be known. Two possible setups with either a laser point or a stripe as structured light are shown in fig. \ref{ative_Triangulation} \cite{MultiObjectTriangulation.}\cite{laser_triangulation}.
+\pagebreak
+To solve the problem of position estimation, it is necessary to know the parameters of the left and the right camera visualized in fig. \ref{Triangulation}. In theory the triangulation is trivial, since each and every point of the images of the respective cameras maps to a line in 3D space. If a pair of corresponding points, in the case of the pipesless plant an AGV is found, the projection of a point x in 3D space can be computed. 
+Active triangulation in comparison to passive triangulation needs one camera and at least one source of structured light (e.g. Laser). The geometrical location and orientation of the camera and light source in space need to be known. Two possible setups with either a laser point or a stripe as structured light are shown in fig. \ref{ative_Triangulation} \cite{MultiObjectTriangulation.}\cite{laser_triangulation}.\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/acticetriangulation}
 \caption{Active triangulation}
 \label{ative_Triangulation}
-\end{figure}\\
-To solve the active triangulation problem, the structured light has to point an object which location is desired to estimate. If this point is found on the 2D image of the camera, a triangulation with basic trigonometrical formulas which are using the properties and parameters of the camera and light source can be performed and the position of the AGV can be estimated. 
+\end{figure}
+\pagebreak
+To solve the active triangulation problem, the structured light has to point an object which location is desired to estimate. If this point is found on the 2D image of the camera, a triangulation with basic trigonometrical formulas which are using the properties and parameters of the camera and light source is performed and the position of the AGV is be estimated.\\
 \pagebreak
 \subsubsection*{Implementation} 
 One possible way to implement a solution for the passive triangulation is to attach 2 high resolution cameras with USB 3.0 on two edges of the plant as shown in fig. \ref{ativeTriangulationimplementation}.\\
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width = 16cm]{Pictures/triangulationimplementatio}
-	\caption{Implementation of passive triangulation}
-	\label{ativeTriangulationimplementation}
-	\footnote{Source of figures \ref{Pattern Recognition}, \ref{PatternRecognition1} and \ref{PatternRecognition2}  Pattern Recognition: www.ieeexplore.ieee.org/document/7101612/} 
+\centering
+\includegraphics[width = 16cm]{Pictures/triangulationimplementatio}
+\caption{Implementation of passive triangulation}
+\label{ativeTriangulationimplementation}
+\footnote{Source of figures \ref{Pattern Recognition}, \ref{PatternRecognition1} and \ref{PatternRecognition2}  Pattern Recognition: www.ieeexplore.ieee.org/document/7101612/} 
 \end{figure}\\%
 The left and right camera are sequentially taking pictures which are transmitted to the plants computer where the image processing takes place.\\ 
 \pagebreak
