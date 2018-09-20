@@ -5,54 +5,54 @@
 \contentsline {subsection}{\numberline {2.3}Project Objectives}{10}{subsection.2.3}
 \contentsline {section}{\numberline {3}Possible localization technologies for chosen application}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Triangulation}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Map-Based Localization\cite {mbl}}{17}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}RFID}{20}{subsection.3.4}
-\contentsline {section}{\numberline {4}Principle of localization via Radio Frequency Identification technology}{23}{section.4}
-\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{23}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}RFID System}{23}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Working Principle}{23}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Trilateration}{25}{subsection.4.2}
-\contentsline {section}{\numberline {5}Hardware}{27}{section.5}
-\contentsline {subsection}{\numberline {5.1}RFID reader and antenna}{27}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}RFID tag}{28}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Wifi Module}{29}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Hardware Setup}{30}{subsection.5.4}
-\contentsline {section}{\numberline {6}Simulation}{32}{section.6}
-\contentsline {subsection}{\numberline {6.1}Emulator}{32}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}RSSI Measurements with real hardware}{33}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Simulation with emulated data}{34}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Results}{34}{subsection.6.4}
-\contentsline {section}{\numberline {7}Implementation}{35}{section.7}
-\contentsline {subsection}{\numberline {7.1}Communication}{35}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Initialization procedure}{37}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data}{41}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Analysing data}{41}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Selection of correct distance related to RSSI}{42}{subsubsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.4}Estimation of initial position and orientation}{44}{subsubsection.7.2.4}
-\contentsline {subsection}{\numberline {7.3}Test setup}{45}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Results}{47}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{49}{section.8}
-\contentsline {section}{\numberline {9}Future work}{50}{section.9}
-\contentsline {subsection}{\numberline {9.1}Hardware}{50}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Software}{50}{subsection.9.2}
-\contentsline {section}{\numberline {10}References}{51}{section.10}
-\contentsline {section}{\numberline {11}Appendixes}{53}{section.11}
-\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{53}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{57}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{61}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization turn and recording Data(C\#)}{61}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Appendix E: Filling Array(C\#)}{63}{subsection.11.5}
-\contentsline {subsection}{\numberline {11.6}Appendix F: Checking for solutions in array(C\#)}{64}{subsection.11.6}
-\contentsline {subsection}{\numberline {11.7}Appendix G: Position and orientation estimation(C\#)}{67}{subsection.11.7}
-\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 3(C\#)}{70}{subsection.11.8}
-\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 4(C\#)}{72}{subsection.11.9}
-\contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{72}{subsection.11.10}
-\contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{73}{subsection.11.11}
-\contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{79}{subsection.11.12}
-\contentsline {subsection}{\numberline {11.13}Appendix M: WiFi Initialization WeMos D1 Mini (Arduino)}{81}{subsection.11.13}
-\contentsline {subsection}{\numberline {11.14}Appendix N: Launch the communication)}{81}{subsection.11.14}
-\contentsline {subsection}{\numberline {11.15}Appendix O: Receiving data from RFID reader}{83}{subsection.11.15}
-\contentsline {subsection}{\numberline {11.16}Appendix P: Publishing tags IDs through the network}{83}{subsection.11.16}
-\contentsline {subsection}{\numberline {11.17}Appendix Q: Manual Configuration of the RFID reader}{84}{subsection.11.17}
-\contentsline {subsection}{\numberline {11.18}Appendix R: Communication Outlay}{85}{subsection.11.18}
+\contentsline {subsection}{\numberline {3.2}Pattern Recognition}{16}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Map-Based Localization\cite {mbl}}{18}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}RFID}{21}{subsection.3.4}
+\contentsline {section}{\numberline {4}Principle of localization via Radio Frequency Identification technology}{24}{section.4}
+\contentsline {subsection}{\numberline {4.1}Radio Frequency Identification}{24}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}RFID System}{24}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Working Principle}{24}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Trilateration}{26}{subsection.4.2}
+\contentsline {section}{\numberline {5}Hardware}{28}{section.5}
+\contentsline {subsection}{\numberline {5.1}RFID reader and antenna}{28}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}RFID tag}{29}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Wifi Module}{30}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Hardware Setup}{31}{subsection.5.4}
+\contentsline {section}{\numberline {6}Simulation}{33}{section.6}
+\contentsline {subsection}{\numberline {6.1}Emulator}{33}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}RSSI Measurements with real hardware}{34}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Simulation with emulated data}{35}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Results}{35}{subsection.6.4}
+\contentsline {section}{\numberline {7}Implementation}{36}{section.7}
+\contentsline {subsection}{\numberline {7.1}Communication}{36}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Initialization procedure}{38}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Recording and filtering data}{42}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Analysing data}{42}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Selection of correct distance related to RSSI}{43}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}Estimation of initial position and orientation}{45}{subsubsection.7.2.4}
+\contentsline {subsection}{\numberline {7.3}Test setup}{46}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Results}{48}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{50}{section.8}
+\contentsline {section}{\numberline {9}Future work}{51}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hardware}{51}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Software}{51}{subsection.9.2}
+\contentsline {section}{\numberline {10}References}{52}{section.10}
+\contentsline {section}{\numberline {11}Appendixes}{54}{section.11}
+\contentsline {subsection}{\numberline {11.1}Appendix A: Emulator RFID data (Matlab)}{54}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Appendix B: Receiving data from reader via Wifi (C\#)}{58}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Appendix C: Initialization procedure (C\#)}{62}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Appendix D: Initialization turn and recording Data(C\#)}{62}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Appendix E: Filling Array(C\#)}{64}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Appendix F: Checking for solutions in array(C\#)}{65}{subsection.11.6}
+\contentsline {subsection}{\numberline {11.7}Appendix G: Position and orientation estimation(C\#)}{68}{subsection.11.7}
+\contentsline {subsection}{\numberline {11.8}Appendix H: Initialization procedure 3(C\#)}{71}{subsection.11.8}
+\contentsline {subsection}{\numberline {11.9}Appendix I: Initialization procedure 4(C\#)}{73}{subsection.11.9}
+\contentsline {subsection}{\numberline {11.10}Appendix J: Initialization procedure 5(C\#)}{73}{subsection.11.10}
+\contentsline {subsection}{\numberline {11.11}Appendix K: Initialization procedure 6(C\#)}{74}{subsection.11.11}
+\contentsline {subsection}{\numberline {11.12}Appendix L: Initialization procedure 7(C\#)}{80}{subsection.11.12}
+\contentsline {subsection}{\numberline {11.13}Appendix M: WiFi Initialization WeMos D1 Mini (Arduino)}{82}{subsection.11.13}
+\contentsline {subsection}{\numberline {11.14}Appendix N: Launch the communication)}{82}{subsection.11.14}
+\contentsline {subsection}{\numberline {11.15}Appendix O: Receiving data from RFID reader}{84}{subsection.11.15}
+\contentsline {subsection}{\numberline {11.16}Appendix P: Publishing tags IDs through the network}{84}{subsection.11.16}
+\contentsline {subsection}{\numberline {11.17}Appendix Q: Manual Configuration of the RFID reader}{85}{subsection.11.17}
+\contentsline {subsection}{\numberline {11.18}Appendix R: Communication Outlay}{86}{subsection.11.18}
