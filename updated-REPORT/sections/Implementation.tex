@@ -22,7 +22,7 @@ While on the other side of computer GUI (Graphical User Interface), the similar 
 	\caption{Computer Network Communication}
 	\label{wifi_pc}
 \end{figure}\\
-\subsection{Initialization procedure}
+\subsection{Initialization procedure}\label{Sec_Imp_Ini}
 In the start-up phase, before running the pipeless plant with its AGVs the correct position and orientation of each and every vehicle are not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]
 \centering
@@ -118,7 +118,7 @@ Initially the first row which represents the measurement at the point 0$^\circ$ 
 Each of this sets of two measurement points is saved as a 1x2 array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
 %
 
-\subsubsection[Selection of correct distance related to RSSI]{Selection of correct distance related to RSSI \footnote{Stephan}}
+\subsubsection{Selection of correct distance related to RSSI}
 In a first step the multiple occurring data points (see tbl.\ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
 The measurements have shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
 \begin{figure}[!htbp]
@@ -151,7 +151,7 @@ The return of the function is an array (2x3) with the indices of the chosen IDs 
 \]
 leads to the choice of the maximal value of the RSSI of the fourth detected ID and the minimum value of the RSSI of the third and the fifth ID in the recorded array at this measurement point. \\
 
-\subsubsection[Estimation of initial position and orientation]{Estimation of initial position and orientation \footnote{Stephan}}
+\subsubsection{Estimation of initial position and orientation}
 As mentioned in chapter \ref{Sec_Imp_Ini}, the main idea to estimate the initial position is to find the intersection point, which lies in the middle of the measurement points.\\
 To compute this position, the algorithm uses trilateration at every suitable measurement point to estimate its position. For trilatertion are three defined positions plus three radii necessary, which are available after the selection of the correct distance and proper IDs.\\
 \begin{figure}[!htbp]
@@ -178,7 +178,7 @@ Theoreticaly all eight measuring points are suitable points (at least four IDs f
 After the initial position as well as the positions of 4 measurement points are known, the algorithm computes the orientation based on those information. The relative angle between the center and the first measurement point will be computed with the arctan2 function and leads to an orientation -180$^\circ < \Theta \leq$180$^\circ$ as shown in fig.\ref{Angle}. \\
 To compute the absolute angle, the angle of the measurement point has to be subtracted and 180$^\circ$ has to be added. This is caused by the fact that the antenna is placed on the back of the robot and the absolute orientation should be the direction of the front. After this computation, the initial position and orientation of the robot are known. \\
 
-\subsection[Test setup]{Test setup\footnote{Stephan}}
+\subsection{Test setup}
 In order to verify the validity of the initialization procedure, experiments with the components mentioned in chapter \ref{Sec_Har} were carried out. The beginning of these experiments were the reconstruction of one of the AGVs with this HW setup. After all components were added to the AGV the power supply was realized via a powerbank and the USB connection of then wifi modul. The plan is to replace this in the future with a direct connection to the battery of the AGV. Fig.\ref{TestSetup} gives an overview of the test setup and shows that also for the prototype, the reader and the wifi modul was just stuck with Sellotape on the upper layer of the AGV.\\
 \begin{figure}[!htbp]
 \centering
@@ -201,7 +201,7 @@ ID tag [dec]    & 2788 & 1673 & 1146 & 1414 & 1925 & 2780 & 3060 & 1681 & 1933 \
 The reason for the small setup was the fact that until the end of the project only 10 tags were available. One of the following steps should be to extend the platform with more tags.\\
 The initialization procedure was started via the GUI. A time value was added in the GUI to perform the 45$^\circ$ turns. This number was around 1125 ms and is highly correlated to the battery status of the AGV.\\
 
-\subsection[Results]{Results\footnote{Stephan}}
+\subsection{Results}
 A couple of tests on the test setup (previous section) were performed to compare the good results created with the simulated data with real measurements. The result of the position estimation was directly plotted in the console. The initial position was 200 mm in x- and y-direction and a varying orientation (0$^\circ$, 90$^\circ$, 180$^\circ$ and -90$^\circ$). Fig.\ref{ResultX} and fig.\ref{ResultY} illustrate the actual measurement results and the desired position in x- and y-direction. 
 \begin{figure}[!htbp]
 \centering

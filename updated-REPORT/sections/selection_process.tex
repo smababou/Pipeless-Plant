@@ -207,23 +207,24 @@ Based on the research made, two tables with advantages and disadvantages of the 
 \end{table}
 \pagebreak
 \subsection{RFID} % stephan around 2 pages
-One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The main areas of this technology is indeed still supply chains, transport, manufacturing, personnel access, animal tagging, toll collection \cite{Bai_overviewof},  but also has become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
+One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The main areas of this technology is indeed "supply chains, transport, manufacturing, personnel access, animal tagging, toll collection" \cite{Bai_overviewof},  but also has become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
 The main idea of those systems is that a reader detects a tag and reads its information. The technology can be divided into three main types: passive, semi-passive and active systems. A passive system, like it is been shown in fig. \ref{RFID_Passive}, consists of a reader, which is connected to an antenna and a computer and a passive tag.\\
 \begin{figure}[!htbp]
 \centering
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width = 7cm]{Pictures/RFID_Passive}%
-\caption{Passive RFID System}
+\caption[Passive RFID System]{Passive RFID System \footnotemark}
 \label{RFID_Passive}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width = 7cm]{Pictures/RFID_Active}%
-\caption{Active RFID System}
+\caption[Active RFID System]{Active RFID System \footnotemark[2]}
 \label{RFID_Active}
 \end{minipage}
 \end{figure}\\
+\footnotetext[2]{Source: Overview of RFID-Based Indoor Positioning Technology \cite{Bai_overviewof}}
 The system is called passive, because the power supply is realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags gets enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a battery build in that the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
 Another classification of RFID systems is the frequency of the radio waves. It can reach from 0.135 MHz (Low Frequency) to 5875 MHz (Super High Frequency). The table \ref{RFID_Systems} gives an overview about the systems related to reading ranges, reading rates and the ability to read near metal or water.\\
 \begin{table}[!htbp]
@@ -231,13 +232,14 @@ Another classification of RFID systems is the frequency of the radio waves. It c
 \begin{tabular}{c}
 \includegraphics[width = 9cm]{Pictures/RFID_Systems}
 \end{tabular}
-\caption{Overview RFID systems}
+\caption[Overview RFID systems]{Overview RFID systems \footnotemark[3]}
 \label{RFID_Systems}
 \end{table}\\
-It can be seen that the passive systems in general have a smaller reading range then the active systems and has a bigger data rate. But it has also to be take into account, that passive tags are cheaper then active tags.   
+It can be seen that the passive systems in general have a smaller reading range then the active systems, but has a bigger data rate. Another important aspect in taking the best choice is, that passive tags are cheaper (around 0.20 \euro{}) then active tags (around 9.00 \euro{}).
 \subsubsection*{Implementation}
 There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV.
-Based on the research made, two tables with advantages and disadvantages of the two RFID systems are created.\\ 
+\footnotetext[3]{Source: Overview of RFID-Based Indoor Positioning Technology \cite{Bai_overviewof}}   
+Based on the research made, two tables with advantages and disadvantages of the two RFID systems were created.\\ 
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
@@ -245,7 +247,7 @@ Based on the research made, two tables with advantages and disadvantages of the 
 \multicolumn{2}{|c|}{\textbf{Active RFID system}}                                                                                                                                                                                \\ \hline
 \multicolumn{1}{|c|}{\textbf{Pro}}                                                                                & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
 Light independent                                                                                                 & Prototype more expansive (3 reader + avtive tags)                                                            \\ \hline
-Space unlimited                                                                                                   & \begin{tabular}[c]{@{}l@{}}Datarate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+Scalable solution                                                                                                  & \begin{tabular}[c]{@{}l@{}}Datarate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
 \begin{tabular}[c]{@{}l@{}}Localization only has to be realized in\\ a bigger area - medium accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more AGVs are\\ used at the same time\end{tabular}      \\ \hline
 \begin{tabular}[c]{@{}l@{}}Wired communication between reader and \\ computer possible\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Signal strength can be influenced by envirnonment\\ (metal or water)\end{tabular} \\ \hline
 Simple algorithm (Trilateration)                                                                                  &                                                                                                              \\ \hline
@@ -260,7 +262,8 @@ Simple algorithm (Trilateration)                                                
 \multicolumn{2}{|c|}{\textbf{Passive RFID system}}                                                                                                                                                                                            \\ \hline
 \multicolumn{1}{|c|}{\textbf{Pro}}                                                                                             & \multicolumn{1}{c|}{\textbf{Con}}                                                                            \\ \hline
 Light independent                                                                                                               & \begin{tabular}[c]{@{}l@{}}Communication between AGV and computer \\ has to be realized\end{tabular}         \\ \hline
-Space unlimited                                                                                                                & \begin{tabular}[c]{@{}l@{}}Data rate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
+Scalable solution  
+& \begin{tabular}[c]{@{}l@{}}Data rate is related to the amount of\\ detected tags a the same time\end{tabular} \\ \hline
 \begin{tabular}[c]{@{}l@{}}Localization only has to be realized between\\ four tags (small area) - high accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anticollision need, cause more tags are\\ detected at the same time\end{tabular}  \\ \hline
 Simple algorithm (Trilateration)                                                                                               &                                                                                                              \\ \hline
 Prototype cheap (1 reader + passive tags)                                                                                      &                                                                                                              \\ \hline
