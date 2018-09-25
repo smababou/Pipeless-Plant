@@ -1,6 +1,6 @@
 \section{Possible localization technologies for chosen application} \label{Sec_selectionp}
 
-Since the main aim of the project is to improve the positioning system of the existing setup, several other techniques were discussed, ending up in four methods namely \textit{triangulation}, \textit{pattern recognition}, \textit{radio frequency identification}, \textit{map-based localization}. The pros and cons were listed and the mentioned techniques were compared. The following section deals with a brief description of the above-mentioned techniques.\\
+Since the main aim of the project is to improve the positioning system of the existing setup, several other techniques were discussed, ending up in four methods namely triangulation, pattern recognition, radio frequency identification, map-based localization. The pros and cons were listed and the mentioned techniques were compared. The following section deals with a brief description of the above-mentioned techniques.\\
 
 \subsection{Triangulation} %stefan
 Since the plant has a specified size in which the location of multiple objects has to be performed the method of triangulation is one promising technic in which research was made. 
@@ -71,7 +71,7 @@ Easy detection of laser points on camera image                                  
 
 
 In this type of localization, estimation of the robot is done in indoor environments using
-only on-board sensors, namely a web-cam and a compass \cite{pat_recog}. The ceiling of the plant is constructed with a pattern of static landmarks whose positions are known a priori as shown in fig. \ref{Pattern Recognition}. All landmarks are indistinguishable from each other and might additionally be distributed along the ceiling in a periodic pattern. The landmark attached to the ceiling can be lights, QR codes, sensors or other reference points. The ceiling is used since it is immune to changes. A camera is installed on the robot, which takes snapshots of the ceiling which can be seen in fig. \ref{PatternRecognition2}. The robot pose relative to the landmark is calculated with the help of the distance of the landmark to the center of the image and its angle relative to the direction of the robot motion. An IMU device is additionally used to give the absolute orientation of the robot in the plant. The Markov Localization (ML) algorithm is used to estimate
+only on-board sensors, namely a web-cam and a compass \cite{pat_recog}. The ceiling of the plant is constructed with a pattern of static landmarks whose positions are known a priori as shown in fig. \ref{Pattern Recognition}. All landmarks are indistinguishable from each other and might additionally be distributed along the ceiling in a periodic pattern. The landmark attached to the ceiling can be lights, QR codes, sensors or other reference points. The ceiling is used since it is immune to changes. A camera is installed on the robot, which takes snapshots of the ceiling which can be seen in fig. \ref{PatternRecognition2}. The robot pose relative to the landmark is calculated with the help of the distance of the landmark to the center of the image and its angle relative to the direction of the robot motion. An Inertial measurement unit(IMU) is additionally used to give the absolute orientation of the robot in the plant. The Markov Localization (ML) algorithm is used to estimate
 the belief grid of the robot position inside the environment. 
 
 \begin{figure}[!htbp]
@@ -81,7 +81,7 @@ the belief grid of the robot position inside the environment.
 	\label{Pattern Recognition}
 \end{figure}
 \subsubsection*{Implementation}
-The goal is to compute the pose of a mobile robot inside an indoor environment using a camera and an IMU device. As mentioned, Markov Localization is used to create a belief grid of the robot in the plant environment. This is done with the help of the snapshots of the ceiling taken by the camera. As seen in the fig. \ref{PatternRecognition1}, the blue and black areas have lower belief and green and yellow areas have higher belief. The obtained pattern is evaluated and based on the pattern, the position of the robot is estimated. Thus with the help of the camera and the IMU device, both the position and orientation is obtained.
+The goal is to compute the pose of a mobile robot inside an indoor environment using a camera and an IMU. As mentioned, ML is used to create a belief grid of the robot in the plant environment. This is done with the help of the snapshots of the ceiling taken by the camera. As seen in the fig. \ref{PatternRecognition1}, the blue and black areas have lower belief and green and yellow areas have higher belief. The obtained pattern is evaluated and based on the pattern, the position of the robot is estimated. Thus with the help of the camera and the IMU, both the position and orientation is obtained.
 \begin{figure}[!htbp]
 	\centering
 	\begin{minipage}{.5\textwidth}
