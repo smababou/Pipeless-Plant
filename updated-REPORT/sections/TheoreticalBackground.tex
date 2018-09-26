@@ -52,7 +52,7 @@ Trilateration is a method to compute the intersection point $P$ of three circles
 \begin{align}\label{Eq_Tri}
 r^2 = (x-x_1)^2 + (y-y_1)^2 + (z-z_1)^2  
 \end{align} 
-where ($P_n=(x_n,y_n,z_n$)) is the center of the sphere \cite{Cotera.2016}. A few assumptions can be made to simplify (\ref{Eq_Tri}) for a flat floor/ 2D space. First of all, the z-component of all spheres can be neglected. Another assumption is that we define the origin of the first circle as the center of the coordinate system, the second along the x-axis with an distance (d) and the third shifted in x- (i) and y-direction (j), which is illustrated in following fig. \ref{Tri_1}.\\ 
+where ($P_n=(x_n,y_n,z_n$)) is the center of the sphere \cite{Cotera.2016}. A few assumptions can be made to simplify (\ref{Eq_Tri}) for a flat floor/ 2D space. First of all, the z-component of all spheres can be neglected. Another assumption is to define the origin of the first circle as the center of the coordinate system, the second along the x-axis with an distance (d) and the third shifted in x- (i) and y-direction (j), which is illustrated in following fig. \ref{Tri_1}.\\ 
 \begin{figure}[!htbp]
  \centering
  \includegraphics[width = 13cm]{Pictures/Trilateration_1}
@@ -79,4 +79,4 @@ The absolute position of the intersection point is computed in following way:
 \begin{align}
 P = P_1 + e_x * x_t + e_y * y_t 
 \end{align}
-It can be seen, that those equations are using the first two points plus radii to estimate the x-coordinate and first and third point plus the estimated x-coordinate to estimate the y-coordinate.\\ 
+It can be seen, that those equations are using the first two points plus radii to estimate the x-coordinate, while the first and third point plus the computed x-coordinate are used to estimate the y-coordinate.\\ 

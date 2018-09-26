@@ -22,7 +22,7 @@ While on the other side of computer GUI (Graphical User Interface), the similar 
 	\caption{Computer Network Communication}
 	\label{wifi_pc}
 \end{figure}\\
-\subsection{Initialization procedure}
+\subsection{Initialization procedure}\label{Sec_Imp_Ini}
 In the start-up phase, before running the pipeless plant with its AGVs the correct position and orientation of each and every vehicle are not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]
 \centering
@@ -118,7 +118,7 @@ Initially the algorithm checks the first row which represents the measurement at
 Each of this sets of two measurement points is saved as a 1x2 array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
 
 \subsubsection{Selection of correct distance related to RSSI}
-In a first step the multiple occurring data points (see tbl.\ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
+In a first step the multiple occurring data points (see table \ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
 The measurements have shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
 \begin{figure}[!htbp]
 \centering
@@ -126,7 +126,7 @@ The measurements have shown that it is not trivial to define the correct distanc
 \caption{Flow Chart: Selection of correct distance and most proper IDs}
 \label{BestID}
 \end{figure}\\
-To distinguish between the multiple possible solution for one RSSI, the algorithm defines the shape of the pattern of tags based on the number of tags at each measurement and the number of the neighbours each tag has. At each measurement point in this scenario several numbers (4-7) of detected tags are possible. The different shapes can be found in the tbl. \ref{ID_shapes}.\\
+To distinguish between the multiple possible solution for one RSSI, the algorithm defines the shape of the pattern of tags based on the number of tags at each measurement and the number of the neighbours each tag has. At each measurement point in this scenario several numbers (4-7) of detected tags are possible. The different shapes can be found in the table \ref{ID_shapes}.\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -168,24 +168,24 @@ To compute this position, the algorithm uses trilateration at every suitable mea
 \label{Angle}
 \end{minipage}
 \end{figure}\\
-As follows from the fig.\ref{Center} shown above, the intersection point is found by computing two linear functions which go trough two corresponding points (blue lines). The center of the robot is then the intersection of those two linear functions and can be computed by the following equations:
+As follows from the fig.\ref{Center} shown above, the intersection point is found by computing two linear functions which go through two corresponding points (blue lines). The center of the robot is then the intersection of those two linear functions and can be computed by the following equations:
 \begin{align}
 x = \dfrac{(x_1y_2-y_1x_2)(x_3-x_4)-(x_1-x_2)(x_3y_4-y_3x_4)}{(x_1-x_2)(y_3-y_4)-(y_1-y_2)(x_3-x_4)} \\
 y = \dfrac{(x_1y_2-y_1x_2)(y_3-y_4)-(y_1-y_2)(x_3y_4-y_3x_4)}{(x_1-x_2)(y_3-y_4)-(y_1-y_2)(x_3-x_4)}
 \end{align}
-Theoreticaly all eight measuring points are suitable points (at least four IDs found). But for the case that the real measurements differ from the theory, the algorithm just needs four suitable points. \\
+Theoretically all eight measuring points are suitable points (at least four IDs found). But for the case that the real measurements differ from the theory, the algorithm just needs four suitable points. \\
 After the initial position as well as the positions of 4 measurement points are known, the algorithm computes the orientation based on those information. The relative angle between the center and the first measurement point will be computed with the arctan2 function and leads to an orientation -180$^\circ < \Theta \leq$180$^\circ$ as shown in fig.\ref{Angle}. \\
 To compute the absolute angle, the angle of the measurement point has to be subtracted and 180$^\circ$ has to be added. This is caused by the fact that the antenna is placed on the back of the robot and the absolute orientation should be the direction of the front. After this computation, the initial position and orientation of the robot are known. \\
 
 \subsection{Test setup}
-In order to verify the validity of the initialization procedure, experiments with the components mentioned in chapter \ref{Sec_Har} were carried out. The beginning of these experiments were the reconstruction of one of the AGVs with this HW setup. After all components were added to the AGV the power supply was realized via a powerbank and the USB connection of then wifi modul. The plan is to replace this in the future with a direct connection to the battery of the AGV. Fig.\ref{TestSetup} gives an overview of the test setup and shows that also for the prototype, the reader and the wifi modul was just stuck with Sellotape on the upper layer of the AGV.\\
+In order to verify the validity of the initialization procedure, experiments with the components mentioned in chapter \ref{Sec_Har} were carried out. The beginning of these experiments were the reconstruction of one of the AGVs with this hardware setup. After all components were added to the AGV the power supply was realized via a powerbank and the USB connection of then wifi modul. The plan is to replace this in the future with a direct connection to the battery of the AGV. Fig.\ref{TestSetup} gives an overview of the test setup and shows that also for the prototype, the reader and the WiFi modul was just stuck with Sellotape on the upper layer of the AGV.\\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 14cm]{Pictures/TestSetup}
 \caption{testing setup for initialization procedure}
 \label{TestSetup}
 \end{figure}\\
-The test platform was a field of 9 tags which were stuck on a piece of carton. The IDs and its positions are shown in tbl.\ref{IDs_Setup}.\\
+The test platform was a field of 9 tags which were stuck on a piece of carton. The IDs and its positions are shown in table \ref{IDs_Setup}.\\
 \begin{table}[!htbp]
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline

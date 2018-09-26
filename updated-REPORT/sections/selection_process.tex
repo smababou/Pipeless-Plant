@@ -208,6 +208,7 @@ Based on the research made, two tables with advantages and disadvantages of the 
 	\label{my-label}
 \end{table}
 \pagebreak
+
 \subsection{RFID} % stephan around 2 pages
 One of the possible solutions to solve the challenging problem of indoor localization is the use of the Radio-frequency Identification (RFID) technology. The main areas of this technology is indeed "supply chains, transport, manufacturing, personnel access, animal tagging, toll collection" \cite{Bai_overviewof},  but also has become popular in localizing objects and persons. Where in the main applications only the identification has to be realized, also the strength of the signals is important to estimate the position of a certain object.\\
 The main idea of those systems is that a reader detects a tag and reads its information. The technology can be divided into three main types: passive, semi-passive and active systems. A passive system, like it is been shown in fig. \ref{RFID_Passive}, consists of a reader, which is connected to an antenna and a computer and a passive tag.\\
@@ -227,7 +228,7 @@ The main idea of those systems is that a reader detects a tag and reads its info
 \end{minipage}
 \end{figure}\\
 \footnotetext[2]{Source: Overview of RFID-Based Indoor Positioning Technology \cite{Bai_overviewof}}
-The system is called passive, because the power supply is realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags gets enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a battery build in that the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
+The system is called passive, because the power supply is realized by the radio signal of the reader. In case where the tag is in the reading range of the reader, the tags get enough power to send predefined information (for example ID) back. The active system (see fig.\ref{RFID_Active}) in comparison has an active tag which has an own power supply. The semi-passive tag has a build-in battery that the tag has more power to communicate, but is not used to generate radio frequency signals.\\ 
 Another classification of RFID systems is the frequency of the radio waves. It can reach from 0.135 MHz (Low Frequency) to 5875 MHz (Super High Frequency). The table \ref{RFID_Systems} gives an overview about the systems related to reading ranges, reading rates and the ability to read near metal or water.\\
 \begin{table}[!htbp]
 \centering
@@ -237,9 +238,9 @@ Another classification of RFID systems is the frequency of the radio waves. It c
 \caption[Overview RFID systems]{Overview RFID systems \footnotemark[3]}
 \label{RFID_Systems}
 \end{table}\\
-It can be seen that the passive systems in general have a smaller reading range then the active systems, but has a bigger data rate. Another important aspect in taking the best choice is, that passive tags are cheaper (around 0.20 \euro{}) then active tags (around 9.00 \euro{}).
+It can be seen that the passive systems have a smaller reading range than the active systems, but have a bigger data rate. Another important aspect in taking the best choice is, that passive tags are cheaper (around 0.20 \euro{}) than active tags (around 9.00 \euro{}).
 \subsubsection*{Implementation}
-There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four reader in each corner of the plant and an active tag on each AGV.
+There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four readers in each corner of the plant and an active tag placed on each AGV.
 \footnotetext[3]{Source: Overview of RFID-Based Indoor Positioning Technology \cite{Bai_overviewof}}   
 Based on the research made, two tables with advantages and disadvantages of the two RFID systems were created.\\ 
 \begin{table}[!htbp]
@@ -256,7 +257,7 @@ Simple algorithm (Trilateration)                                                
 \end{tabular}
 \caption{Pro and cons of active RFID system}
 \label{my-label}
-\end{table}
+\end{table} \\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
