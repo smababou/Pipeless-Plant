@@ -18,6 +18,8 @@ Warning--empty year in Prinzip3DVideometrie.
 Warning--empty journal in MultiObjectTriangulation.
 Warning--empty year in MultiObjectTriangulation.
 Warning--empty journal in laser_triangulation
+Warning--empty journal in TriangulationFormula
+Warning--empty year in TriangulationFormula
 Warning--empty journal in ChristofRohrigDanielHessandFrankKunemund.
 Warning--empty year in ChristofRohrigDanielHessandFrankKunemund.
-(There were 7 warnings)
+(There were 9 warnings)

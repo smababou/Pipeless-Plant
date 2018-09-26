@@ -22,16 +22,16 @@ Matteo Munaro, Edmond Wai Yan~So, Stefano Tonello, and Emanuele Menegatti.
   reconstruction with a dual-laser triangulation system.
 \newblock 48:201--225, 09 2015.
 
+\bibitem{TriangulationFormula}
+{Richard I. Hartley, Peter Sturm}.
+\newblock Triangulation.
+
 \bibitem{pat_recog}
 F.~Dias, H.~Schafer, L.~Natal, and C.~Cardeira.
 \newblock Mobile robot localisation for indoor environments based on ceiling
   pattern recognition.
 \newblock In {\em 2015 IEEE International Conference on Autonomous Robot
   Systems and Competitions}, pages 65--70, 2015.
-
-\bibitem{Bai_overviewof}
-Yuntian~Brian Bai, Suqin Wu, Hongren Wu, and Kefei Zhang.
-\newblock Overview of rfid-based indoor positioning technology, 2012.
 
 \bibitem{acml1}
 Jun~Liu Baoxian~Zhang and Haoyao Chen.
@@ -42,6 +42,10 @@ Jun~Liu Baoxian~Zhang and Haoyao Chen.
 \bibitem{acml2}
 ROS.
 \newblock Amcl, 2018.
+
+\bibitem{Bai_overviewof}
+Yuntian~Brian Bai, Suqin Wu, Hongren Wu, and Kefei Zhang.
+\newblock Overview of rfid-based indoor positioning technology, 2012.
 
 \bibitem{rfid.application}
 Hanifa~SHAH Kamran~AHSAN and Paul KINGSTON.
