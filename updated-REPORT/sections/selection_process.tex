@@ -3,26 +3,41 @@
 Since the main aim of the project is to improve the positioning system of the existing setup, several other techniques were discussed, ending up in four methods namely triangulation, pattern recognition, radio frequency identification, map-based localization. The pros and cons were listed and the mentioned techniques were compared. The following section deals with a brief description of the above-mentioned techniques.\\
 
 \subsection{Triangulation} %stefan
-Since the plant has a specified size in which the location of multiple objects has to be performed the method of triangulation is one promising technic in which research was made. 
-Triangulation was already a common principle of measurement in the 18th century and it is divided into active and passive triangulation. Passive triangulation is a geometrical method based on two measurement stations which positions are known exactly. At these two measurement points angels of the desired point in space are measured to compute the localization in the specified coordinate system (x, y, z) with trigonometrical formulas.
+Since the plant has a specified size in which the location of multiple objects has to be performed the method of triangulation is one promising technique in which research was made. 
+Triangulation was already a common principle of measurement in the 18th century and it is divided into active and passive triangulation. Passive triangulation is a geometrical method based on two measurement stations which positions are known exactly. At these two measurement points angles of the desired point in space are measured to compute the localization in the specified coordinate system (x, y, z) with trigonometrical formulas.
 With respect to the system setup used in the 18th century nowadays two cameras are installed to perform a geographical method of 3D object-data estimation as shown in fig. \ref{Triangulation} \cite{Prinzip3DVideometrie.}.
+\footnotetext[1]{Source: \url{https://arxiv.org/abs/1410.2535}}
 \begin{figure}[!htbp]
-\centering
+\begin{center}
 \includegraphics[width = 16cm]{Pictures/Triangulation}
-\caption{Passive triangulation setup with two cameras}
+\caption[The ListOfFigures caption]{Passive triangulation setup with two cameras \footnotemark[1]}
 \label{Triangulation}
-\end{figure}\\
-\pagebreak
-To solve the problem of position estimation, it is necessary to know the parameters of the left and the right camera visualized in fig. \ref{Triangulation}. In theory the triangulation is trivial, since each and every point of the images of the respective cameras maps to a line in 3D space. If a pair of corresponding points, in the case of the pipesless plant an AGV is found, the projection of a point x in 3D space can be computed. 
+\end{center}
+\end{figure}
+%\begin{figure}[!htbp]
+%\centering
+%\includegraphics[width = 16cm]{Pictures/Triangulation}
+%\caption{Passive triangulation setup with two cameras}
+%\label{Triangulation}
+%\end{figure}
+\newpage To solve the problem of position estimation, it is necessary to know the parameters of the left and the right camera visualized in fig. \ref{Triangulation}. In theory the triangulation is trivial, since each and every point of the images of the respective cameras maps to a line in 3D space. If a pair of corresponding points, in the case of the pipesless plant an AGV is found, the projection of a point x in 3D space can be computed. 
 Active triangulation in comparison to passive triangulation needs one camera and at least one source of structured light (e.g. Laser). The geometrical location and orientation of the camera and light source in space need to be known. Two possible setups with either a laser point or a stripe as structured light are shown in fig. \ref{ative_Triangulation} \cite{MultiObjectTriangulation.}\cite{laser_triangulation}.\\
+\footnotetext[2]{Source: \url{https://www.tuhh.de/ft2/wo/Scripts/Videometrie3D/Prinzip3DVideoMetrie.pdf}}
 \begin{figure}[!htbp]
+\begin{center}
 \centering
 \includegraphics[width = 16cm]{Pictures/acticetriangulation}
-\caption{Active triangulation}
+\caption[The ListOfFigures caption]{Active triangulation \footnotemark[2]}
 \label{ative_Triangulation}
+\end{center}
 \end{figure}
-\pagebreak
-To solve the active triangulation problem, the structured light has to point an object which location is desired to estimate. If this point is found on the 2D image of the camera, a triangulation with basic trigonometrical formulas which are using the properties and parameters of the camera and light source is performed and the position of the AGV is be estimated.\\
+%\begin{figure}[!htbp]
+%\centering
+%\includegraphics[width = 16cm]{Pictures/acticetriangulation}
+%\caption{Active triangulation}
+%\label{ative_Triangulation}
+%\end{figure}
+\\To solve the active triangulation problem, the structured light has to point an object which location is desired to estimate. If this point is found on the 2D image of the camera, a triangulation is performed. Basic trigonometrical formulas \cite{TriangulationFormula} use the properties and parameters of the camera and light source to estimate the position of the AGV.\\
 \pagebreak
 \subsubsection*{Implementation} 
 One possible way to implement a solution for the passive triangulation is to attach 2 high resolution cameras with USB 3.0 on two edges of the plant as shown in fig. \ref{ativeTriangulationimplementation}.\\
@@ -34,8 +49,8 @@ One possible way to implement a solution for the passive triangulation is to att
 \footnote{Source of figures \ref{Pattern Recognition}, \ref{PatternRecognition1} and \ref{PatternRecognition2}  Pattern Recognition: www.ieeexplore.ieee.org/document/7101612/} 
 \end{figure}\\%
 The left and right camera are sequentially taking pictures which are transmitted to the plants computer where the image processing takes place.\\ 
-\pagebreak
-Based on the research made , two tables with advantages and disadvantages of the two triangulation systems are created.
+\ \newpage
+Based on the research made, two tables with advantages and disadvantages of the two triangulation systems were created.
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
@@ -242,7 +257,7 @@ It can be seen that the passive systems have a smaller reading range than the ac
 \subsubsection*{Implementation}
 There are mainly two different ways to realize a localization system of the AGVs in the pipeless plant. Based on the fact that the plant has a size of 3 by 4 meter, the tracking can be carried out with a passive system in which a couple of passive tags on the floor can be used as landmarks. In this case the reader plus the antenna would be placed on the AGV and localize with the help of the detected tags. The other systems consists of three or four readers in each corner of the plant and an active tag placed on each AGV.
 \footnotetext[3]{Source: Overview of RFID-Based Indoor Positioning Technology \cite{Bai_overviewof}}   
-Based on the research made, two tables with advantages and disadvantages of the two RFID systems were created.\\ 
+\newpage Based on the research made, two tables with advantages and disadvantages of the two RFID systems were created.\\ 
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}

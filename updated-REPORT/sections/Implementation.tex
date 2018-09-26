@@ -8,22 +8,22 @@ The already existing software is overwritten on the  built-in micro-controller o
 	\caption{RFID-WeMos Module Communication}
 	\label{rfid_wifi}
 \end{figure}\\
-A TCP-IP communication is established within the network on the WeMos WiFi Module that start publishing the data which has been received from the reader. This communication is killed if and only if in the case of robot shutdown as shown in fig.\ref{wifi_network}.\\
+\newpage A TCP-IP communication is established within the network on the WeMos WiFi Module that start publishing the data which has been received from the reader. This communication is killed if and only if in the case of robot shutdown as shown in fig.\ref{wifi_network}.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width = 14cm]{Pictures/wifinetwork}
 	\caption{WeMos Module Network Communication}
 	\label{wifi_network}
 \end{figure}
-While on the other side of computer GUI (Graphical User Interface), the similar communication is being established (which should be on the same network). and should grasp all the data that has been published by the WeMos WiFi module even if there exists no feedback. This communication can be terminated on the GUI if required as shown in the fig.\ref{wifi_pc}.\\
+\newpage While on the other side of computer GUI (Graphical User Interface), the similar communication is being established (which should be on the same network) and should grasp all the data that has been published by the WeMos WiFi module even if there exists no feedback. This communication can be terminated on the GUI if required as shown in the fig.\ref{wifi_pc}.\\
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width = 14cm]{Pictures/wifipc}
 	\caption{Computer Network Communication}
 	\label{wifi_pc}
-\end{figure}\\
+\end{figure}\newpage
 \subsection{Initialization procedure}\label{Sec_Imp_Ini}
-In the start-up phase, before running the pipeless plant with its AGVs the correct position and orientation of each and every vehicle are not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be discribed by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
+In the start-up phase, before running the pipeless plant with its AGVs, the correct position and orientation of each and every vehicle are not known. Even though the controller is able to compute the position of the AGVs antenna in each point of time (t=0 included),  several AGV positions in the plants operation space can be described by one single antenna position. In fig. \ref{possible_initial_positions} four possible AGV positions with one common antenna position are pointed out. \\
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/possible_initial_positions}
@@ -31,15 +31,15 @@ In the start-up phase, before running the pipeless plant with its AGVs the corre
 \label{possible_initial_positions}
 \end{figure}\\
 Since the position information is crucial for the plant, a procedure was set up to determine the starting positions of each and every AGV.
-According to the fact, that the position and orientation of a single AGV is unknown at the beginning, some potential hazards were taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\pagebreak
+According to the fact that the position and orientation of a single AGV is unknown at the beginning, some potential hazards were taken into account. For instance, the plant contains several obstacles like the mixing stations, vessel storage, charging stations, plant edges and even other vehicles as represented in fig. \ref{hazards}.\pagebreak
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/hazards}
 \caption{Possible hazards/obstacles}
 \label{hazards}
 \end{figure}\\
-With respect to these potential hazards collisions during the initialization procedure have to be avoided. This is realized by taking advantage out of the AGVs ability to turn around its z axis without a change of the AGVs center point in x and y direction. This ability of the AGV leads the way that each and every robot performs an initialization turn of 360$^\circ$ in which the reader takes measurments every 45$^\circ$ to estimate the specific positions and orientations of the AGVs. Furthermore, the fact, that the position of the center point does not change during a turn around its z axis, dominates  the decision process of the antenna position under the robot. 
-During the 360$^\circ$ turn the intervals of taking measurments need to be known by the controller. The determination of these measurement points can be computed in two different ways. On the one hand the controller uses the encoders of the AGV-wheels to estimate the performed rotation. On the other hand, the time of a complete turn is measured and used as a parameter in the procedure. In terms of simplicity the algorithm includes the second option during the initialization procedure.  
+With respect to these potential hazards, collisions during the initialization procedure have to be avoided. This is realized by taking advantage out of the AGVs ability to turn around its z axis without a change of the AGVs center point in x and y direction. This ability of the AGV leads the way that each and every robot performs an initialization turn of 360$^\circ$. During this turn the reader takes measurments every 45$^\circ$ to estimate the specific positions and orientations of the AGVs. Furthermore, the fact, that the position of the center point does not change during a turn around its z axis, dominates  the decision process of the antenna position under the robot. 
+During the 360$^\circ$ turn, the intervals of taking measurments need to be known by the controller. The determination of these measurement points can be computed in two different ways. On the one hand, the controller uses the encoders of the AGV-wheels to estimate the performed rotation. On the other hand, the time of a complete turn is measured and used as a parameter in the procedure. In terms of simplicity the algorithm includes the second option during the initialization procedure.  
 Fig. \ref{SFC_Init_Procedure} illustrates a sequential flow chart which describes the movement and data processing during the initialization procedure. The part of the code which is explained and visualized by Fig. \ref{SFC_Init_Procedure} is found in section \ref{Sec_AppD} \\ 
 \begin{figure}[!htbp]
 \centering
@@ -47,25 +47,25 @@ Fig. \ref{SFC_Init_Procedure} illustrates a sequential flow chart which describe
 \caption{Flow Chart: Initial procedure 360$^\circ$ turn}
 \label{SFC_Init_Procedure}
 \end{figure}\\\\\\\\\\\\\\\\
-The initialization procedure for AGV No. 1 is created and a button in the test environment starts the respective part of the algorithm. In the first place the user types an integer number in the field called Sleeptime. This integer number is interpretated as milliseconds and describes the time of rotation. Even though a time for a complete turn of 45$^\circ$  has been found at around 1125ms it has to be said that this time strongly depends on the battery charge of the AGV. After the desired turning time is given to the GUI and the initialization button, located over the input box in fig.  \ref{Screenshot_Test_environment}, was pushed the initialization starts.
+The initialization procedure for AGV No. 1 is created and a button in the test environment starts the respective part of the algorithm. In the first place the user types an integer number in the field called sleeptime. This integer number is interpretated as milliseconds and describes the time of rotation. Even though a time for a complete turn of 45$^\circ$  has been found at around 1125ms, it has to be said that this time strongly depends on the battery charge of the AGV. After the desired turning time is given to the GUI, the initialization button, located over the input box in fig.  \ref{Screenshot_Test_environment}, starts the initalization procedure.
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 16cm]{Pictures/Screenshot_Test_environment}
 \caption{Test environment in GUI}
 \label{Screenshot_Test_environment}
 \end{figure}\\
-In the second step, after the procedure was started, the RFID-Reader reads all the available IDs and their respective RSSI in its current reading range. The reading is performed in the Automatic Scan mode of the RFID reader\cite{KTSSysteme.2017}. With the included timestamp for every measurement a delay of minimum 30ms between each tag information was detected. With respect to this delay the antenna stops a specific period of time at each measuring point to deliver correct data of all the reachable tags. Experiences have shown, that a measuring time between one and two seconds delivers the best results. During this time the controller recieves new measurment information every 100 ms. In order to save the single TAG information of each and every measuring point an initially empty array with 14 columns and 8 rows was created. 
+In the second step, after the procedure was started, the RFID-Reader reads all the available IDs and their respective RSSI in its current reading range. The reading is performed in the Automatic Scan mode of the RFID reader\cite{KTSSysteme.2017}. With the included timestamp for every measurement a delay of minimum 30ms between each tag information was detected. With respect to this delay, the antenna stops a specific period of time at each measuring point to deliver correct data of all the reachable tags. Experiences have shown that a measuring time between one and two seconds delivers the best results. During this time, the controller recieves new measurment information every 100 ms. In order to save the single tag information of each and every measuring point, an initially empty array with 14 columns and 8 rows was created. 
 The number of rows is derived by the fact that the systems takes measuremtns every 45\textdegree. \\
 \begin{align}
 Rows = 360^\circ/45^\circ = 8\\
 \end{align}
-The first seven columns in the array contain the received TAG IDs and the last seven entries describe the respective RSSI. \\
-The number of columns is derived by the fact that at each and every measurement point in the used test environment, information of maximal seven TAGs can be read. \\
+The first seven columns in the array contain the received tag IDs and the last seven entries describe the respective RSSI. \\
+The number of columns is derived by the fact that at each and every measurement point in the used test environment, information of maximal seven tags can be read. \\
 \begin{align}
 Columns = max. no. of  tags * 2 = 7 * 2 = 14\\
 \end{align}
 Once the received data is saved in its corresponding row, the AGV turns around 45\textdegree  and places the antenna at the next measurment point. An AGV turn is realized by setting the velocity of the right and left wheel in different directions. During the turning sections the velocity is set to 100 mm/s or rather -100 mm/s. 
-This procedure of reading information, writing information in the initialization array and turning 45$^\circ$  to the next measuring point is repeating itself until a 360$^\circ$  turn is performed. After a successful initialization turn the corresponding array of measurement information can look like the example in table \ref{Init_Array}. The code which realizes the filling of the array can be seen in section \ref{Sec_AppE}
+This procedure of reading information, writing information in the initialization array and turning 45$^\circ$  to the next measuring point is repeating itself until a 360$^\circ$  turn is performed. After a successful initialization turn, the corresponding array of measurement information can look like the example in table \ref{Init_Array}. The code which realizes the filling of the array can be seen in section \ref{Sec_AppE}
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -79,13 +79,13 @@ This procedure of reading information, writing information in the initialization
 5&4&7&8&1&&&2&5&0&0&0&&  \\ \hline
 2&4&1&5&&&&0&2&2&0&&&  \\ \hline
 \end{tabular}
-\caption{Filled array after 360$^\circ$ turn}
+\caption{Filled initalization array after 360$^\circ$ turn}
 \label{Init_Array}
 \end{table}\\
 
 \subsubsection{Recording and filtering data}
-To read the ID and RSSI of all the TAG laying in the reading range the RFID-reader performs in its Automatic mode and its Anticollision is switched on. In this mode the plans computer recieves packages of strings with a length of 36 characters. Even though these 36 character strings contain all the information of the TAG which is needed the algorithm seperates the useful parts and delivers them to the localization algorithm for further computations.\\
-With exception of the information each string contains, the structure itself is always the same. In the first five characters the substring ``\textit{SCAN:}'' is detected and deleted for the further process. The sixth slot of the string is the first important character. It contains either a ``\textit{+}'' or a ``\textit{-}''. With the help of this sixth slot it is distinglished wheather the current reading is complete or not. In order to guarantee the correctness of the received information the measurments are filtered by the ``\textit{+}'' and the measurments in which a ``\textit{-}'' is included are ignored in the further processes. After the indicator for complete and incomplete readings a introduction to the ID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 characters define the unique identification of the specific TAG. As a last useless string, which has to be cut out, with the structure ``\textit{.RSSI=}'' is found directly after the ID. As a result the 16 character hexadecimal ID and its respective RSSI are seperated from the received string. Since the ordered tag IDs differ each other just in the last three numbers these numbers are transformed in a decimal number before UID and RSSI are used for further computations. The code which realizes the recording and filtering of the data can be seen in section \ref{Sec_AppB}\\
+To read the ID and RSSI of all the tag laying in the reading range, the RFID-reader performs in its Automatic mode and its Anticollision is switched on. In this mode the plans computer recieves packages of strings with a length of 36 characters. Even though these 36 character strings contain all the information of the tag which is needed the algorithm seperates the useful parts and delivers them to the localization algorithm for further computations.\\
+With exception of the information each string contains, the structure itself is always the same. In the first five characters the substring ``\textit{SCAN:}'' is detected and deleted for the further process. The sixth slot of the string is the first important character. It contains either a ``\textit{+}'' or a ``\textit{-}''. With the help of this sixth slot it is distinglished whether the current reading is complete or not. In order to guarantee the correctness of the received information the measurments are filtered by the ``\textit{+}'' and the measurments in which a ``\textit{-}'' is included are ignored in the further processes. After the indicator for complete and incomplete readings a introduction to the ID is indicated by  ``\textit{UID=} '' and cut out of the string. The next 16 characters define the unique identification of the specific tag. As a last useless string, which has to be cut out, with the structure ``\textit{.RSSI=}'' is found directly after the ID. As a result the 16 character hexadecimal ID and its respective RSSI are seperated from the received string. Since the ordered tag IDs differ each other just in the last three numbers, these numbers are transformed in a decimal number before UID and RSSI are used for further computations. The code which realizes the recording and filtering of the data can be seen in section \ref{Sec_AppB}\\
 \begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|}
@@ -102,23 +102,23 @@ E00401503A5BD691 0/0                    &                                       
 \end{table}
 
 \subsubsection{Analysing data}
-In the next step  the algorithm analizes the previous described filled array. To estimate the position and orientation of the AGV the array has to include two valid sets of each two valid measuring points.  During this analyzation following restrictions validate the single measurement point-sets:\\\\
-1.: At the two valid measurement point each contains at least three tags\\
-2.: The other measurement point in one set needs to have a distance of 180$^\circ$  to the first.
-\pagebreak\\
-In terms to get the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.\\
-The code in which the analization is realized can be seen in section \ref{Sec_AppF}
+In the next step, the algorithm analyses the previously described filled array. To estimate the position and orientation of the AGV, the array has to include two valid sets of each two valid measuring points.  During this analyzation, following restrictions validate the single measurement point-sets:\begin{itemize}
+\item  At the two valid measurement point each contains at least three tags.
+\item  The other measurement point in one set needs to have a distance of 180$^\circ$  to the first.
+\end{itemize}\newpage
+In terms of getting the adequate sets of measurment points the array is analyzed row by row. The stepwise workflow is vizialized in fig. \ref{Analyze_Array}.\\
+The code in which the analyzation is realized can be seen in section \ref{Sec_AppF}
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width = 10cm]{Pictures/AnalyzeArray}
-\caption{Flow Chart: Analizing measurment points}
+\caption{Flow Chart: Analizing initialization measurment points}
 \label{Analyze_Array}
 \end{figure}\\
-Initially the algorithm checks the first row which represents the measurement at the point 0$^\circ$ in terms of the number of readable tags. If this specific number is higher or equal three the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180$^\circ$ to the former measurement point. If this next measurement point can be described as valid, the first valid set of two measurement points is found. If, on the other hand, the number of readable TAGs are less than three, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next measurement point is evaluated.
-Each of this sets of two measurement points is saved as a 1x2 array called Solution 1 and Solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 Estimation of initial position and orientation.\\
+Initially the algorithm checks the first row which represents the measurement at the point 0$^\circ$ in terms of the number of readable tags. If this specific number is higher or equal three the transition is acknowledged as true and the same query will be performed at the measurement point with a distance of 180$^\circ$ to the former measurement point. If this next measurement point can be described as valid, the first valid set of two measurement points is found. If, on the other hand, the number of readable tag are less than three, which means that the triangulation algorithm cannot be performed, the current measurement point is ignored and the next measurement point is evaluated.
+Each of these sets of two measurement points is saved as a 1x2 array called solution 1 and solution 2 is used for the estimation of the position of the measurement points which is explained in the section 7.2.4 estimation of initial position and orientation.\\
 
 \subsubsection{Selection of correct distance related to RSSI}
-In a first step the multiple occurring data points (see table \ref{RSSI_Dis_data}) are divided into three groups (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
+In the first step, the multiple occurring data points (see table \ref{RSSI_Dis_data}) are divided into three groups, (max, middle and min) where max means the maximal possible distance related to one RSSI and so on.\\ 
 The measurements have shown that it is not trivial to define the correct distance related to most of the RSSI. The involved algorithm selects the correct distance out of the multiple possible solutions and is shown in fig. \ref{BestID}:\\
 \begin{figure}[!htbp]
 \centering
